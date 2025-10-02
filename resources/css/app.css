@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* optional: global body font */
+body {
+    @apply font-sans;
+}
