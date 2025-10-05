@@ -4,20 +4,47 @@
 @section('page-title', 'Add Client')
 
 @section('content')
-<form action="{{ route('clients.store') }}" method="POST" enctype="multipart/form-data" class="bg-white p-6 rounded shadow">
-    @csrf
-    <div class="mb-4">
-        <label class="block font-semibold">Name</label>
-        <input type="text" name="name" class="w-full border rounded p-2" required>
-    </div>
-    <div class="mb-4">
-        <label class="block font-semibold">Image</label>
-        <input type="file" name="image" class="w-full border rounded p-2">
-    </div>
-    <div class="mb-4">
-        <label class="block font-semibold">Testimonial</label>
-        <textarea name="testimonial" class="w-full border rounded p-2"></textarea>
-    </div>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Save</button>
-</form>
+<div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+    <form action="{{ route('clients.store') }}" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="mb-4">
+            <label class="block font-semibold mb-1">Name</label>
+            <input type="text" name="name" value="{{ old('name') }}" class="w-full border rounded p-2" required>
+            @error('name')
+                <span class="text-red-600 text-sm">{{ $message }}</span>
+            @enderror
+        </div>  
+
+        <div class="mb-4">
+            <label class="block font-semibold mb-1">Image</label>
+            <input type="file" name="image" class="w-full border rounded p-2">
+            @error('image')
+                <span class="text-red-600 text-sm">{{ $message }}</span>
+            @enderror
+        </div>
+
+        <div class="mb-4">
+            <label class="block font-semibold mb-1">Type</label>
+            <select name="type" class="w-full border rounded p-2">
+                <option value="international" {{ old('type') == 'international' ? 'selected' : '' }}>International</option>
+                <option value="bangladeshi" {{ old('type') == 'bangladeshi' ? 'selected' : '' }}>Bangladeshi</option>
+            </select>
+            @error('type')
+                <span class="text-red-600 text-sm">{{ $message }}</span>
+            @enderror
+        </div>
+
+        <div class="mb-4">
+            <label class="block font-semibold mb-1">Testimonial</label>
+            <textarea name="testimonial" class="w-full border rounded p-2">{{ old('testimonial') }}</textarea>
+            @error('testimonial')
+                <span class="text-red-600 text-sm">{{ $message }}</span>
+            @enderror
+        </div>
+
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+            Save
+        </button>
+    </form>
+</div>
 @endsection

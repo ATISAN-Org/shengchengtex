@@ -25,30 +25,39 @@ class ClientController extends Controller
             'name' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'testimonial' => 'nullable|string',
+            'type' => 'required|in:international,bangladeshi',
+
         ]);
 
         $path = null;
+
         if ($request->hasFile('image')) {
             $file = $request->file('image');
-            $filename = time() . '_' . $file->getClientOriginalName();
+            $filename = time() . '_' . preg_replace('/\s+/', '_', $file->getClientOriginalName());
+            $destinationPath = public_path('uploads/clients');
 
-            // Save directly to public/storage/clients
-            if (!file_exists(public_path('storage/clients'))) {
-                mkdir(public_path('storage/clients'), 0755, true);
+            // Create directory if not exists
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath, 0755, true);
             }
 
-            $file->move(public_path('storage/clients'), $filename);
-            $path = 'clients/' . $filename; // store relative path in DB
+            // Move uploaded file to public/uploads/clients
+            $file->move($destinationPath, $filename);
+
+            // Save relative path to database
+            $path = 'uploads/clients/' . $filename;
         }
 
         Client::create([
             'name' => $request->name,
             'image' => $path,
             'testimonial' => $request->testimonial,
+            'type' => $request->type,
         ]);
 
         return redirect()->route('clients.index')->with('success', 'Client added successfully!');
     }
+
 
     public function edit(Client $client)
     {
@@ -61,19 +70,23 @@ class ClientController extends Controller
             'name' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'testimonial' => 'nullable|string',
+            'type' => 'required|in:international,bangladeshi',
+
         ]);
 
         $path = $client->image;
+
         if ($request->hasFile('image')) {
             $file = $request->file('image');
-            $filename = time() . '_' . $file->getClientOriginalName();
+            $filename = time() . '_' . preg_replace('/\s+/', '_', $file->getClientOriginalName());
+            $destinationPath = public_path('uploads/clients');
 
-            if (!file_exists(public_path('storage/clients'))) {
-                mkdir(public_path('storage/clients'), 0755, true);
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath, 0755, true);
             }
 
-            $file->move(public_path('storage/clients'), $filename);
-            $path = 'clients/' . $filename;
+            $file->move($destinationPath, $filename);
+            $path = 'uploads/clients/' . $filename;
         }
 
         $client->update([
@@ -84,5 +97,6 @@ class ClientController extends Controller
 
         return redirect()->route('clients.index')->with('success', 'Client updated successfully!');
     }
+
 
 }

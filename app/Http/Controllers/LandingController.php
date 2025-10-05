@@ -94,5 +94,25 @@ class LandingController extends Controller
     }
 
 
+    public function clientsMore()
+    {
+        // Get international clients
+        $internationalClients = Client::where('type', 'international')->get();
+
+        // Get Bangladeshi clients
+        $bangladeshiClients = Client::where('type', 'bangladeshi')->get();
+
+        // Get clients with testimonials
+        $clientsWithTestimonials = Client::whereNotNull('testimonial')->get();
+
+        // Return view with data
+        return view('components.clients-more', compact(
+            'internationalClients',
+            'bangladeshiClients',
+            'clientsWithTestimonials'
+        ));
+    }
+
+
 
 }

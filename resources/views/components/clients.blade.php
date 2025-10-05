@@ -11,22 +11,23 @@
 
         <!-- Clients Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-10">
-            @foreach($clients as $client)
-                <div
-                    class="bg-white rounded-2xl shadow-md p-6 transform transition duration-500 hover:-translate-y-2 hover:scale-105">
-                    <div class="relative w-28 h-28 mx-auto mb-4">
-                        <img src="{{ $client->image ? asset('storage/' . $client->image) : 'https://source.unsplash.com/150x150/?business' }}"
-                            alt="{{ $client->name }}"
-                            class="w-28 h-28 object-cover rounded-full border-4 border-orange-300 shadow-sm">
-                    </div>
+            @foreach($clients->take(6) as $client)
+                    <div
+                        class="bg-white rounded-2xl shadow-md p-6 transform transition duration-500 hover:-translate-y-2 hover:scale-105">
+                        <div class="relative w-28 h-28 mx-auto mb-4">
+                            <img src="{{ $client->image && file_exists(public_path($client->image))
+                ? asset($client->image)
+                : 'https://source.unsplash.com/150x150/?business' }}" alt="{{ $client->name }}"
+                                class="w-28 h-28 object-cover rounded-full border-4 border-orange-300 shadow-sm">
+                        </div>
 
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">{{ $client->name }}</h3>
-                    @if($client->testimonial)
-                        <p class="text-gray-600 text-sm md:text-base italic mb-0">
-                            "{{ $client->testimonial }}"
-                        </p>
-                    @endif
-                </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">{{ $client->name }}</h3>
+                        @if($client->testimonial)
+                            <p class="text-gray-600 text-sm md:text-base italic mb-0">
+                                "{{ $client->testimonial }}"
+                            </p>
+                        @endif
+                    </div>
             @endforeach
         </div>
 

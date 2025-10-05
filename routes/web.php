@@ -39,7 +39,8 @@ Route::post('/contact', [LandingController::class, 'submitContact'])->name('cont
 // routes/web.php
 
 Route::view('/about-more', 'components.about-more')->name('about-more');
-Route::view('/clients-more', 'components.clients-more')->name('clients-more');
+Route::get('/clients-more', [LandingController::class, 'clientsMore'])->name('clients-more');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 /*
 |--------------------------------------------------------------------------

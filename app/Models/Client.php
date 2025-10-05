@@ -12,5 +12,6 @@ class Client extends Model
         'name',
         'image',
         'testimonial',
+        'type'
     ];
 }

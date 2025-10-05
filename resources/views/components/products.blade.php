@@ -36,7 +36,7 @@
                     <div class="hidden lg:block mb-6">
                         @include('components.products-filter-form')
                     </div>
-    
+
                     <!-- Products Grid -->
                     <!-- Products Grid -->
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6">
@@ -45,6 +45,7 @@
                                 <img src="{{ $product->image ? asset($product->image) : 'https://source.unsplash.com/400x400/?fabric,textile' }}"
                                     alt="{{ $product->name }}"
                                     class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+
                                 <div class="p-4 text-center">
                                     <h3 class="text-base font-semibold text-gray-800 mb-1">{{ $product->name }}</h3>
                                     <a href="{{ route('products.details', $product->id) }}"
