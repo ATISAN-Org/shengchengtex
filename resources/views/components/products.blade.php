@@ -1,0 +1,86 @@
+@extends('layouts.app')
+
+@section('title', 'Products - Shengcheng Textile')
+
+@section('content')
+    <section class="py-16 bg-orange-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-orange-500 mb-8">All Products</h2>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+
+                <!-- Products Grid (Left/Main) -->
+                <div class="flex-1">
+
+                    <!-- Mobile Filter Toggle -->
+                    <div x-data="{ open: false }" class="lg:hidden mb-4">
+                        <button @click="open = !open"
+                            class="bg-orange-500 text-black px-4 py-2 rounded shadow w-full flex justify-between items-center">
+                            <span>Filters</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                                <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 15l7-7 7 7" />
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-transition class="mt-2 bg-white p-4 rounded shadow">
+                            @include('components.products-filter-form')
+                        </div>
+                    </div>
+
+
+                    <!-- Desktop Filter Form (hidden on mobile) -->
+                    <div class="hidden lg:block mb-6">
+                        @include('components.products-filter-form')
+                    </div>
+    
+                    <!-- Products Grid -->
+                    <!-- Products Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                        @foreach($products as $product)
+                            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                                <img src="{{ $product->image ? asset($product->image) : 'https://source.unsplash.com/400x400/?fabric,textile' }}"
+                                    alt="{{ $product->name }}"
+                                    class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="p-4 text-center">
+                                    <h3 class="text-base font-semibold text-gray-800 mb-1">{{ $product->name }}</h3>
+                                    <a href="{{ route('products.details', $product->id) }}"
+                                        class="inline-block bg-orange-500 text-black px-4 py-2 text-xs rounded-full shadow hover:bg-orange-600 transition">
+                                        View
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <div class="mt-8">
+                        {{ $products->links() }}
+                    </div>
+                </div>
+
+                <!-- Sidebar (Right, Desktop Only) -->
+                <aside class="w-full lg:w-64 hidden lg:block">
+                    <div class="bg-white rounded-xl shadow p-6">
+                        <h3 class="text-2xl font-bold text-orange-500 mb-4">Categories</h3>
+                        <ul class="space-y-2">
+                            @foreach($categories as $category)
+                                <li>
+                                    <a href="{{ route('products.list', ['category' => $category->id]) }}"
+                                        class="text-gray-800 hover:text-orange-500 transition-colors">
+                                        {{ $category->name }}
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+@endsection

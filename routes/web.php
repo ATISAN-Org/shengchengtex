@@ -1,0 +1,86 @@
+<?php
+
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\ProductRequestController;
+use Illuminate\Support\Facades\Route;
+use App\Models\Category;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ClientController;
+use App\Http\Controllers\Admin\EmployeeController;
+use App\Http\Controllers\Admin\ExpenseController;
+use App\Http\Controllers\Admin\ReportController;
+use App\Http\Controllers\LandingController;
+
+/*
+|--------------------------------------------------------------------------
+| Landing / Public Routes
+|--------------------------------------------------------------------------
+*/
+
+// Homepage
+Route::get('/', [LandingController::class, 'index'])->name('landing');
+
+// Landing products page
+Route::get('/products', [LandingController::class, 'products'])->name('products.list');
+
+// Other landing pages
+Route::get('/about', [LandingController::class, 'about'])->name('about');
+Route::get('/contact', [LandingController::class, 'contact'])->name('contact');
+
+// Contact form submission
+Route::post('/contact', [LandingController::class, 'submitContact'])->name('contact.submit');
+Route::post('/contact-submit', [LandingController::class, 'submitContact']);
+Route::get('/products/{product}', [LandingController::class, 'productDetails'])->name('products.details');
+Route::post('/product/{product}/request', [ProductController::class, 'request'])->name('product.request');
+
+Route::post('/contact', [LandingController::class, 'submitContact'])->name('contact.submit');
+// routes/web.php
+
+Route::view('/about-more', 'components.about-more')->name('about-more');
+Route::view('/clients-more', 'components.clients-more')->name('clients-more');
+
+/*
+|--------------------------------------------------------------------------
+| Admin Routes (Protected)
+|--------------------------------------------------------------------------
+*/
+
+Route::prefix('admin')->group(function () {
+
+    // Dashboard
+    Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard');
+
+    // Resources
+    Route::resource('products', ProductController::class);
+    Route::resource('categories', CategoryController::class);
+    Route::resource('clients', ClientController::class);
+    Route::resource('employees', EmployeeController::class);
+    Route::resource('expenses', ExpenseController::class);
+
+    // Reports
+    Route::get('reports', [ReportController::class, 'index'])->name('reports.index');
+    Route::get('reports/export', [ReportController::class, 'exportCsv'])->name('reports.export');
+
+    Route::get('requests', [ProductRequestController::class, 'index'])->name('requests.index');
+    Route::get('requests/{request}', [ProductRequestController::class, 'show'])
+        ->name('requests.show');
+    Route::get('contacts', [ContactController::class, 'index'])->name('contacts.index');
+    Route::get('contacts/{contact}', [ContactController::class, 'show'])->name('contacts.show');
+
+});
+
+
+/*
+|--------------------------------------------------------------------------
+| Notes
+|--------------------------------------------------------------------------
+|
+| 1. Admin routes use prefix 'admin'.
+| 2. Admin dashboard is at '/admin' and points to DashboardController@index.
+| 3. Landing pages remain accessible at root '/'.
+| 4. Resource routes handle CRUD for products, categories, clients, employees, expenses.
+| 5. Reports routes are separated under 'admin/reports'.
+|
+*/
