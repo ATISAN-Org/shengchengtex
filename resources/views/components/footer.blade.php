@@ -1,4 +1,4 @@
-<footer class="bg-gray-900 text-white py-16 relative">
+<footer class="bg-gray-900 text-white py-16 relative overflow-hidden">
     <div class="container mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-10">
         <!-- Contact Info -->
         <div>

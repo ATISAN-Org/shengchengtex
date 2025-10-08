@@ -1,4 +1,4 @@
-<section id="products" class="relative min-h-screen bg-orange-50 flex flex-col justify-center">
+<section id="products" class="relative min-h-screen bg-orange-50 flex flex-col justify-center overflow-hidden">
     <div class="container mx-auto px-4">
         <!-- Header -->
         <div class="text-center mb-16">
