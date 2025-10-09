@@ -32,14 +32,14 @@
                                 <span class="text-white font-bold text-sm">RP</span>
                             </div>
                             <h3 class="text-lg font-semibold text-gray-800 mb-1">Release Paper Dept.</h3>
-                            <p class="text-gray-600 text-sm">High-quality release paper manufacturing</p>
+                            <p class="text-gray-600 text-sm">High-quality release paper manufacturing company</p>
                         </div>
                     </div>
 
                     <!-- Department 2 -->
                     <div class="text-center group cursor-pointer transform transition duration-300 hover:scale-105">
                         <div class="bg-orange-50 rounded-2xl p-5 shadow-md border border-orange-100 group-hover:shadow-lg group-hover:border-orange-300">
-                            <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
+                            <div class="w-16 h-16 mx-auto mb-2 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
                                 <span class="text-white font-bold text-sm">LB</span>
                             </div>
                             <h3 class="text-lg font-semibold text-gray-800 mb-1">Lamination Bonding Dept.</h3>
@@ -50,18 +50,18 @@
                     <!-- Department 3 -->
                     <div class="text-center group cursor-pointer transform transition duration-300 hover:scale-105">
                         <div class="bg-orange-50 rounded-2xl p-5 shadow-md border border-orange-100 group-hover:shadow-lg group-hover:border-orange-300">
-                            <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
+                            <div class="w-16 h-16 mx-auto mb-2 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
                                 <span class="text-white font-bold text-sm">WD</span>
                             </div>
                             <h3 class="text-lg font-semibold text-gray-800 mb-1">Weaving Dept.</h3>
-                            <p class="text-gray-600 text-sm">织造部 - Precision weaving operations</p>
+                            <p class="text-gray-600 text-sm">织造部 - Precision weaving operations company</p>
                         </div>
                     </div>
 
                     <!-- Department 4 -->
                     <div class="text-center group cursor-pointer transform transition duration-300 hover:scale-105">
                         <div class="bg-orange-50 rounded-2xl p-5 shadow-md border border-orange-100 group-hover:shadow-lg group-hover:border-orange-300">
-                            <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
+                            <div class="w-16 h-16 mx-auto mb-2 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
                                 <span class="text-white font-bold text-sm">FR</span>
                             </div>
                             <h3 class="text-lg font-semibold text-gray-800 mb-1">Military Flame Retardant</h3>

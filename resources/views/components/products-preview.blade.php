@@ -11,13 +11,13 @@
         </div>
 
         <!-- Product Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
             @foreach($products as $product)
                 <a href="{{ route('products.details', $product->id) }}" 
-                   class="group block rounded-xl overflow-hidden bg-white hover:shadow-md transition duration-300 transform hover:-translate-y-1">
+                   class="group block rounded-md overflow-hidden bg-white hover:shadow-md transition duration-300 transform hover:-translate-y-1">
                     
                     <!-- Image -->
-                    <div class="relative overflow-hidden aspect-square">
+                    <div class="relative overflow-hidden">
                         <img 
                             src="{{ $product->image ? asset($product->image) : 'https://source.unsplash.com/400x400/?fabric,textile' }}" 
                             alt="{{ $product->name }}" 
@@ -26,10 +26,10 @@
                     </div>
 
                     <!-- Product Name -->
-                    <div class="p-4 text-center">
-                        <h3 class="text-lg font-semibold text-gray-800">{{ $product->name }}</h3>
+                    <div class="p-3 text-center">
+                        <h3 class="text-sm font-medium text-gray-800">{{ $product->name }}</h3>
                         @if($product->short_description)
-                            <p class="text-sm text-gray-500 mt-1 truncate">{{ $product->short_description }}</p>
+                            <p class="text-xs text-gray-500 mt-1 truncate">{{ $product->short_description }}</p>
                         @endif
                     </div>
                 </a>
