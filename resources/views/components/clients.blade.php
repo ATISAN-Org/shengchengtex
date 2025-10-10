@@ -11,7 +11,7 @@
         </p>
 
         <!-- Big Visual Row (left image + right brands collage + vertical center bar with icons) -->
-        <div class="relative mb-12">
+        <div class="relative mb-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                 <!-- Left big image -->
                 <div class="rounded-xl overflow-hidden shadow-lg">
@@ -76,7 +76,7 @@
         </div>
 
         <!-- Logos Marquee (bottom) -->
-        <div class="mt-12">
+        <div class="mt-10">
             <div class="bg-white px-4 py-3 rounded-t-xl border-b border-gray-100 overflow-hidden">
                 <!-- Use the CSS marquee (no npm needed) -->
                 <div class="marquee relative overflow-hidden">
@@ -104,7 +104,7 @@
         </div>
         <!-- See More Button -->
         <a href="{{ route('clients-more') }}"
-           class="inline-block bg-orange-500 text-white mt-6 px-8 py-3 rounded-full shadow hover:bg-orange-600 transition transform hover:scale-105">
+           class="inline-block bg-orange-500 text-white mt-10 px-8 py-3 rounded-full shadow hover:bg-orange-600 transition transform hover:scale-105">
             See More Clients
         </a>
     </div>
