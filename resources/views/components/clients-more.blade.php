@@ -20,7 +20,7 @@
             </div>
             
             <!-- International Buyers Section -->
-            <div class="mb-8">
+            <div class="mb-10">
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8">
                     <!-- Client 1 -->
                     <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
@@ -70,6 +70,73 @@
                     <!-- Client 10 -->
                     <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
                         <img src="/uploads/clients/1759648211_logo.jpeg" alt="Client Logo" class="max-h-20 max-w-full object-contain">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl my-5 font-bold text-gray-800 mb-8 text-center">OUR BANGLADESHI BUYERS</h3>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8">
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-1.jpg" alt="Bangladeshi Client 1" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 2 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-2.jpg" alt="Bangladeshi Client 2" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 3 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-3.jpg" alt="Bangladeshi Client 3" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 4 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-4.jpg" alt="Bangladeshi Client 4" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 5 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-5.jpg" alt="Bangladeshi Client 5" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 6 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-6.jpg" alt="Bangladeshi Client 6" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 7 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-7.jpg" alt="Bangladeshi Client 7" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 8 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-8.jpg" alt="Bangladeshi Client 8" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 9 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-9.jpg" alt="Bangladeshi Client 9" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 10 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-10.jpg" alt="Bangladeshi Client 10" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 11 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-11.jpg" alt="Bangladeshi Client 11" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Bangladeshi Client 12 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/bangladeshi-client-12.jpg" alt="Bangladeshi Client 12" class="max-h-20 max-w-full object-contain">
                     </div>
                 </div>
             </div>
