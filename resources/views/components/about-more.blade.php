@@ -394,6 +394,209 @@
   </div>
 </section>
 
+<!-- Certifications and Standards Section -->
+<section class="py-20 bg-orange-50">
+    <div class="w-11/12 md:w-4/5 mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Side - Content -->
+            <div class="space-y-8">
+                <!-- Section Header -->
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-orange-600 mb-4">Certifications and Standards</h2>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        We maintain the highest international quality and safety standards, ensuring our products meet global regulatory requirements and customer expectations through rigorous testing and continuous compliance.
+                    </p>
+                </div>
+
+                <!-- Certifications Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- ISO Certification -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100 transform transition duration-300 hover:shadow-xl">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">ISO 9001:2015</h3>
+                        <p class="text-gray-600 mb-4">Quality Management System certified for consistent product excellence and process optimization.</p>
+                        <div class="flex items-center text-sm text-blue-600 font-medium">
+                            <span>Certified Since 2018</span>
+                        </div>
+                    </div>
+
+                    <!-- OEKO-TEX Certification -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100 transform transition duration-300 hover:shadow-xl">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">OEKO-TEX Standard 100</h3>
+                        <p class="text-gray-600 mb-4">Textile products tested for harmful substances, ensuring safety for human ecological requirements.</p>
+                        <div class="flex items-center text-sm text-green-600 font-medium">
+                            <span>Class I & II Certified</span>
+                        </div>
+                    </div>
+
+                    <!-- GOTS Certification -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100 transform transition duration-300 hover:shadow-xl">
+                        <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">GOTS Certified</h3>
+                        <p class="text-gray-600 mb-4">Global Organic Textile Standard for organic fiber production from harvesting to labeling.</p>
+                        <div class="flex items-center text-sm text-emerald-600 font-medium">
+                            <span>Organic Compliance</span>
+                        </div>
+                    </div>
+
+                    <!-- REACH Compliance -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100 transform transition duration-300 hover:shadow-xl">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">REACH Compliance</h3>
+                        <p class="text-gray-600 mb-4">Full compliance with EU regulations on chemical substances for environmental and health protection.</p>
+                        <div class="flex items-center text-sm text-purple-600 font-medium">
+                            <span>EU Market Ready</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standards Compliance -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        Industry Standards Compliance
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
+                                <span class="text-orange-600 font-bold text-xs">AATCC</span>
+                            </div>
+                            <span class="text-gray-700 text-sm">Textile Testing Standards</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
+                                <span class="text-orange-600 font-bold text-xs">ASTM</span>
+                            </div>
+                            <span class="text-gray-700 text-sm">Material Standards</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
+                                <span class="text-orange-600 font-bold text-xs">ISO</span>
+                            </div>
+                            <span class="text-gray-700 text-sm">14001 Environmental</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
+                                <span class="text-orange-600 font-bold text-xs">BS</span>
+                            </div>
+                            <span class="text-gray-700 text-sm">British Standards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Image with Certificates -->
+            <div class="flex justify-center">
+                <div class="relative">
+                    <img src="{{ asset('images/image7.jpg') }}" 
+                         alt="Quality Certifications and Standards" 
+                         class="rounded-3xl shadow-2xl w-full object-cover h-[600px]">
+                    
+                    <!-- Floating Certificate Badges -->
+                    <div class="absolute -top-6 -left-6 bg-white rounded-2xl shadow-2xl p-4 border border-orange-200">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div class="text-green-600 font-bold text-lg">15+</div>
+                            <div class="text-gray-600 text-xs font-medium">Certifications</div>
+                        </div>
+                    </div>
+
+                    <!-- Another Floating Element -->
+                    <div class="absolute -bottom-6 -right-6 bg-orange-500 text-white rounded-2xl shadow-2xl p-6">
+                        <div class="text-center">
+                            <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                            <div class="text-sm font-semibold">Quality</div>
+                            <div class="text-lg font-bold">Assured</div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate Preview -->
+                    <div class="absolute top-1/2 left-8 transform -translate-y-1/2 bg-white rounded-xl shadow-lg p-3 border border-gray-200 rotate-6">
+                        <div class="w-24 h-32 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg border-2 border-blue-200 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-1">
+                                    <span class="text-white text-xs font-bold">ISO</span>
+                                </div>
+                                <div class="text-blue-600 text-xs font-bold">9001</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Another Certificate Preview -->
+                    <div class="absolute bottom-20 right-12 bg-white rounded-xl shadow-lg p-3 border border-gray-200 -rotate-3">
+                        <div class="w-20 h-28 bg-gradient-to-br from-green-50 to-green-100 rounded-lg border-2 border-green-200 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-green-600 text-xs font-bold">OEKO</div>
+                                <div class="text-green-600 text-xs font-bold">TEX</div>
+                                <div class="w-4 h-0.5 bg-green-400 mx-auto my-1"></div>
+                                <div class="text-green-600 text-xxs">100</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quality Assurance Statement -->
+        <div class="mt-16 bg-white rounded-2xl shadow-lg p-8 border border-orange-100">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-2">Rigorous Testing</h4>
+                    <p class="text-gray-600 text-sm">Comprehensive quality control at every production stage</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-2">Annual Audits</h4>
+                    <p class="text-gray-600 text-sm">Regular compliance verification with international standards</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-2">Continuous Improvement</h4>
+                    <p class="text-gray-600 text-sm">Ongoing process optimization and quality enhancement</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Existing History / Milestones Timeline Section -->
 <section class="py-20 bg-white">
     <div class="w-11/12 md:w-4/5 mx-auto text-center">
