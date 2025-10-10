@@ -4,7 +4,7 @@
     <section class="py-20 bg-orange-50">
         <div class="container mx-auto px-5">
             <!-- Page Header -->
-            <div class="text-center mb-20">
+            <div class="text-center mb-12">
                 <h1 class="text-5xl md:text-6xl font-extrabold text-orange-500 mb-6 flex items-center justify-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-orange-500" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
@@ -14,46 +14,65 @@
                     Our Valuable Clients
                 </h1>
                 <p class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-                   Only a customer's point of view for the customer, can win the market. Development of the Sheng Cheng Textile services in strict accordance with its policy to enhance the quality of the services and strengthened the brand's value. We are working with below buyers.
+                    Only a customer's point of view for the customer, can win the market. Development of the Sheng Cheng Textile services in strict accordance with its policy to enhance the quality of the services and strengthened the brand's value. We are working with below buyers.
                 </p>
-                    <h3 class="text-2xl my-5 font-bold text-gray-800 mb-6 text-center">OUR INTERNATIONAL BUYERS</h3>
+                <h3 class="text-2xl my-5 font-bold text-gray-800 mb-8 text-center">OUR INTERNATIONAL BUYERS</h3>
             </div>
-                
-                <div class="mb-10">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                        <!-- Client logos would go here -->
-                        <div class="flex items-center justify-center border border-yellow-400 p-4 bg-gray-50 rounded-lg h-32">
-                           <img src="/uploads/clients/1759644347_puma.jpg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg h-24">
-                           <img src="/uploads/clients/1759646521_Nike-Logo-History-4-1200x750.png" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg h-24">
-                           <img src="/uploads/clients/1759646708_maxmara.png" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg h-24">
-                           <img src="/uploads/clients/1759648156_maxmara.png" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg h-24">
-                           <img src="/uploads/clients/1759648211_logo.jpeg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg h-24">
-                           <img src="/uploads/clients/1759644347_puma.jpg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg h-24">
-                           <img src="/uploads/clients/1759646521_Nike-Logo-History-4-1200x750.png" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg h-24">
-                           <img src="/uploads/clients/1759646708_maxmara.png" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg h-24">
-                           <img src="/uploads/clients/1759648156_maxmara.png" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg h-24">
-                           <img src="/uploads/clients/1759648211_logo.jpeg" alt="">
-                        </div>
+            
+            <!-- International Buyers Section -->
+            <div class="mb-8">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8">
+                    <!-- Client 1 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759644347_puma.jpg" alt="Puma" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Client 2 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759646521_Nike-Logo-History-4-1200x750.png" alt="Nike" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Client 3 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759646708_maxmara.png" alt="Max Mara" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Client 4 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759648156_maxmara.png" alt="Max Mara" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Client 5 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759648211_logo.jpeg" alt="Client Logo" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Client 6 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759644347_puma.jpg" alt="Puma" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Client 7 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759646521_Nike-Logo-History-4-1200x750.png" alt="Nike" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Client 8 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759646708_maxmara.png" alt="Max Mara" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Client 9 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759648156_maxmara.png" alt="Max Mara" class="max-h-20 max-w-full object-contain">
+                    </div>
+                    
+                    <!-- Client 10 -->
+                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-48 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                        <img src="/uploads/clients/1759648211_logo.jpeg" alt="Client Logo" class="max-h-20 max-w-full object-contain">
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 @endsection
