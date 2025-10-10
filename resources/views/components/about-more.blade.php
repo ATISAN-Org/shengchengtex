@@ -228,7 +228,7 @@
 
             <!-- RIGHT: Title & structured bullets (text) -->
             <div>
-                <h2 id="historical-evolution-title" class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-orange-600">
                     Historical Evolution and Vision
                 </h2>
 
@@ -315,6 +315,83 @@
             </div>
         </div>
     </div>
+</section>
+
+<section id="partnerships" class="py-16 bg-white">
+  <div class="w-11/12 md:w-4/5 mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- LEFT: Demo Image -->
+      <div class="flex justify-center">
+        <div class="relative w-full">
+          <img src="{{ asset('images/image6.jpg') }}"
+               alt="Partnerships and Clientele"
+               class="rounded-3xl shadow-xl w-full h-[420px] object-cover">
+          <!-- Floating badges / stats -->
+          <div class="absolute -top-6 left-6 bg-white rounded-xl shadow-lg px-4 py-3 border border-orange-100">
+            <div class="text-orange-600 font-bold text-xl">120+</div>
+            <div class="text-gray-600 text-xs">Global Partners</div>
+          </div>
+
+          <div class="absolute -bottom-6 -right-6 bg-gradient-to-br from-orange-400 to-orange-600 text-white rounded-2xl px-4 py-3 shadow-2xl">
+            <div class="text-sm font-semibold">Trusted by</div>
+            <div class="text-lg font-bold">Leading Brands</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Title, logos, testimonial -->
+      <div class="space-y-6">
+         <h2 class="text-3xl md:text-4xl font-bold text-orange-600">
+          Partnerships and Clientele
+        </h2>
+        <p class="text-gray-700 text-base leading-relaxed max-w-xl">
+          We collaborate with global manufacturers, brands and technical partners to deliver high-performance textile solutions. Our strategic partnerships enable faster innovation, reliable supply chains and consistent quality for customers worldwide.
+        </p>
+
+        <!-- Partner logos grid -->
+        <div class="grid grid-cols-3 sm:grid-cols-6 gap-3 items-center max-w-xl">
+          <!-- Replace these img src with real partner logo assets -->
+          <div class="flex items-center justify-center bg-white rounded-lg p-3 shadow-sm border border-gray-100">
+            <img src="{{ asset('images/partner1.png') }}" alt="Partner 1" class="max-h-8 object-contain">
+          </div>
+          <div class="flex items-center justify-center bg-white rounded-lg p-3 shadow-sm border border-gray-100">
+            <img src="{{ asset('images/partner2.png') }}" alt="Partner 2" class="max-h-8 object-contain">
+          </div>
+          <div class="flex items-center justify-center bg-white rounded-lg p-3 shadow-sm border border-gray-100">
+            <img src="{{ asset('images/partner3.png') }}" alt="Partner 3" class="max-h-8 object-contain">
+          </div>
+          <div class="flex items-center justify-center bg-white rounded-lg p-3 shadow-sm border border-gray-100">
+            <img src="{{ asset('images/partner4.png') }}" alt="Partner 4" class="max-h-8 object-contain">
+          </div>
+          <div class="flex items-center justify-center bg-white rounded-lg p-3 shadow-sm border border-gray-100">
+            <img src="{{ asset('images/partner5.png') }}" alt="Partner 5" class="max-h-8 object-contain">
+          </div>
+          <div class="flex items-center justify-center bg-white rounded-lg p-3 shadow-sm border border-gray-100">
+            <img src="{{ asset('images/partner6.png') }}" alt="Partner 6" class="max-h-8 object-contain">
+          </div>
+        </div>
+
+        <!-- Testimonial / Client quote -->
+        <div class="bg-gray-50 rounded-2xl p-4 flex items-start gap-4 shadow-sm border border-gray-100 max-w-xl">
+          <img src="{{ asset('images/client-avatar.jpg') }}" alt="Client avatar" class="w-12 h-12 rounded-full object-cover shadow">
+          <div>
+            <p class="text-gray-800 font-semibold text-sm">"Shengcheng's collaboration and technical support accelerated our product launch and ensured consistent quality across multiple production runs."</p>
+            <div class="text-gray-600 text-xs mt-2">— Jane Doe, Head of Sourcing, Example Brand</div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="flex items-center gap-4">
+          <a href="{{ url('/contact') }}" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-[1.02] transform transition">
+            Become a Partner
+          </a>
+          <a href="{{ url('/clients') }}" class="text-orange-600 font-medium hover:underline">
+            View Full Client List
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Existing History / Milestones Timeline Section -->
