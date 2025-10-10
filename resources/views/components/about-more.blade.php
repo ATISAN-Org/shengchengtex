@@ -131,7 +131,7 @@
             <!-- Right Side - Image -->
             <div class="flex justify-center">
                 <div class="relative">
-                    <img src="{{ asset('images/banner3.jpeg') }}" 
+                    <img src="{{ asset('images/image2.jpg') }}" 
                          alt="Shengcheng Textile Main Products" 
                          class="rounded-3xl shadow-xl w-full object-cover h-[500px]">
                     <!-- Floating Stats -->
@@ -181,14 +181,6 @@
                         <rect x="50" y="210" rx="30" ry="30" width="80" height="180"
                               transform="rotate(-36 90 300)"
                               fill="url(#g1)" />
-                        <!-- left icon -->
-                        <g transform="translate(56,170) rotate(-36)">
-                            <rect x="0" y="0" width="56" height="56" rx="10" fill="#ffffff" opacity="0"/>
-                            <g transform="translate(9,8)" fill="#ffffff" opacity="0.95">
-                                <circle cx="9" cy="9" r="3"/>
-                                <rect x="0" y="28" width="18" height="6" rx="2"/>
-                            </g>
-                        </g>
                     </g>
 
                     <!-- bottom bar (olive) -->
@@ -196,16 +188,6 @@
                         <rect x="120" y="280" rx="30" ry="30" width="220" height="60"
                               transform="rotate(0 230 310)"
                               fill="url(#g2)" />
-                        <!-- calendar icon on bottom bar -->
-                        <g transform="translate(280,288)">
-                            <rect x="0" y="0" width="36" height="24" rx="3" fill="#ffffff" opacity="0"/>
-                            <g transform="translate(4,2)" fill="#ffffff" opacity="0.95">
-                                <rect x="0" y="2" width="28" height="4" rx="1"/>
-                                <rect x="0" y="10" width="6" height="6" rx="1"/>
-                                <rect x="9" y="10" width="6" height="6" rx="1"/>
-                                <rect x="18" y="10" width="6" height="6" rx="1"/>
-                            </g>
-                        </g>
                     </g>
 
                     <!-- right bar (moss) -->
@@ -213,22 +195,13 @@
                         <rect x="260" y="90" rx="30" ry="30" width="80" height="180"
                               transform="rotate(36 300 180)"
                               fill="url(#g2)" />
-                        <!-- stats icon on right bar -->
-                        <g transform="translate(266,50) rotate(36)">
-                            <rect x="0" y="0" width="56" height="56" rx="10" fill="#ffffff" opacity="0"/>
-                            <g transform="translate(9,8)" fill="#ffffff" opacity="0.95">
-                                <rect x="0" y="10" width="6" height="18" rx="1"/>
-                                <rect x="8" y="6" width="6" height="22" rx="1"/>
-                                <rect x="16" y="2" width="6" height="26" rx="1"/>
-                            </g>
-                        </g>
                     </g>
                 </svg>
             </div>
 
             <!-- RIGHT: Title & structured bullets (text) -->
             <div>
-            <h2 class="text-3xl md:text-4xl font-bold text-orange-600">
+                <h2 id="historical-evolution-title" class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6">
                     Historical Evolution and Vision
                 </h2>
 
@@ -317,6 +290,7 @@
     </div>
 </section>
 
+<!-- Partnerships and Clientele -->
 <section id="partnerships" class="py-16 bg-white">
   <div class="w-11/12 md:w-4/5 mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -597,88 +571,205 @@
     </div>
 </section>
 
-<!-- Existing History / Milestones Timeline Section -->
-<section class="py-20 bg-white">
-    <div class="w-11/12 md:w-4/5 mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-bold text-orange-600 mb-12">Milestones & Innovations</h2>
-        <div class="relative max-w-5xl mx-auto">
-            <!-- Vertical Line -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-orange-300"></div>
-            <div class="space-y-16 relative">
-                <!-- Milestone 1 -->
-                <div class="flex flex-col md:flex-row items-center md:items-start">
-                    <div class="w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
-                        <img src="{{ asset('images/image1.jpg') }}"  
-                             alt="Spinning Facility" 
-                             class="rounded-3xl shadow-xl w-full md:w-4/5 object-cover">
-                    </div>
-                    <div class="w-full md:w-1/2 md:pl-12 text-left">
-                        <h4 class="text-2xl font-bold text-orange-600 mb-2">First Spinning Facility</h4>
-                        <p class="text-gray-700">Established in Shengze Town, laying foundation for modern textile production.</p>
-                    </div>
-                </div>
-                <!-- Milestone 2 -->
-                <div class="flex flex-col md:flex-row-reverse items-center md:items-start">
-                    <div class="w-full md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
-                        <img src="{{ asset('images/image2.jpg') }}" 
-                             alt="Beam Dyeing" 
-                             class="rounded-3xl shadow-xl w-full md:w-4/5 object-cover">
-                    </div>
-                    <div class="w-full md:w-1/2 md:pr-12 text-left">
-                        <h4 class="text-2xl font-bold text-orange-600 mb-2">Beam Dyeing & Auto Drawing</h4>
-                        <p class="text-gray-700">Introduced Staubli Safir S60 Auto Drawing & Leasing and Beam Dyeing technology to improve production efficiency.</p>
-                    </div>
-                </div>
-                <!-- Continue with existing milestones... -->
+<!-- MERGED: Operations, Milestones & Capacity (combined Milestones & Innovations, Technology & Capacity, Weaving & Finishing) -->
+<section id="operations" class="py-20 bg-white">
+  <div class="w-11/12 md:w-4/5 mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- Visual / Image column -->
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative w-full max-w-lg">
+          <img src="{{ asset('images/image3.jpg') }}" alt="Operations overview" class="rounded-3xl shadow-2xl w-full h-[560px] object-cover">
+          
+          <!-- floating stat blocks -->
+          <div class="absolute -top-6 left-6 bg-white rounded-2xl shadow-lg p-4 border border-gray-100">
+            <div class="text-2xl font-bold text-orange-600">40m<span class="text-sm">t/day</span></div>
+            <div class="text-xs text-gray-500">Spinning Capacity</div>
+          </div>
+
+          <div class="absolute -bottom-6 right-6 bg-white rounded-2xl shadow-2xl p-5 border border-gray-100 text-center">
+            <div class="text-2xl font-bold text-orange-600">3M</div>
+            <div class="text-xs text-gray-500">Yards / month (Weaving)</div>
+          </div>
+
+          <div class="absolute top-1/3 -right-8 bg-gradient-to-br from-orange-400 to-orange-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg">
+            <span class="font-bold">✓</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content column -->
+      <div class="lg:col-span-7 space-y-8">
+        <div class="flex items-center justify-between">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">Operations, Milestones & Capacity</h2>
+          <div class="flex items-center gap-4">
+            <div class="text-right">
+              <div class="text-lg font-bold text-orange-600">500+</div>
+              <div class="text-xs text-gray-500">Products</div>
             </div>
+            <div class="text-right">
+              <div class="text-lg font-bold text-orange-600">120+</div>
+              <div class="text-xs text-gray-500">Partners</div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
 
-<!-- Continue with your existing sections... -->
-<!-- Technology / Production -->
-<section class="py-20 bg-orange-50">
-    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div class="flex justify-center md:order-last">
-            <img src="{{ asset('images/image6.jpg') }}" 
-                 alt="Spinning Division" 
-                 class="rounded-3xl shadow-xl w-full md:w-4/5 object-cover">
+        <!-- Tabs for quick switching between Milestones / Technology / Weaving -->
+        <div class="bg-gray-50 p-1 rounded-full w-full max-w-2xl">
+          <div class="flex space-x-1">
+            <button class="px-4 py-2 rounded-full bg-white text-sm font-medium shadow-sm active-tab" data-tab="milestones">Milestones</button>
+            <button class="px-4 py-2 rounded-full text-sm font-medium text-gray-600" data-tab="technology">Technology</button>
+            <button class="px-4 py-2 rounded-full text-sm font-medium text-gray-600" data-tab="weaving">Weaving & Finishing</button>
+          </div>
         </div>
-        <div>
-            <h2 class="text-4xl md:text-5xl font-bold text-orange-600 mb-6">Technology & Capacity</h2>
-            <p class="text-gray-700 text-lg leading-relaxed mb-4 text-justify">
-                Equipped with state-of-the-art machinery from Switzerland and Germany including Rieter, Zinser, Trutzschler, and Autocoro from Schlafhorst.
-            </p>
-            <p class="text-gray-600 text-lg leading-relaxed text-justify">
-                Quality control uses the latest Uster apparatus (UT-6, AFIS, HVI) for yarn & cotton testing. Spinning capacity reaches <span class="font-bold text-orange-600">40 m.tons/day</span>.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 text-lg mt-4 space-y-2">
-                <li>Yarn types: Ne 7 to Ne 50, carded, combed, compact, twin, core, slub</li>
-                <li>Special yarn: PC, CVC, NEPY, SIRO, Injected, Snow, Wrappy</li>
-                <li>Yarn Dyeing Capacity: <span class="font-bold text-orange-600">15-40 M.Tons/day</span></li>
-            </ul>
-        </div>
-    </div>
-</section>
 
-<!-- Weaving / Finishing -->
-<section class="py-20 bg-white">
-    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-            <h2 class="text-4xl md:text-5xl font-bold text-orange-600 mb-6">Weaving & Finishing</h2>
-            <p class="text-gray-700 text-lg leading-relaxed mb-4 text-justify">
-                Weaving capacity: 3 million yards/month using Rapier, Air Jet, and Dobby looms, including double beams. Fabric types include 100% cotton, blends, and Spandex.
-            </p>
-            <p class="text-gray-600 text-lg leading-relaxed text-justify">
-                Finishing lines produce 400 million yards annually, including 180 million for solids and 220 million for yarn-dyed fabrics.
-            </p>
+        <!-- Tab panels -->
+        <div class="space-y-6">
+          <!-- Milestones panel -->
+          <div class="tab-panel" id="milestones">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-2xl p-5 shadow border border-gray-100">
+                <h4 class="text-xl font-semibold text-orange-600 mb-2">First Spinning Facility</h4>
+                <p class="text-gray-600 text-sm mb-3">Established in Shengze Town, laying the foundation for modern textile production with integrated spinning and quality labs.</p>
+                <div class="text-xs text-gray-500">2004</div>
+              </div>
+
+              <div class="bg-white rounded-2xl p-5 shadow border border-gray-100">
+                <h4 class="text-xl font-semibold text-orange-600 mb-2">Beam Dyeing & Auto Drawing</h4>
+                <p class="text-gray-600 text-sm mb-3">Introduced Staubli Safir S60 Auto Drawing and advanced beam dyeing for improved color consistency and efficiency.</p>
+                <div class="text-xs text-gray-500">2012</div>
+              </div>
+
+              <div class="bg-white rounded-2xl p-5 shadow border border-gray-100">
+                <h4 class="text-xl font-semibold text-orange-600 mb-2">Lamination & Bonding Expansion</h4>
+                <p class="text-gray-600 text-sm mb-3">Expanded lamination lines to support technical textiles and composite fabric applications for industrial clients.</p>
+                <div class="text-xs text-gray-500">2017</div>
+              </div>
+
+              <div class="bg-white rounded-2xl p-5 shadow border border-gray-100">
+                <h4 class="text-xl font-semibold text-orange-600 mb-2">Flame Retardant Capability</h4>
+                <p class="text-gray-600 text-sm mb-3">Deployed specialized military flame retardant coating processes compliant with international safety standards.</p>
+                <div class="text-xs text-gray-500">2020</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology panel -->
+          <div class="tab-panel hidden" id="technology">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-2xl p-5 shadow border border-gray-100">
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">State-of-the-art Machinery</h4>
+                <p class="text-gray-600 text-sm mb-3">We operate equipment from Rieter, Zinser, Trutzschler, Autocoro (Schlafhorst), and Staubli to ensure consistent yarn and fabric quality.</p>
+                <ul class="text-sm text-gray-700 list-disc list-inside space-y-1">
+                  <li>Autocoro & compact spinning systems</li>
+                  <li>Beam dyeing and high-precision color control</li>
+                  <li>Automated QC with Uster (UT-6, AFIS, HVI)</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-2xl p-5 shadow border border-gray-100">
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Capacity & Quality</h4>
+                <p class="text-gray-600 text-sm mb-3">Spinning capacity: <span class="font-bold text-orange-600">40 m.tons/day</span>. Yarn types from Ne 7 to Ne 50; wide variety of specialty yarns.</p>
+                <div class="mt-2 grid grid-cols-2 gap-2">
+                  <div class="p-3 bg-gray-50 rounded-lg text-center">
+                    <div class="text-xl font-bold text-orange-600">15-40</div>
+                    <div class="text-xs text-gray-500">M.Tons/day Dyeing</div>
+                  </div>
+                  <div class="p-3 bg-gray-50 rounded-lg text-center">
+                    <div class="text-xl font-bold text-orange-600">≥ 98%</div>
+                    <div class="text-xs text-gray-500">On-time Delivery</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weaving & Finishing panel -->
+          <div class="tab-panel hidden" id="weaving">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-2xl p-5 shadow border border-gray-100">
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Weaving Capabilities</h4>
+                <p class="text-gray-600 text-sm mb-3">Rapier, Air Jet and Dobby looms, including double beams — weaving capacity approximately <span class="font-bold text-orange-600">3 million yards/month</span>.</p>
+                <ul class="text-sm text-gray-700 list-disc list-inside space-y-1">
+                  <li>Solids, yarn-dyed and specialty performance weaves</li>
+                  <li>Spandex blends, technical substrates</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-2xl p-5 shadow border border-gray-100">
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Finishing & Output</h4>
+                <p class="text-gray-600 text-sm mb-3">Finishing lines produce over <span class="font-bold text-orange-600">400M yards/year</span>, with dedicated lines for solids and yarn-dyed fabrics.</p>
+                <div class="mt-2 flex gap-3">
+                  <div class="p-3 bg-gray-50 rounded-lg text-center">
+                    <div class="text-lg font-bold text-orange-600">180M</div>
+                    <div class="text-xs text-gray-500">Solids / year</div>
+                  </div>
+                  <div class="p-3 bg-gray-50 rounded-lg text-center">
+                    <div class="text-lg font-bold text-orange-600">220M</div>
+                    <div class="text-xs text-gray-500">Yarn-dyed / year</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="flex justify-center">
-            <img src="{{ asset('images/image7.jpg') }}" 
-                 alt="Weaving & Finishing" 
-                 class="rounded-3xl shadow-xl w-full md:w-4/5 object-cover">
+
+        <!-- Timeline summary (single-line) -->
+        <div class="mt-4">
+          <div class="relative max-w-3xl mx-auto">
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-orange-100"></div>
+            <div class="space-y-6 relative">
+              <div class="flex items-start md:items-center md:justify-between">
+                <div class="md:w-1/2 md:pr-8 text-left">
+                  <h5 class="text-sm font-semibold text-gray-800">2004</h5>
+                  <p class="text-xs text-gray-600">Company founded & first spinning unit established.</p>
+                </div>
+                <div class="flex items-center justify-center w-8 h-8 bg-white border border-orange-200 rounded-full shadow-sm">
+                  <svg class="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2.5 10a7.5 7.5 0 1015 0 7.5 7.5 0 00-15 0z"/></svg>
+                </div>
+              </div>
+
+              <div class="flex flex-col md:flex-row-reverse items-start md:items-center">
+                <div class="md:w-1/2 md:pl-8 text-left">
+                  <h5 class="text-sm font-semibold text-gray-800">2012</h5>
+                  <p class="text-xs text-gray-600">Major technology upgrade — beam dyeing & auto drawing implemented.</p>
+                </div>
+                <div class="flex items-center justify-center w-8 h-8 bg-white border border-orange-200 rounded-full shadow-sm">
+                  <svg class="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20"><path d="M5 13l4-4 4 4"/></svg>
+                </div>
+              </div>
+
+              <div class="flex items-start md:items-center md:justify-between">
+                <div class="md:w-1/2 md:pr-8 text-left">
+                  <h5 class="text-sm font-semibold text-gray-800">2017</h5>
+                  <p class="text-xs text-gray-600">Expanded lamination & bonding for technical textiles.</p>
+                </div>
+                <div class="flex items-center justify-center w-8 h-8 bg-white border border-orange-200 rounded-full shadow-sm">
+                  <svg class="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20"><path d="M3 7h14v6H3z"/></svg>
+                </div>
+              </div>
+
+              <div class="flex flex-col md:flex-row-reverse items-start md:items-center">
+                <div class="md:w-1/2 md:pl-8 text-left">
+                  <h5 class="text-sm font-semibold text-gray-800">2020</h5>
+                  <p class="text-xs text-gray-600">Launched military-grade flame retardant processes and scale-up of finishing capacity.</p>
+                </div>
+                <div class="flex items-center justify-center w-8 h-8 bg-white border border-orange-200 rounded-full shadow-sm">
+                  <svg class="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l2 6h6l-5 4 2 6-5-4-5 4 2-6L2 8h6z"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- CTA -->
+        <div class="mt-6 flex gap-4">
+          <a href="{{ url('/contact') }}" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-[1.02] transform transition">Discuss Production</a>
+          <a href="{{ url('/capabilities') }}" class="text-orange-600 font-medium hover:underline self-center">Download Capacity Sheet</a>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- CTA Section -->
