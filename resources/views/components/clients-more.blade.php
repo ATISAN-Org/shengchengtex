@@ -16,10 +16,10 @@
                 <p class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
                    Only a customer's point of view for the customer, can win the market. Development of the Sheng Cheng Textile services in strict accordance with its policy to enhance the quality of the services and strengthened the brand's value. We are working with below buyers.
                 </p>
+                    <h3 class="text-2xl my-5 font-bold text-gray-800 mb-6 text-center">OUR INTERNATIONAL BUYERS</h3>
             </div>
                 
                 <div class="mb-10">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">OUR INTERNATIONAL BUYERS</h3>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         <!-- Client logos would go here -->
                         <div class="flex items-center justify-center border border-yellow-400 p-4 bg-gray-50 rounded-lg h-32">
