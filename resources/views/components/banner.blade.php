@@ -2,7 +2,7 @@
     <!-- Background Image with Parallax Effect -->
     <div 
         class="absolute inset-0 bg-cover bg-center transform scale-110 transition-transform duration-1000" 
-        style="background-image: url('{{ asset('images/banner3.jpeg') }}');" 
+        style="background-image: url('{{ asset('images/banner3.jpg') }}');" 
         id="banner-bg">
     </div>
 
