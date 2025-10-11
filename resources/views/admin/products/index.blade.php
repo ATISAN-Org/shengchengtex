@@ -1,50 +1,57 @@
 @extends('admin.layout')
 
 @section('title', 'Products')
+@section('page-title', 'Products')
 
 @section('content')
-<div class="flex justify-between items-center mb-5">
-    <h2 class="text-2xl font-bold">Products</h2>
-    <a href="{{ route('products.create') }}" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add Product</a>
-</div>
+<div class="p-3">
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold text-gray-800">Products</h2>
+        <a href="{{ route('products.create') }}" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg shadow transition">
+            + Add Product
+        </a>
+    </div>
 
-@if(session('success'))
-    <div class="text-green-600 mb-3">{{ session('success') }}</div>
-@endif
+    @if(session('success'))
+        <div class="bg-green-100 text-green-700 px-4 py-2 rounded mb-4 shadow text-sm">
+            {{ session('success') }}
+        </div>
+    @endif
 
-@if($products->isEmpty())
-    <div class="text-gray-600">No products available.</div>
-@else
-<div class="overflow-x-auto">
-    <table class="min-w-full border border-gray-300 bg-white">
-        <thead class="bg-gray-100">
-            <tr>
-                <th class="border px-3 py-2 text-left">ID</th>
-                <th class="border px-3 py-2 text-left">Name</th>
-                <th class="border px-3 py-2 text-left">Category</th>
-                <th class="border px-3 py-2 text-left">Price</th>
-                <th class="border px-3 py-2 text-left">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($products as $prod)
-            <tr class="hover:bg-gray-50">
-                <td class="border px-3 py-2">{{ $prod->id }}</td>
-                <td class="border px-3 py-2">{{ $prod->name }}</td>
-                <td class="border px-3 py-2">{{ $prod->category->name ?? 'N/A' }}</td>
-                <td class="border px-3 py-2">${{ $prod->price }}</td>
-                <td class="border px-3 py-2">
-                    <a href="{{ route('products.edit', $prod) }}" class="text-blue-600 hover:underline">Edit</a>
-                    <form action="{{ route('products.destroy', $prod) }}" method="POST" class="inline" onsubmit="return confirm('Delete this product?')">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="text-red-600 hover:underline ml-2">Delete</button>
-                    </form>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+    @if($products->isEmpty())
+        <div class="text-gray-500 text-center py-6">No products available.</div>
+    @else
+    <div class="bg-white rounded-lg shadow overflow-x-auto">
+        <table class="min-w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-gray-100 text-gray-700">
+                    <th class="px-5 py-3 font-medium">ID</th>
+                    <th class="px-5 py-3 font-medium">Name</th>
+                    <th class="px-5 py-3 font-medium">Category</th>
+                    <th class="px-5 py-3 font-medium">Price</th>
+                    <th class="px-5 py-3 font-medium text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($products as $prod)
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="px-5 py-3">{{ $prod->id }}</td>
+                    <td class="px-5 py-3">{{ $prod->name }}</td>
+                    <td class="px-5 py-3">{{ $prod->category->name ?? 'N/A' }}</td>
+                    <td class="px-5 py-3">${{ number_format($prod->price, 2) }}</td>
+                    <td class="px-5 py-3 text-center space-x-2">
+                        <a href="{{ route('products.edit', $prod) }}" class="bg-yellow-500 text-white px-4 py-1 rounded hover:bg-yellow-600 text-sm">Edit</a>
+                        <form action="{{ route('products.destroy', $prod) }}" method="POST" class="inline-block" onsubmit="return confirm('Delete this product?')">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="bg-red-600 text-white px-4 py-1 rounded hover:bg-red-700 text-sm">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+    @endif
 </div>
-@endif
 @endsection

@@ -21,7 +21,7 @@
 
     <div class="mt-6 flex justify-end">
         <a href="{{ route('contacts.index') }}"
-           class="bg-orange-500 text-black px-4 py-2 rounded hover:bg-orange-600 transition">
+           class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">
            Back to Contact Queries
         </a>
     </div>
