@@ -75,60 +75,13 @@
             @endforeach
         </div>
 
-        <!-- Logos Marquee (bottom) -->
-        <div class="mt-10">
-            <div class="bg-white px-4 py-3 rounded-t-xl border-b border-gray-100 overflow-hidden">
-                <!-- Use the CSS marquee (no npm needed) -->
-                <div class="marquee relative overflow-hidden">
-                    <div class="marquee-track flex items-center gap-10">
-                        @php
-                            $partners = [
-                               'images/partner1.png',
-                               'images/partner2.png',
-                               'images/partner3.png',
-                               'images/partner2.png',
-                               'images/partner1.png',
-                               'images/partner3.png',
-                               'images/partner1.png'
-                            ];
-                        @endphp
-
-                        @foreach($partners as $p)
-                            <div class="flex-shrink-0">
-                                <img src="{{ asset($p) }}" alt="partner" class="w-16 sm:w-20 md:w-40 h-auto">
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Logos Marquee removed per backend request -->
         <!-- See More Button -->
         <a href="{{ route('clients-more') }}"
-           class="inline-block bg-orange-500 text-white mt-10 px-8 py-3 rounded-full shadow hover:bg-orange-600 transition transform hover:scale-105">
+           class="inline-block bg-orange-500 text-white mt-5 px-8 py-3 rounded-full shadow hover:bg-orange-600 transition transform hover:scale-105">
             See More Clients
         </a>
     </div>
 
-    <!-- Inline styles for marquee and small responsive tweaks (move to your app.css if you prefer) -->
-    <style>
-        /* marquee animation: move track from right to left continuously */
-        .marquee {
-            --marquee-speed: 20s; /* adjust duration for speed */
-        }
-        .marquee-track {
-            display: inline-flex;
-            gap: 2.5rem;
-            animation: marquee var(--marquee-speed) linear infinite;
-        }
-        .marquee:hover .marquee-track {
-            animation-play-state: paused;
-        }
-        @keyframes marquee {
-            0% { transform: translateX(0%); }
-            100% { transform: translateX(-50%); }
-        }
-
-        /* To make the animation seamless we duplicate the contents via CSS: */
-        /* duplicate by using ::after — only works when the track width is > container; safe fallback: duplicate markup in blade above */
-    </style>
+    <!-- Marquee styles removed per backend request -->
 </section>
