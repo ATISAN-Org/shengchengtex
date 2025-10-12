@@ -36,7 +36,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'category_id' => 'required|exists:categories,id',
-            'price' => 'required|numeric',
+            'price' => ['required', 'string', 'regex:/^\d+(\.\d{1,2})?$/'],
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             // Other fields optional
         ]);
@@ -81,7 +81,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'category_id' => 'required|exists:categories,id',
-            'price' => 'required|numeric',
+            'price' => ['required', 'string', 'regex:/^\d+(\.\d{1,2})?$/'],
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             // Other fields optional
         ]);

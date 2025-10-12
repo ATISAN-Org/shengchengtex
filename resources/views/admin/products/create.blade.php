@@ -1,7 +1,7 @@
 @extends('admin.layout')
 
 @section('content')
-<div class="max-w-3xl mx-auto px-3 py-4">
+<div class="max-w-5xl mx-auto p-3">
     <h2 class="text-2xl font-bold text-gray-800 mb-6">Add New Product</h2>
 
     @if ($errors->any())
@@ -35,7 +35,7 @@
 
             <div>
                 <label class="block mb-1 font-semibold text-gray-700">Price <span class="text-red-500">*</span></label>
-                <input type="number" step="0.01" name="price" class="w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-200" required>
+                <input type="text" inputmode="decimal" pattern="^\d+(\.\d{1,2})?$" name="price" class="w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-200" required>
             </div>
 
             <div>

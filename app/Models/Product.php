@@ -34,6 +34,15 @@ class Product extends Model
         'basic_info',
     ];
 
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'price' => 'decimal:2',
+    ];
+
     public function category() {
         return $this->belongsTo(Category::class);
     }
