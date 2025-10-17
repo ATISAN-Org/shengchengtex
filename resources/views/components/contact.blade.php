@@ -12,7 +12,7 @@
         </h2>
 
         <!-- Contact Form -->
-        <form action="{{ route('contact.submit') }}" method="POST" class="bg-white rounded-3xl shadow-2xl p-10 space-y-6">
+        <form action="{{ route('contact.submit') }}" method="POST" class="bg-white rounded-3xl shadow-md p-10 space-y-6">
             @csrf
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input type="text" name="name" placeholder="Your Name" required
@@ -53,7 +53,7 @@
         <!-- Contact Details -->
         <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
             <!-- China Office -->
-            <div class="bg-white shadow-2xl rounded-3xl p-10 text-left hover:shadow-orange-200 transition duration-300">
+            <div class="bg-white shadow-lg rounded-3xl p-10 text-left hover:shadow-orange-200 transition duration-300">
                 <h3 class="text-2xl font-bold text-orange-500 mb-6 flex items-center gap-2">
                     <i data-lucide="building-2" class="w-6 h-6"></i> China Office
                 </h3>
@@ -70,7 +70,7 @@
             </div>
 
             <!-- Bangladesh Office -->
-            <div class="bg-white shadow-2xl rounded-3xl p-10 text-left hover:shadow-orange-200 transition duration-300">
+            <div class="bg-white shadow-lg rounded-3xl p-10 text-left hover:shadow-orange-200 transition duration-300">
                 <h3 class="text-2xl font-bold text-orange-500 mb-6 flex items-center gap-2">
                     <i data-lucide="building" class="w-6 h-6"></i> Bangladesh Office
                 </h3>
