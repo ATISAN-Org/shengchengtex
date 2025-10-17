@@ -2,110 +2,332 @@
 
 @section('content')
 
-<!-- HERO / About Us Section (Image Right, Text Left) -->
-<section class="py-20 bg-gradient-to-br from-orange-50 to-white">
-    <div class="w-11/12 md:w-4/5 mx-auto flex flex-col lg:flex-row gap-12 items-center">
-        <!-- Left: Content -->
-        <div class="lg:w-3/5 space-y-6">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-orange-700 mb-4">About Shengcheng Textile Ltd</h1>
-            <p class="text-lg text-gray-800 leading-relaxed text-justify">
-                Welcome to <span class="font-semibold text-orange-600">Shengcheng Textile Ltd</span>, a proud member of the Thenhong Group and a professional manufacturer of polyester-based knit & woven fabric. Our head office is located at 21F, No.79 Xiushui Road, Shengze Town, Wujiang City, China – the heart of the textile industry.
-            </p>
-            <p class="text-gray-700 text-base">
-                With <span class="font-semibold text-orange-600">over 25 years</span> of experience, we produce <span class="font-semibold text-orange-600">25 million meters</span> of greige fabric annually. We are devoted to creating a paragon brand for the textile industry, consistently developing new varieties that lead trends in both fashion and functionality. Shengcheng Textile has evolved into a comprehensive company combining weaving, dyeing, finishing, and sales, with a quality control system surpassing industry standards and a competitive, reasonable pricing mechanism.
-            </p>
-            <p class="text-gray-700 text-base">
-                We have built deep, win-win business relationships with customers worldwide, striving for excellence, reliability, and innovation in every meter of fabric.
-            </p>
-        </div>
-        <!-- Right: Hero Image -->
-        <div class="lg:w-2/5 flex justify-center">
-            <img src="{{ asset('images/1.png') }}" alt="Shengcheng Textile Company" class="rounded-3xl shadow-xl w-full object-cover md:h-[480px]">
+<!-- Hero Section with Stats -->
+<section class="relative py-24 bg-gradient-to-br from-orange-50 via-white to-amber-50 overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ea580c\" fill-opacity=\"0.1\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"2\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </div>
+    
+    <div class="relative w-11/12 md:w-4/5 mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left Content -->
+            <div class="space-y-8">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"/>
+                    </svg>
+                    Since 1999 • Part of Thenhong Group
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                    Weaving Excellence
+                    <span class="block text-orange-600">for 25+ Years</span>
+                </h1>
+                
+                <p class="text-xl text-gray-700 leading-relaxed">
+                    Shengcheng Textile Ltd is a leading manufacturer of premium polyester-based knit & woven fabrics, delivering <span class="font-semibold text-orange-600">25 million meters</span> annually with uncompromising quality and sustainable practices.
+                </p>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-600 mb-1">25M+</div>
+                        <div class="text-sm text-gray-600 font-medium">Meters Annual Production</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-600 mb-1">25+</div>
+                        <div class="text-sm text-gray-600 font-medium">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-600 mb-1">500+</div>
+                        <div class="text-sm text-gray-600 font-medium">Product Varieties</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Image with Floating Elements -->
+            <div class="relative">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="{{ asset('images/1.png') }}" 
+                         alt="Shengcheng Textile Manufacturing Facility" 
+                         class="w-full md:h-[500px] object-cover transform hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </div>
+                
+                <!-- Floating Badge 1 -->
+                <div class="absolute -top-4 -left-4 bg-white rounded-2xl shadow-xl p-4 border border-orange-100">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-bold text-orange-600">Innovation</div>
+                            <div class="text-xs text-gray-600">Driving Trends</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating Badge 2 -->
+                <div class="absolute -bottom-4 -right-4 bg-orange-600 text-white rounded-2xl shadow-xl p-5">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold">120+</div>
+                        <div class="text-sm opacity-90">Global Partners</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Mission & Vision Section (Image Left, Text Right) -->
-<section class="py-16 bg-white">
-    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <!-- Left: Mission Image or Infographic -->
-        <div class="flex justify-center order-2 md:order-1">
-            <img src="{{ asset('images/2.png') }}" alt="Our Mission" class="rounded-3xl shadow-2xl w-full object-cover md:h-[400px]">
-        </div>
-        <!-- Right: Mission Statement -->
-        <div class="order-1 md:order-2">
-            <h2 class="text-3xl md:text-4xl font-bold text-orange-700 mb-3">Our Mission</h2>
-            <p class="text-gray-700 text-lg leading-relaxed mb-4">
-                To make <span class="font-semibold text-orange-600">SHENGCHENG TEXTILE</span> your preferred partner by delivering outstanding value and excellent pricing, while fulfilling all your requirements with consistent quality and continuous feedback.
-            </p>
-            <ul class="space-y-4">
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-orange-500 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 00-1.414 0l-7 7-3-3a1 1 0 00-1.414 1.414l3.707 3.707a1 1 0 001.414 0l7.707-7.707a1 1 0 000-1.414z"/></svg>
-                    <span>
-                        We believe <span class="font-bold text-orange-600">good fabric makes people happy</span> — the look, feel, and even scent of fabric instills comfort and pleasure.
-                    </span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-orange-500 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 00-1.414 0l-7 7-3-3a1 1 0 00-1.414 1.414l3.707 3.707a1 1 0 001.414 0l7.707-7.707a1 1 0 000-1.414z"/></svg>
-                    <span>
-                        Every meter of our fabric reveals our <span class="font-bold">dedication</span> to appearance, functionality, and tactile sensation.
-                    </span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-orange-500 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 00-1.414 0l-7 7-3-3a1 1 0 00-1.414 1.414l3.707 3.707a1 1 0 001.414 0l7.707-7.707a1 1 0 000-1.414z"/></svg>
-                    <span>
-                        We use yarns, dyes, and materials that meet or exceed industry standards, ensuring <span class="font-bold">vivid colors, beautiful patterns, and lasting quality</span>.
-                    </span>
-                </li>
-            </ul>
+<!-- Mission & Values Section -->
+<section class="py-20 bg-white">
+    <div class="w-11/12 md:w-4/5 mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left: Mission Image -->
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="{{ asset('images/2.png') }}" 
+                         alt="Our Mission - Quality Fabric Production" 
+                         class="w-full md:h-[500px] object-cover">
+                </div>
+                <!-- Accent Element -->
+                <div class="absolute -z-10 -bottom-6 -left-6 w-24 h-24 bg-orange-200 rounded-full opacity-50"></div>
+            </div>
+            
+            <!-- Right: Mission Content -->
+            <div class="space-y-8">
+                <!-- Section Header -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Our Mission</h2>
+                    </div>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        To make <span class="font-semibold text-orange-600">SHENGCHENG TEXTILE</span> your preferred partner by delivering outstanding value, excellent pricing, and consistently fulfilling all your requirements.
+                    </p>
+                </div>
+
+                <!-- Mission Points -->
+                <div class="space-y-6">
+                    <div class="flex gap-4 p-4 rounded-2xl bg-orange-50 border border-orange-100">
+                        <div class="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Fabric That Brings Joy</h4>
+                            <p class="text-gray-700">We believe good fabric makes people happy — the look, feel, and even scent instills comfort and pleasure in every creation.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-4 rounded-2xl bg-orange-50 border border-orange-100">
+                        <div class="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Uncompromising Quality</h4>
+                            <p class="text-gray-700">Using premium yarns, dyes, and materials that exceed industry standards, ensuring vivid colors and lasting quality.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-4 rounded-2xl bg-orange-50 border border-orange-100">
+                        <div class="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Dedication in Every Meter</h4>
+                            <p class="text-gray-700">Every meter of our fabric reveals our passion for appearance, functionality, and exceptional tactile sensation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Quality Control & Commitment Section (Image Left, Text Right) -->
-<section class="py-16 bg-orange-50">
-    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <!-- Left: Quality Image / Badges -->
-        <div class="flex justify-center order-2 md:order-1">
-            <img src="{{ asset('images/3.png') }}" alt="Quality Control" class="rounded-3xl shadow-2xl w-full object-cover md:h-[400px]">
-        </div>
-        <!-- Right: Quality Statement -->
-        <div class="space-y-6 order-1 md:order-2">
-            <h2 class="text-3xl md:text-4xl font-bold text-orange-700 mb-2">Quality Control & Commitment</h2>
-            <p class="text-gray-700 text-base">
-                Every fabric at Shengcheng Textile undergoes strict, multi-level quality inspections — from yarn to finished product. Our commitment is not just to quality, but to your satisfaction.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 text-base space-y-2">
-                <li>Consistency and durability are ensured at every step.</li>
-                <li>Every fabric is tested and trusted as per buyer requirements.</li>
-                <li>Clear Time & Action plans keep your supply chain smooth and your orders on track.</li>
-                <li>We value your time — on-time delivery is our promise and responsibility.</li>
-            </ul>
-            <p class="text-orange-700 font-semibold">Quality is not an option, it’s a promise.</p>
+<!-- Quality Commitment Section -->
+<section class="py-20 bg-gradient-to-br from-gray-50 to-orange-50">
+    <div class="w-11/12 md:w-4/5 mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left: Quality Content -->
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Quality Control & Commitment</h2>
+                    </div>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Every fabric undergoes rigorous, multi-level inspections from yarn to finished product. Our commitment extends beyond quality to your complete satisfaction.
+                    </p>
+                </div>
+
+                <!-- Quality Process -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Rigorous Testing</h4>
+                        <p class="text-gray-600 text-sm">Every fabric tested against buyer requirements with precision instruments.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Timely Delivery</h4>
+                        <p class="text-gray-600 text-sm">Clear Time & Action plans ensure your supply chain stays smooth.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Long-term Trust</h4>
+                        <p class="text-gray-600 text-sm">Consistency from yarn to final fabric builds lasting relationships.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Continuous Improvement</h4>
+                        <p class="text-gray-600 text-sm">Ongoing process optimization for better quality and efficiency.</p>
+                    </div>
+                </div>
+
+                <div class="bg-orange-100 border border-orange-200 rounded-2xl p-6">
+                    <p class="text-orange-800 font-semibold text-lg text-center">
+                        "Quality is not an option, it's a promise we keep in every meter of fabric."
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Right: Quality Image -->
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="{{ asset('images/3.png') }}" 
+                         alt="Quality Control Process" 
+                         class="w-full h-[600px] object-cover">
+                </div>
+                <!-- Quality Badge -->
+                <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-2xl p-6 border border-orange-200">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-600">99.8%</div>
+                        <div class="text-gray-600 text-sm font-medium">Quality Assurance Rate</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Environmental Policy Section (Image Right, Text Left) -->
-<section class="py-16 bg-white">
-    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <!-- Right: Eco Image (leaf, fabric, earth) -->
-        <div class="flex justify-center order-1 md:order-2">
-            <img src="{{ asset('images/4.jpg') }}" alt="Environmental Policy" class="rounded-3xl shadow-md w-full object-cover h-[330px]">
-        </div>
-        <!-- Left: Environmental Commitment -->
-        <div class="order-2 md:order-1">
-            <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-3">Environmental Policy</h2>
-            <p class="text-gray-700 text-base mb-3">
-                We go beyond compliance — striving to lead the industry in <span class="font-bold text-green-700">eco-friendly and sustainable practices</span>.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-2">
-                <li>Only eco-friendly raw materials and dyes for all fabrics</li>
-                <li>Strict controls over water, energy, and chemical use to reduce waste</li>
-                <li>Recycled materials used in production, with client confirmation</li>
-                <li>Benchmarking for continuous improvement in sustainability</li>
-            </ul>
-            <p class="text-green-700 font-semibold mt-3">We believe career and business growth must respect the environment.</p>
+<!-- Environmental Commitment Section -->
+<section class="py-20 bg-white">
+    <div class="w-11/12 md:w-4/5 mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left: Environmental Image -->
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="{{ asset('images/4.jpg') }}" 
+                         alt="Environmental Sustainability" 
+                         class="w-full md:h-[500px] object-cover">
+                </div>
+                <!-- Eco Badge -->
+                <div class="absolute -top-4 -left-4 bg-green-500 text-white rounded-2xl shadow-xl p-4">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold">100%</div>
+                        <div class="text-sm opacity-90">Eco-friendly Materials</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right: Environmental Content -->
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Environmental Policy</h2>
+                    </div>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        We go beyond compliance, striving to lead the industry in <span class="font-semibold text-green-600">eco-friendly and sustainable practices</span> that respect our planet.
+                    </p>
+                </div>
+
+                <!-- Environmental Practices -->
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-green-50 border border-green-100">
+                        <div class="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mt-1">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Eco-friendly Materials</h4>
+                            <p class="text-gray-700">Only sustainable raw materials and dyes used across all production lines.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-green-50 border border-green-100">
+                        <div class="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mt-1">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Resource Management</h4>
+                            <p class="text-gray-700">Strict controls over water, energy, and chemical usage to minimize waste.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-green-50 border border-green-100">
+                        <div class="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mt-1">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Recycled Materials</h4>
+                            <p class="text-gray-700">Incorporating recycled materials in production with full client transparency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-100 border border-green-200 rounded-2xl p-6">
+                    <p class="text-green-800 font-semibold text-lg text-center">
+                        "We believe career and business growth must respect and protect our environment."
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
