@@ -1,4 +1,4 @@
-<section id="products" class="relative min-h-screen bg-orange-50 flex flex-col justify-center overflow-hidden">
+<section id="products" class="relative min-h-screen bg-white flex flex-col justify-center overflow-hidden">
     <div class="container mx-auto px-4">
         <!-- Header -->
         <div class="text-center mb-16">
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <!-- Optional: Decorative Background Shapes -->
-    <div class="absolute top-0 left-0 w-64 h-64 bg-orange-200 rounded-full opacity-20 -translate-x-1/2 -translate-y-1/2"></div>
-    <div class="absolute bottom-0 right-0 w-72 h-72 bg-orange-300 rounded-full opacity-20 translate-x-1/2 translate-y-1/2"></div>
+    <!-- Optional: Decorative Background Shapes - Subtle -->
+    <div class="absolute top-0 left-0 w-64 h-64 bg-gray-100 rounded-full opacity-30 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 right-0 w-72 h-72 bg-gray-100 rounded-full opacity-30 translate-x-1/2 translate-y-1/2"></div>
 </section>

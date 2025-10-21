@@ -1,8 +1,8 @@
-<section class="py-20 bg-orange-50">
+<section class="py-20 bg-gray-50">
     <div class="w-4/5 mx-auto px-5 text-center">
 
         <!-- Section Header -->
-        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-orange-500 drop-shadow-md">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-orange-600 drop-shadow-md">
             Our Clients
         </h2>
         <p class="text-gray-700 mb-12 text-lg max-w-3xl mx-auto">
@@ -62,7 +62,7 @@
                         <img src="{{ $client->image && file_exists(public_path($client->image))
                 ? asset($client->image)
                 : 'https://source.unsplash.com/150x150/?business' }}" alt="{{ $client->name }}"
-                             class="w-28 h-28 object-cover rounded-full border-4 border-orange-300 shadow-sm">
+                             class="w-28 h-28 object-cover rounded-full border-4 border-orange-400 shadow-sm">
                     </div>
 
                     <h3 class="text-xl font-semibold mb-2 text-gray-800">{{ $client->name }}</h3>
@@ -78,7 +78,7 @@
         <!-- Logos Marquee removed per backend request -->
         <!-- See More Button -->
         <a href="{{ route('clients-more') }}"
-           class="inline-block bg-orange-500 text-white mt-5 px-8 py-3 rounded-full shadow hover:bg-orange-600 transition transform hover:scale-105">
+           class="inline-block bg-orange-600 text-white mt-5 px-8 py-3 rounded-full shadow hover:bg-orange-700 transition transform hover:scale-105">
             See More Clients
         </a>
     </div>

@@ -4,10 +4,10 @@
     </div>
 @endif
 
-<section class="py-20 bg-orange-50">
+<section class="py-20 bg-gray-50">
     <div class="container mx-auto px-5 max-w-5xl">
         <!-- Heading -->
-        <h2 class="text-4xl md:text-5xl font-extrabold mb-10 text-center text-orange-500">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-10 text-center text-orange-600">
             Get in Touch
         </h2>
 
@@ -44,7 +44,7 @@
             <!-- Submit Button -->
             <div class="text-center">
                 <button type="submit"
-                        class="bg-orange-500 text-black px-10 py-4 rounded-full font-semibold shadow-lg hover:bg-orange-600 hover:scale-105 transform transition duration-300">
+                        class="bg-orange-600 text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:bg-orange-700 hover:scale-105 transform transition duration-300">
                     Send Message
                 </button>
             </div>
@@ -53,8 +53,8 @@
         <!-- Contact Details -->
         <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
             <!-- China Office -->
-            <div class="bg-white shadow-lg rounded-3xl p-10 text-left hover:shadow-orange-200 transition duration-300">
-                <h3 class="text-2xl font-bold text-orange-500 mb-6 flex items-center gap-2">
+            <div class="bg-white shadow-lg rounded-3xl p-10 text-left hover:shadow-2xl transition duration-300">
+                <h3 class="text-2xl font-bold text-orange-600 mb-6 flex items-center gap-2">
                     <i data-lucide="building-2" class="w-6 h-6"></i> China Office
                 </h3>
                 <div class="space-y-3 text-gray-700">
@@ -70,8 +70,8 @@
             </div>
 
             <!-- Bangladesh Office -->
-            <div class="bg-white shadow-lg rounded-3xl p-10 text-left hover:shadow-orange-200 transition duration-300">
-                <h3 class="text-2xl font-bold text-orange-500 mb-6 flex items-center gap-2">
+            <div class="bg-white shadow-lg rounded-3xl p-10 text-left hover:shadow-2xl transition duration-300">
+                <h3 class="text-2xl font-bold text-orange-600 mb-6 flex items-center gap-2">
                     <i data-lucide="building" class="w-6 h-6"></i> Bangladesh Office
                 </h3>
                 <div class="space-y-3 text-gray-700">

@@ -6,13 +6,13 @@
         id="banner-bg">
     </div>
 
-    <!-- Animated Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-r from-orange-500 via-transparent to-orange-500 opacity-30 animate-gradient"></div>
+    <!-- Subtle Dark Overlay -->
+    <div class="absolute inset-0 bg-black/40"></div>
 
     <!-- Hero Content -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-5">
         <!-- Heading -->
-        <h2 class="text-5xl md:text-6xl font-extrabold text-orange-500 mb-6 leading-tight drop-shadow-lg">
+        <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-2xl">
             Weaving Quality, Crafting Excellence
         </h2>
 
@@ -23,14 +23,14 @@
 
         <!-- CTA Button -->
         <a href="{{ route('products.list') }}" 
-           class="inline-block bg-orange-500 text-black px-10 py-4 font-semibold rounded-lg shadow-lg hover:bg-orange-600 hover:scale-105 transform transition duration-300">
+           class="inline-block bg-orange-600 text-white px-10 py-4 font-semibold rounded-lg shadow-lg hover:bg-orange-700 hover:scale-105 transform transition duration-300">
             Explore Products
         </a>
     </div>
 </section>
 
 <!-- Tailwind Custom Animation -->
-<style>
+<!-- <style>
     @keyframes gradientMove {
         0% { background-position: 0% 50%; }
         50% { background-position: 100% 50%; }
@@ -41,8 +41,7 @@
         background-size: 200% 200%;
         animation: gradientMove 15s ease infinite;
     }
-</style>
-
+</style> -->
 <!-- Simple Parallax JS -->
 <script>
     const banner = document.getElementById('banner-bg');

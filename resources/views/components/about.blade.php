@@ -1,4 +1,4 @@
-<section class="h-screen flex items-center bg-gradient-to-br from-orange-50 to-orange-100 relative overflow-hidden">
+<section class="h-screen flex items-center bg-gray-50 relative overflow-hidden">
     <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 md:px-12">
 
         <!-- Text Content -->
@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    <!-- Decorative Glow -->
-    <div class="absolute top-0 left-0 w-60 h-60 bg-orange-200 rounded-full opacity-40 blur-3xl"></div>
-    <div class="absolute bottom-0 right-0 w-72 h-72 bg-orange-300 rounded-full opacity-30 blur-3xl"></div>
+    <!-- Decorative Glow - Subtle -->
+    <div class="absolute top-0 left-0 w-60 h-60 bg-orange-100 rounded-full opacity-20 blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-72 h-72 bg-orange-100 rounded-full opacity-15 blur-3xl"></div>
 </section>
