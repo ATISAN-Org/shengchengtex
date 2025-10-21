@@ -7,7 +7,7 @@
                 About Us
             </h2>
             <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
-                Chengcheng Textile Co., Ltd is a leading fabric manufacturer located in Shengze Town, Wujiang City —
+                Chengcheng Textile Co., Ltd is a leading fabric manufacturer located in Shengze Town, Wujiang City -
                 China’s “Hometown of Silk.” With advanced facilities and strong global partnerships,
                 we deliver premium textiles worldwide with a focus on quality, innovation, and sustainability.
             </p>
