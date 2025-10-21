@@ -7,7 +7,7 @@
 <section class="py-20 bg-orange-50">
     <div class="container mx-auto px-5 max-w-5xl">
         <!-- Heading -->
-        <h2 class="text-5xl md:text-6xl font-extrabold mb-10 text-center text-orange-500">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-10 text-center text-orange-500">
             Get in Touch
         </h2>
 
