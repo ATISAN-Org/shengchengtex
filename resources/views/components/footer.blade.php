@@ -6,11 +6,11 @@
             <p class="mb-2">123 Textile Avenue, Dhaka, Bangladesh</p>
             <p class="mb-2">
                 Email: 
-                <a href="mailto:info@shengchengtextile.com" class="hover:text-orange-400 transition-colors">info@shengchengtextile.com</a>
+                <a href="mailto:sagar@yrc-tex.cn" class="hover:text-orange-400 transition-colors">sagar@yrc-tex.cn</a>
             </p>
             <p>
                 Phone: 
-                <a href="tel:+880123456789" class="hover:text-orange-400 transition-colors">+880 123 456 789</a>
+                <a href="tel:+8801671927782" class="hover:text-orange-400 transition-colors">+880 1671927782</a>
             </p>
         </div>
 
@@ -20,7 +20,7 @@
             <ul class="space-y-2">
                 <li><a href="{{ route('landing') }}" class="hover:text-orange-400 transition-colors">Home</a></li>
                 <li><a href="{{ route('products.list') }}" class="hover:text-orange-400 transition-colors">Products</a></li>
-                <li><a href="{{ route('about') }}" class="hover:text-orange-400 transition-colors">About Us</a></li>
+                <li><a href="{{ route('about-more') }}" class="hover:text-orange-400 transition-colors">About Us</a></li>
                 <li><a href="{{ route('contact') }}" class="hover:text-orange-400 transition-colors">Contact</a></li>
             </ul>
         </div>
@@ -38,11 +38,19 @@
         <!-- Company Info -->
         <div>
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Company Info</h3>
-            <ul class="space-y-2 text-gray-300">
-                <li>TH TengHong Group</li>
-                <li>Sister Concern: Shengcheng Textile</li>
-                <li>BCI Certified</li>
-            </ul>
+            <div class="space-y-2 text-gray-300">
+                <!-- TH TENGHONG Logo Style -->
+                <div class="mb-3">
+                    <div class="text-3xl font-bold leading-none tracking-wider">
+                        <span style="color: #66a1a3;">T</span><span style="color: #787ead;">H</span>
+                    </div>
+                    <div class="text-sm font-semibold tracking-widest" style="color: #888888;">TENGHONG</div>
+                </div>
+                <div>Sister Concern: 
+                    Shengcheng Textile, Shifeng TextileCo., Ltd, Suzhou Yuerongcheng Textile Co., Ltd
+                </div>
+                <div>BCI Certified</div>
+            </div>
         </div>
     </div>
 
