@@ -39,8 +39,8 @@
 
         <!-- Image Side -->
         <div class="flex justify-center md:justify-end">
-            <img src="/images/factory.jpeg" alt="Textile Factory"
-                class="rounded-3xl shadow-2xl w-full md:w-4/5 object-cover">
+            <img src="/images/1.png" alt="Textile Factory"
+                class="rounded-3xl shadow-2xl w-full object-cover">
         </div>
     </div>
 

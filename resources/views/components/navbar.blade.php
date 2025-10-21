@@ -10,16 +10,16 @@
             <a href="{{ route('landing') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 Home
             </a>
-            <a href="{{ url('/#products') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+            <a href="{{ route('products.list') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 Products
             </a>
-            <a href="{{ url('/#about') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+            <a href="{{ route('about-more') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 About Us
             </a>
             <a href="{{ url('/#contact') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 Contact
             </a>
-            <a href="{{ url('/#clients') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+            <a href="{{ route('clients-more') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 Clients
             </a>
         </nav>
@@ -38,11 +38,10 @@
     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg overflow-hidden">
         <div class="flex flex-col items-center py-4 space-y-3">
             <a href="{{ route('landing') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Home</a>
-            <a href="{{ url('/#products') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Products</a>
+            <a href="{{ route('products.list') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Products</a>
             <a href="{{ route('about') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">About Us</a>
-            <a href="{{ url('/#contact') }}" class="inline-block bg-orange-500 text-white px-10 py-4 font-semibold rounded-full shadow-lg hover:bg-orange-600 hover:scale-105 transform transition duration-300">
-                Get in Touch
-            </a>
+            <a href="{{ url('/#contact') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Contact</a>
+            <a href="{{ route('clients-more') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Clients</a>
         </div>
     </div>
 
