@@ -46,10 +46,20 @@
                     </div>
                     <div class="text-sm font-semibold tracking-widest" style="color: #888888;">TENGHONG</div>
                 </div>
-                <div>Sister Concern: 
-                    Shengcheng Textile, Shifeng TextileCo., Ltd, Suzhou Yuerongcheng Textile Co., Ltd
+                <div class="text-sm">
+                    <div class="font-semibold mb-1">Sister Concerns:</div>
+                    <ul class="space-y-1 text-xs text-gray-400">
+                        <li>• Shengcheng Textile</li>
+                        <li>• Shifeng Textile Co., Ltd</li>
+                        <li>• Suzhou Yuerongcheng Textile Co., Ltd</li>
+                    </ul>
                 </div>
-                <div>BCI Certified</div>
+                <div class="mt-3 inline-flex items-center gap-2 bg-green-700 px-3 py-1.5 rounded text-xs font-bold text-white">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    BCI CERTIFIED
+                </div>
             </div>
         </div>
     </div>

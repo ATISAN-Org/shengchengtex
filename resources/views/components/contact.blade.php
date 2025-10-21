@@ -74,34 +74,22 @@
                 <h3 class="text-2xl font-bold text-orange-600 mb-6 flex items-center gap-2">
                     <i data-lucide="building" class="w-6 h-6"></i> Bangladesh Office
                 </h3>
-                <div class="space-y-3 text-gray-700">
+                <div class="space-y-2 text-gray-700">
                     <p class="flex items-start gap-3">
                         <i data-lucide="map-pin" class="w-5 h-5 text-orange-400"></i>
-                        SECTOR-3, ROAD #18, HOUSE #22,<br>UTTARA, DHAKA-1230, BANGLADESH
+                        House # 9 (Floor-5A), Road # 4,<br>Sector # 3, Uttara,<br>Dhaka-1230, BANGLADESH
                     </p>
                     <p class="flex items-center gap-3">
                         <i data-lucide="user" class="w-5 h-5 text-orange-400"></i>
-                        Tushar Ahmed – <span class="text-gray-500">Country Manager</span>
+                        Arifuzzaman Sagar – <span class="text-gray-500">Country Manager</span>
                     </p>
                     <p class="flex items-center gap-3">
                         <i data-lucide="phone" class="w-5 h-5 text-orange-400"></i>
-                        +88 01739939469
-                    </p>
-                    <p class="flex items-center gap-3">
-                        <i data-lucide="message-square" class="w-5 h-5 text-orange-400"></i>
-                        WhatsApp: +8801739939469
-                    </p>
-                    <p class="flex items-center gap-3">
-                        <i data-lucide="message-circle" class="w-5 h-5 text-orange-400"></i>
-                        WeChat: Tushar9469
+                        +880 1671927782
                     </p>
                     <p class="flex items-center gap-3">
                         <i data-lucide="mail" class="w-5 h-5 text-orange-400"></i>
-                        tushar@shifengtextile.com
-                    </p>
-                    <p class="flex items-center gap-3">
-                        <i data-lucide="mail" class="w-5 h-5 text-orange-400"></i>
-                        tushar@nsd-tex.com
+                        sagar@yrc-tex.cn
                     </p>
                 </div>
             </div>
