@@ -10,7 +10,7 @@
     </div>
     
     <div class="relative w-11/12 md:w-4/5 mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <!-- Left Content -->
             <div class="space-y-8">
                 <!-- Badge -->
@@ -21,17 +21,17 @@
                     Since 1999 • Part of Thenhong Group
                 </div>
                 
-                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                     Weaving Excellence
                     <span class="block text-orange-600">for 25+ Years</span>
                 </h1>
                 
-                <p class="text-xl text-gray-700 leading-relaxed">
+                <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                     Shengcheng Textile Ltd is a leading manufacturer of premium polyester-based knit & woven fabrics, delivering <span class="font-semibold text-orange-600">25 million meters</span> annually with uncompromising quality and sustainable practices.
                 </p>
 
                 <!-- Quick Stats -->
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 pt-6">
                     <div class="text-center">
                         <div class="text-3xl font-bold text-orange-600 mb-1">25M+</div>
                         <div class="text-sm text-gray-600 font-medium">Meters Annual Production</div>
@@ -52,12 +52,12 @@
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img src="{{ asset('images/1.png') }}" 
                          alt="Shengcheng Textile Manufacturing Facility" 
-                         class="w-full md:h-[500px] object-cover transform hover:scale-105 transition duration-700">
+                         class="w-full h-48 sm:h-64 md:h-[500px] object-cover transform hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
                 
                 <!-- Floating Badge 1 -->
-                <div class="absolute -top-4 -left-4 bg-white rounded-2xl shadow-xl p-4 border border-orange-100">
+                <div class="absolute -top-2 sm:-top-4 -left-2 sm:-left-4 bg-white rounded-2xl shadow-xl p-2 sm:p-4 border border-orange-100">
                     <div class="flex items-center gap-3">
                         <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,7 +72,7 @@
                 </div>
                 
                 <!-- Floating Badge 2 -->
-                <div class="absolute -bottom-4 -right-4 bg-orange-600 text-white rounded-2xl shadow-xl p-5">
+                <div class="absolute -bottom-2 sm:-bottom-4 -right-2 sm:-right-4 bg-orange-600 text-white rounded-2xl shadow-xl p-3 sm:p-5">
                     <div class="text-center">
                         <div class="text-2xl font-bold">120+</div>
                         <div class="text-sm opacity-90">Global Partners</div>
@@ -84,24 +84,24 @@
 </section>
 
 <!-- Mission & Values Section -->
-<section class="py-20 bg-white">
+<section class="py-12 md:py-20 bg-white">
     <div class="w-11/12 md:w-4/5 mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <!-- Left: Mission Image -->
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden shadow-2xl">
                     <img src="{{ asset('images/2.png') }}" 
                          alt="Our Mission - Quality Fabric Production" 
-                         class="w-full md:h-[500px] object-cover">
+                         class="w-full h-48 sm:h-64 md:h-[500px] object-cover">
                 </div>
                 <!-- Accent Element -->
                 <div class="absolute -z-10 -bottom-6 -left-6 w-24 h-24 bg-orange-200 rounded-full opacity-50"></div>
             </div>
             
             <!-- Right: Mission Content -->
-            <div class="space-y-8">
+            <div class="space-y-6 md:space-y-8">
                 <!-- Section Header -->
-                <div class="space-y-4">
+                <div class="space-y-2 md:space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
                             <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,13 +110,13 @@
                         </div>
                         <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Our Mission</h2>
                     </div>
-                    <p class="text-xl text-gray-700 leading-relaxed">
+                    <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                         To make <span class="font-semibold text-orange-600">SHENGCHENG TEXTILE</span> your preferred partner by delivering outstanding value, excellent pricing, and consistently fulfilling all your requirements.
                     </p>
                 </div>
 
                 <!-- Mission Points -->
-                <div class="space-y-6">
+                <div class="space-y-4 md:space-y-6">
                     <div class="flex gap-4 p-4 rounded-2xl bg-orange-50 border border-orange-100">
                         <div class="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
                             <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -159,12 +159,12 @@
 </section>
 
 <!-- Quality Commitment Section -->
-<section class="py-20 bg-gradient-to-br from-gray-50 to-orange-50">
+<section class="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-orange-50">
     <div class="w-11/12 md:w-4/5 mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <!-- Left: Quality Content -->
-            <div class="space-y-8">
-                <div class="space-y-4">
+            <div class="space-y-6 md:space-y-8">
+                <div class="space-y-2 md:space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
                             <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -173,13 +173,13 @@
                         </div>
                         <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Quality Control & Commitment</h2>
                     </div>
-                    <p class="text-xl text-gray-700 leading-relaxed">
+                    <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                         Every fabric undergoes rigorous, multi-level inspections from yarn to finished product. Our commitment extends beyond quality to your complete satisfaction.
                     </p>
                 </div>
 
                 <!-- Quality Process -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div class="bg-white rounded-2xl p-6 shadow-lg border border-orange-100">
                         <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -221,7 +221,7 @@
                     </div>
                 </div>
 
-                <div class="bg-orange-100 border border-orange-200 rounded-2xl p-6">
+                <div class="bg-orange-100 border border-orange-200 rounded-2xl p-4 md:p-6">
                     <p class="text-orange-800 font-semibold text-lg text-center">
                         "Quality is not an option, it's a promise we keep in every meter of fabric."
                     </p>
@@ -233,10 +233,10 @@
                 <div class="rounded-3xl overflow-hidden shadow-2xl">
                     <img src="{{ asset('images/3.png') }}" 
                          alt="Quality Control Process" 
-                         class="w-full h-[600px] object-cover">
+                         class="w-full h-48 sm:h-64 md:h-[600px] object-cover">
                 </div>
                 <!-- Quality Badge -->
-                <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-2xl p-6 border border-orange-200">
+                <div class="absolute -bottom-2 sm:-bottom-6 -right-2 sm:-right-6 bg-white rounded-2xl shadow-2xl p-3 sm:p-6 border border-orange-200">
                     <div class="text-center">
                         <div class="text-3xl font-bold text-orange-600">99.8%</div>
                         <div class="text-gray-600 text-sm font-medium">Quality Assurance Rate</div>
@@ -248,18 +248,18 @@
 </section>
 
 <!-- Environmental Commitment Section -->
-<section class="py-20 bg-white">
+<section class="py-12 md:py-20 bg-white">
     <div class="w-11/12 md:w-4/5 mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <!-- Left: Environmental Image -->
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden shadow-2xl">
                     <img src="{{ asset('images/4.jpg') }}" 
                          alt="Environmental Sustainability" 
-                         class="w-full md:h-[500px] object-cover">
+                         class="w-full h-48 sm:h-64 md:h-[500px] object-cover">
                 </div>
                 <!-- Eco Badge -->
-                <div class="absolute -top-4 -left-4 bg-green-500 text-white rounded-2xl shadow-xl p-4">
+                <div class="absolute -top-2 sm:-top-4 -left-2 sm:-left-4 bg-green-500 text-white rounded-2xl shadow-xl p-2 sm:p-4">
                     <div class="text-center">
                         <div class="text-2xl font-bold">100%</div>
                         <div class="text-sm opacity-90">Eco-friendly Materials</div>
@@ -268,8 +268,8 @@
             </div>
             
             <!-- Right: Environmental Content -->
-            <div class="space-y-8">
-                <div class="space-y-4">
+            <div class="space-y-6 md:space-y-8">
+                <div class="space-y-2 md:space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                             <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -278,13 +278,13 @@
                         </div>
                         <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Environmental Policy</h2>
                     </div>
-                    <p class="text-xl text-gray-700 leading-relaxed">
+                    <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                         We go beyond compliance, striving to lead the industry in <span class="font-semibold text-green-600">eco-friendly and sustainable practices</span> that respect our planet.
                     </p>
                 </div>
 
                 <!-- Environmental Practices -->
-                <div class="space-y-4">
+                <div class="space-y-2 md:space-y-4">
                     <div class="flex items-start gap-4 p-4 rounded-2xl bg-green-50 border border-green-100">
                         <div class="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mt-1">
                             <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -322,7 +322,7 @@
                     </div>
                 </div>
 
-                <div class="bg-green-100 border border-green-200 rounded-2xl p-6">
+                <div class="bg-green-100 border border-green-200 rounded-2xl p-4 md:p-6">
                     <p class="text-green-800 font-semibold text-lg text-center">
                         "We believe career and business growth must respect and protect our environment."
                     </p>
@@ -333,21 +333,21 @@
 </section>
 
 <!-- Certifications & Sustainability Section (Image Right, Text Left) -->
-<section class="py-20 bg-gradient-to-br from-green-50 via-white to-orange-50">
-    <div class="w-11/12 md:w-4/5 mx-auto flex flex-col lg:flex-row-reverse gap-12 items-center">
+<section class="py-12 md:py-20 bg-gradient-to-br from-green-50 via-white to-orange-50">
+    <div class="w-11/12 md:w-4/5 mx-auto flex flex-col lg:flex-row-reverse gap-6 md:gap-12 items-center">
         <!-- Right: Certification Image -->
         <div class="lg:w-1/2 flex justify-center">
-            <img src="{{ asset('images/5.jpg') }}" alt="Certifications" class="rounded-3xl shadow-2xl w-full object-cover">
+            <img src="{{ asset('images/5.jpg') }}" alt="Certifications" class="rounded-3xl shadow-2xl w-full h-48 sm:h-64 md:h-auto object-cover">
         </div>
         <!-- Left: Content -->
-        <div class="lg:w-1/2 space-y-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-orange-700 mb-2 flex items-center gap-2">
+    <div class="lg:w-1/2 space-y-4 md:space-y-6">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-orange-700 mb-2 flex items-center gap-2">
                 <span class="inline-block text-2xl">🌱</span> Our Commitment to Certified Quality & Sustainability
             </h2>
-            <p class="text-gray-700 text-lg">
+            <p class="text-gray-700 text-base sm:text-lg">
                 Every product follows the highest international sustainability and safety standards. We are proudly certified by:
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 pt-2">
                 <div class="bg-white rounded-2xl shadow p-5 border-l-4 border-green-400">
                     <h3 class="font-semibold text-xl text-green-800 mb-1">Global Recycle Standard (GRS)</h3>
                     <p class="text-gray-700 text-sm">Responsible recycling and sustainable production.</p>
@@ -365,7 +365,7 @@
                     <p class="text-gray-700 text-sm">Organic fibers and environmentally-friendly manufacturing certified.</p>
                 </div>
             </div>
-            <p class="text-gray-700 mt-6">
+            <p class="text-gray-700 mt-4 md:mt-6">
                 These certifications reflect our unwavering commitment to quality, safety, and sustainability — making every meter of fabric a responsible choice.
             </p>
         </div>
@@ -373,35 +373,35 @@
 </section>
 
 <!-- Company at a Glance (Quick Stats) -->
-<section class="py-12 bg-orange-50">
-    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<section class="py-8 md:py-12 bg-orange-50">
+    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
         <div>
-            <div class="text-3xl font-extrabold text-orange-600 mb-1">25+</div>
+            <div class="text-3xl font-bold text-orange-600 mb-1">25+</div>
             <div class="text-gray-700 text-sm">Years in Business</div>
         </div>
         <div>
-            <div class="text-3xl font-extrabold text-orange-600 mb-1">25M</div>
+            <div class="text-3xl font-bold text-orange-600 mb-1">25M</div>
             <div class="text-gray-700 text-sm">Meters Annual Production</div>
         </div>
         <div>
-            <div class="text-3xl font-extrabold text-orange-600 mb-1">120+</div>
+            <div class="text-3xl font-bold text-orange-600 mb-1">120+</div>
             <div class="text-gray-700 text-sm">Global Partners</div>
         </div>
         <div>
-            <div class="text-3xl font-extrabold text-orange-600 mb-1">15+</div>
+            <div class="text-3xl font-bold text-orange-600 mb-1">15+</div>
             <div class="text-gray-700 text-sm">Certifications</div>
         </div>
     </div>
 </section>
 
 <!-- CTA Section -->
-<section class="py-20 bg-gradient-to-r from-orange-400 to-orange-700 text-center">
-    <h3 class="text-4xl font-bold text-white mb-6">Partner with Us</h3>
-    <p class="text-white text-lg mb-8">Let's create sustainable and innovative textiles together.</p>
-    <a href="{{ url('/#contact') }}"
-       class="inline-block bg-white text-orange-600 px-10 py-4 font-semibold rounded-full shadow-lg hover:bg-gray-100 hover:scale-105 transform transition duration-300">
-       Contact Us
-    </a>
+<section class="py-12 md:py-20 bg-gradient-to-r from-orange-400 to-orange-700 text-center">
+     <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">Partner with Us</h3>
+     <p class="text-white text-base sm:text-lg mb-6 md:mb-8">Let's create sustainable and innovative textiles together.</p>
+     <a href="{{ url('/#contact') }}"
+         class="inline-block bg-white text-orange-600 px-6 sm:px-10 py-3 sm:py-4 font-semibold rounded-full shadow-lg hover:bg-gray-100 hover:scale-105 transform transition duration-300">
+         Contact Us
+     </a>
 </section>
 
 @endsection
