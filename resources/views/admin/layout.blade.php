@@ -119,9 +119,9 @@
                     <div class="text-sm font-medium">Admin User</div>
                     <div class="text-xs text-gray-400">Administrator</div>
                 </div>
-                <a href="#" class="text-gray-400 hover:text-white">
+                <span class="text-gray-500 cursor-not-allowed">
                     <i class="fas fa-sign-out-alt"></i>
-                </a>
+                </span>
             </div>
         </div>
     </aside>

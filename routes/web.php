@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\ExpenseController;
 use App\Http\Controllers\Admin\ReportController;
 use App\Http\Controllers\LandingController;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,11 +45,45 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 
 /*
 |--------------------------------------------------------------------------
-| Admin Routes (Protected)
+| Admin Auth (Simple session-based)
+|--------------------------------------------------------------------------
+*/
+Route::get('/admin/login', function () {
+    if (session('is_admin')) {
+        return redirect('/admin');
+    }
+    return view('admin.login');
+})->name('admin.login');
+
+Route::post('/admin/login', function (Request $request) {
+    $validated = $request->validate([
+        'email' => ['required', 'string'],
+        'password' => ['required', 'string'],
+    ]);
+
+    if ($validated['email'] === 'admin' && $validated['password'] === 'sagar') {
+        $request->session()->put('is_admin', true);
+        $request->session()->regenerate();
+        return redirect()->intended('/admin');
+    }
+
+    return back()->with('login_error', 'Invalid credentials')->withInput();
+})->name('admin.login.submit');
+
+Route::get('/admin/logout', function (Request $request) {
+    $request->session()->forget('is_admin');
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
+    return redirect()->route('admin.login');
+})->name('admin.logout');
+
+/*
+|--------------------------------------------------------------------------
+| Admin Routes (Protected by session)
 |--------------------------------------------------------------------------
 */
 
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->middleware('admin.session')->group(function () {
 
     // Dashboard
     Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard');
