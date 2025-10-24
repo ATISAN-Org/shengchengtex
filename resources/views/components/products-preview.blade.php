@@ -12,7 +12,7 @@
 
         <!-- Product Grid -->
         <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
-            @foreach($products as $product)
+            @foreach(collect($products)->take(10) as $product)
                 <a href="{{ route('products.details', $product->id) }}" 
                    class="group block rounded-md overflow-hidden bg-white hover:shadow-md transition duration-300 transform hover:-translate-y-1">
                     
