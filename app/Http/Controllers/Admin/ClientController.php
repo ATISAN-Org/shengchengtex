@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Client;
+use Illuminate\Support\Facades\Schema;
 
 class ClientController extends Controller
 {
@@ -49,13 +50,19 @@ class ClientController extends Controller
             $path = 'uploads/clients/' . $filename;
         }
 
-        Client::create([
+        $data = [
             'name' => $request->name,
             'image' => $path,
             'testimonial' => $request->testimonial,
             'type' => $request->type,
-            'local_type' => $request->local_type,
-        ]);
+        ];
+
+        // Only include local_type if the DB column exists to avoid QueryException before running migrations
+        if (Schema::hasColumn('clients', 'local_type')) {
+            $data['local_type'] = $request->local_type;
+        }
+
+        Client::create($data);
 
         return redirect()->route('clients.index')->with('success', 'Client added successfully!');
     }
@@ -92,13 +99,18 @@ class ClientController extends Controller
             $path = 'uploads/clients/' . $filename;
         }
 
-        $client->update([
+        $data = [
             'name' => $request->name,
             'image' => $path,
             'testimonial' => $request->testimonial,
             'type' => $request->type,
-            'local_type' => $request->local_type,
-        ]);
+        ];
+
+        if (Schema::hasColumn('clients', 'local_type')) {
+            $data['local_type'] = $request->local_type;
+        }
+
+        $client->update($data);
 
         return redirect()->route('clients.index')->with('success', 'Client updated successfully!');
     }
