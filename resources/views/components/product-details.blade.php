@@ -6,7 +6,22 @@
         <!-- Product Header -->
         <div class="flex flex-col md:flex-row md:gap-12 items-start">
             <div class="md:w-1/2 mb-6 md:mb-0">
-                <img src="{{ $product->image ? asset('storage/' . $product->image) : asset('images/no-image.png') }}"
+                @php
+                    // Resolve image URL from either public path (uploads stored directly under public)
+                    // or storage/app/public (published via `php artisan storage:link`).
+                    $imageUrl = asset('images/no-image.png');
+                    if ($product->image) {
+                        if (file_exists(public_path($product->image))) {
+                            $imageUrl = asset($product->image);
+                        } elseif (file_exists(storage_path('app/public/' . ltrim($product->image, '/')))) {
+                            $imageUrl = asset('storage/' . ltrim($product->image, '/'));
+                        } elseif (\Illuminate\Support\Str::startsWith($product->image, ['http://', 'https://'])) {
+                            $imageUrl = $product->image;
+                        }
+                    }
+                @endphp
+
+                <img src="{{ $imageUrl }}"
                     alt="{{ $product->name }}"
                     class="w-full h-[380px] object-cover rounded-xl shadow-md border border-gray-200 transition-transform duration-500 hover:scale-105">
             </div>
@@ -16,7 +31,11 @@
                     {{ $product->fabric_name ?? $product->name }}
                 </h1>
                 <p class="text-2xl text-black font-semibold uppercase">
-                    ${{ number_format($product->price, 2) }}/YDS
+                    @if(!is_null($product->price) && $product->price !== '')
+                        ${{ number_format($product->price, 2) }}/YDS
+                    @else
+                        N/A
+                    @endif
                 </p>
                 <p class="text-sm text-gray-700 uppercase">
                     CATEGORY: <span class="font-medium">{{ $product->category->name ?? 'N/A' }}</span>

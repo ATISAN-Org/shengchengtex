@@ -36,7 +36,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'category_id' => 'required|exists:categories,id',
-            'price' => ['required', 'string', 'regex:/^\d+(\.\d{1,2})?$/'],
+            'price' => ['nullable', 'string', 'regex:/^\d+(\.\d{1,2})?$/'],
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             // Other fields optional
         ]);
@@ -81,7 +81,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'category_id' => 'required|exists:categories,id',
-            'price' => ['required', 'string', 'regex:/^\d+(\.\d{1,2})?$/'],
+            'price' => ['nullable', 'string', 'regex:/^\d+(\.\d{1,2})?$/'],
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             // Other fields optional
         ]);
@@ -110,9 +110,16 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        // Delete image if exists
-        if ($product->image && \Storage::disk('public')->exists($product->image)) {
-            \Storage::disk('public')->delete($product->image);
+        // Delete image if exists on public path
+        if ($product->image) {
+            $publicPath = public_path($product->image);
+            if (file_exists($publicPath)) {
+                @unlink($publicPath);
+            }
+            $storagePath = storage_path('app/public/' . ltrim($product->image, '/'));
+            if (file_exists($storagePath)) {
+                @unlink($storagePath);
+            }
         }
 
         $product->delete();
