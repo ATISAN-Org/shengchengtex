@@ -34,6 +34,18 @@
             @enderror
         </div>
 
+        <div class="mb-4" id="local-type-wrapper" style="display: none;">
+            <label class="block font-semibold mb-1">Bangladeshi Role</label>
+            <select name="local_type" id="local_type" class="w-full border rounded p-2">
+                <option value="">Select Role</option>
+                <option value="buying_house" {{ old('local_type') == 'buying_house' ? 'selected' : '' }}>Buying House</option>
+                <option value="factory" {{ old('local_type') == 'factory' ? 'selected' : '' }}>Factory</option>
+            </select>
+            @error('local_type')
+                <span class="text-red-600 text-sm">{{ $message }}</span>
+            @enderror
+        </div>
+
         <div class="mb-4">
             <label class="block font-semibold mb-1">Testimonial</label>
             <textarea name="testimonial" class="w-full border rounded p-2">{{ old('testimonial') }}</textarea>
@@ -47,4 +59,28 @@
         </button>
     </form>
 </div>
+    <script>
+        (function(){
+            const typeSelect = document.querySelector('select[name="type"]');
+            const wrapper = document.getElementById('local-type-wrapper');
+
+            function toggleLocalType() {
+                if (!typeSelect) return;
+                if (typeSelect.value === 'bangladeshi') {
+                    wrapper.style.display = 'block';
+                } else {
+                    wrapper.style.display = 'none';
+                    const sel = document.getElementById('local_type');
+                    if (sel) sel.value = '';
+                }
+            }
+
+            if (typeSelect) {
+                typeSelect.addEventListener('change', toggleLocalType);
+                // initial state based on old value
+                toggleLocalType();
+            }
+        })();
+    </script>
+
 @endsection

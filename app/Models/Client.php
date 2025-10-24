@@ -12,7 +12,8 @@ class Client extends Model
         'name',
         'image',
         'testimonial',
-        'type'
+        'type',
+        'local_type'
     ];
 }
 // option

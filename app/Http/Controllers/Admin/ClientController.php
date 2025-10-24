@@ -26,6 +26,7 @@ class ClientController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'testimonial' => 'nullable|string',
             'type' => 'required|in:international,bangladeshi',
+            'local_type' => 'required_if:type,bangladeshi|nullable|in:buying_house,factory',
 
         ]);
 
@@ -53,6 +54,7 @@ class ClientController extends Controller
             'image' => $path,
             'testimonial' => $request->testimonial,
             'type' => $request->type,
+            'local_type' => $request->local_type,
         ]);
 
         return redirect()->route('clients.index')->with('success', 'Client added successfully!');
@@ -71,6 +73,7 @@ class ClientController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'testimonial' => 'nullable|string',
             'type' => 'required|in:international,bangladeshi',
+            'local_type' => 'required_if:type,bangladeshi|nullable|in:buying_house,factory',
 
         ]);
 
@@ -93,6 +96,8 @@ class ClientController extends Controller
             'name' => $request->name,
             'image' => $path,
             'testimonial' => $request->testimonial,
+            'type' => $request->type,
+            'local_type' => $request->local_type,
         ]);
 
         return redirect()->route('clients.index')->with('success', 'Client updated successfully!');

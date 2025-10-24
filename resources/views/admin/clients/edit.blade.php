@@ -11,6 +11,22 @@
         <input type="text" name="name" value="{{ $client->name }}" class="w-full border rounded p-2" required>
     </div>
     <div class="mb-4">
+        <label class="block font-semibold">Type</label>
+        <select name="type" class="w-full border rounded p-2">
+            <option value="international" {{ $client->type == 'international' ? 'selected' : '' }}>International</option>
+            <option value="bangladeshi" {{ $client->type == 'bangladeshi' ? 'selected' : '' }}>Bangladeshi</option>
+        </select>
+    </div>
+
+    <div class="mb-4" id="local-type-wrapper-edit" style="display: none;">
+        <label class="block font-semibold mb-1">Bangladeshi Role</label>
+        <select name="local_type" id="local_type_edit" class="w-full border rounded p-2">
+            <option value="">Select Role</option>
+            <option value="buying_house" {{ $client->local_type == 'buying_house' ? 'selected' : '' }}>Buying House</option>
+            <option value="factory" {{ $client->local_type == 'factory' ? 'selected' : '' }}>Factory</option>
+        </select>
+    </div>
+    <div class="mb-4">
         <label class="block font-semibold">Image</label>
         <input type="file" name="image" class="w-full border rounded p-2">
         @if($client->image)
@@ -23,4 +39,27 @@
     </div>
     <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Update</button>
 </form>
+<script>
+    (function(){
+        const typeSelect = document.querySelector('select[name="type"]');
+        const wrapper = document.getElementById('local-type-wrapper-edit');
+
+        function toggleLocalType() {
+            if (!typeSelect) return;
+            if (typeSelect.value === 'bangladeshi') {
+                wrapper.style.display = 'block';
+            } else {
+                wrapper.style.display = 'none';
+                const sel = document.getElementById('local_type_edit');
+                if (sel) sel.value = '';
+            }
+        }
+
+        if (typeSelect) {
+            typeSelect.addEventListener('change', toggleLocalType);
+            // initial state
+            toggleLocalType();
+        }
+    })();
+</script>
 @endsection

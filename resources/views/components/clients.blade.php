@@ -9,9 +9,16 @@
             Only a customer’s point of view for the customer can win the market. Development of Sheng Cheng Textile
             services in strict accordance with its policy to enhance quality and strengthen the brand’s value.
         </p>
-        <!-- Clients Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-10">
-            @foreach($clients->take(6) as $client)
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+            @php
+                $collection = collect($clients);
+                $international = $collection->where('type', 'international')->take(4);
+                $bangladeshi = $collection->where('type', 'bangladeshi')->take(4);
+                $displayClients = $international->concat($bangladeshi);
+            @endphp
+
+            @foreach($displayClients as $client)
                 <div class="bg-white rounded-2xl shadow-md p-6 transform transition duration-500 hover:-translate-y-2 hover:scale-105">
                     <div class="relative w-28 h-28 mx-auto mb-4">
                         <img src="{{ $client->image && file_exists(public_path($client->image))

@@ -34,8 +34,8 @@
             </div>
 
             <div>
-                <label class="block mb-1 font-semibold text-gray-700">Price <span class="text-red-500">*</span></label>
-                <input type="text" inputmode="decimal" pattern="^\d+(\.\d{1,2})?$" name="price" class="w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-200" required>
+                <label class="block mb-1 font-semibold text-gray-700">Price</label>
+                <input type="text" inputmode="decimal" pattern="^\d+(\.\d{1,2})?$" name="price" class="w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-200">
             </div>
 
             <div>

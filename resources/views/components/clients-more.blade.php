@@ -22,55 +22,11 @@
             <!-- International Buyers Section -->
             <div class="mb-10">
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8">
-                    <!-- Client 1 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759644347_puma.jpg" alt="Puma" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Client 2 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759646521_Nike-Logo-History-4-1200x750.png" alt="Nike" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Client 3 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759646708_maxmara.png" alt="Max Mara" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Client 4 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759648156_maxmara.png" alt="Max Mara" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Client 5 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759648211_logo.jpeg" alt="Client Logo" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Client 6 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759644347_puma.jpg" alt="Puma" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Client 7 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759646521_Nike-Logo-History-4-1200x750.png" alt="Nike" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Client 8 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759646708_maxmara.png" alt="Max Mara" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Client 9 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759648156_maxmara.png" alt="Max Mara" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Client 10 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/1759648211_logo.jpeg" alt="Client Logo" class="max-h-16 max-w-full object-contain">
-                    </div>
+                    @foreach($internationalClients as $client)
+                        <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
+                            <img src="{{ $client->image ? asset($client->image) : 'https://via.placeholder.com/150x60?text=Client' }}" alt="{{ $client->name }}" class="max-h-16 max-w-full object-contain">
+                        </div>
+                    @endforeach
                 </div>
             </div>
 
@@ -78,65 +34,42 @@
                 <div class="text-center mb-12">
                     <h3 class="text-2xl my-5 font-bold text-gray-800 mb-8 text-center">OUR BANGLADESHI BUYERS</h3>
                 </div>
-                
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8">
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-1.jpg" alt="Bangladeshi Client 1" class="max-h-16 max-w-full object-contain">
+
+                <!-- Bangladeshi buyers: left = Buying House (names only), right = Factory (names only) -->
+                <div class="flex flex-col sm:flex-row gap-8">
+                    <!-- Buying House Column -->
+                    @php
+                        $buyingHouse = $bangladeshiClients->where('local_type', 'buying_house')->sortBy('name');
+                        $factoryList = $bangladeshiClients->where('local_type', 'factory')->sortBy('name');
+                    @endphp
+
+                    <div class="w-full sm:w-1/2">
+                        <h4 class="text-lg font-semibold mb-4 border-b border-red-200 pb-2">Buying House @if($buyingHouse->count()) <span class="text-sm text-gray-500">({{ $buyingHouse->count() }})</span>@endif</h4>
+                        <ul class="space-y-3">
+                            @forelse($buyingHouse as $client)
+                                <li class="flex items-start gap-3">
+                                    <span class="w-4 h-4 mt-1 rounded-full border border-gray-400 flex-shrink-0"></span>
+                                    <span class="text-sm text-gray-800">{{ $client->name }}</span>
+                                </li>
+                            @empty
+                                <li class="text-sm text-gray-500">No Buying House entries found.</li>
+                            @endforelse
+                        </ul>
                     </div>
-                    
-                    <!-- Bangladeshi Client 2 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-2.jpg" alt="Bangladeshi Client 2" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 3 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-3.jpg" alt="Bangladeshi Client 3" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 4 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-4.jpg" alt="Bangladeshi Client 4" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 5 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-5.jpg" alt="Bangladeshi Client 5" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 6 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-6.jpg" alt="Bangladeshi Client 6" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 7 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-7.jpg" alt="Bangladeshi Client 7" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 8 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-8.jpg" alt="Bangladeshi Client 8" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 9 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-9.jpg" alt="Bangladeshi Client 9" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 10 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-10.jpg" alt="Bangladeshi Client 10" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 11 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-11.jpg" alt="Bangladeshi Client 11" class="max-h-16 max-w-full object-contain">
-                    </div>
-                    
-                    <!-- Bangladeshi Client 12 -->
-                    <div class="flex items-center justify-center border-2 border-yellow-400 p-4 bg-white rounded-lg h-36 transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                        <img src="/uploads/clients/bangladeshi-client-12.jpg" alt="Bangladeshi Client 12" class="max-h-16 max-w-full object-contain">
+
+                    <!-- Factory Column -->
+                    <div class="w-full sm:w-1/2">
+                        <h4 class="text-lg font-semibold mb-4 border-b border-red-200 pb-2">Factory @if($factoryList->count()) <span class="text-sm text-gray-500">({{ $factoryList->count() }})</span>@endif</h4>
+                        <ul class="space-y-3">
+                            @forelse($factoryList as $client)
+                                <li class="flex items-start gap-3">
+                                    <span class="w-4 h-4 mt-1 rounded-full border border-gray-400 flex-shrink-0"></span>
+                                    <span class="text-sm text-gray-800">{{ $client->name }}</span>
+                                </li>
+                            @empty
+                                <li class="text-sm text-gray-500">No Factory entries found.</li>
+                            @endforelse
+                        </ul>
                     </div>
                 </div>
             </div>
