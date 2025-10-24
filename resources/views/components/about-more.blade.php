@@ -21,7 +21,7 @@
                     Since 1999 • Part of Thenhong Group
                 </div>
                 
-                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                <h1 class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                     Weaving Excellence
                     <span class="block text-orange-600">for 25+ Years</span>
                 </h1>
@@ -33,15 +33,15 @@
                 <!-- Quick Stats -->
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 pt-6">
                     <div class="text-center">
-                        <div class="text-3xl font-bold text-orange-600 mb-1">25M+</div>
+                        <div class="text-2xl font-bold text-orange-600 mb-1">25M+</div>
                         <div class="text-sm text-gray-600 font-medium">Meters Annual Production</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl font-bold text-orange-600 mb-1">25+</div>
+                        <div class="text-2xl font-bold text-orange-600 mb-1">25+</div>
                         <div class="text-sm text-gray-600 font-medium">Years Experience</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl font-bold text-orange-600 mb-1">500+</div>
+                        <div class="text-2xl font-bold text-orange-600 mb-1">500+</div>
                         <div class="text-sm text-gray-600 font-medium">Product Varieties</div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                             </svg>
                         </div>
-                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Our Mission</h2>
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900">Our Mission</h2>
                     </div>
                     <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                         To make <span class="font-semibold text-orange-600">SHENGCHENG TEXTILE</span> your preferred partner by delivering outstanding value, excellent pricing, and consistently fulfilling all your requirements.
@@ -171,7 +171,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                             </svg>
                         </div>
-                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Quality Control & Commitment</h2>
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900">Quality Control & Commitment</h2>
                     </div>
                     <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                         Every fabric undergoes rigorous, multi-level inspections from yarn to finished product. Our commitment extends beyond quality to your complete satisfaction.
@@ -238,7 +238,7 @@
                 <!-- Quality Badge -->
                 <div class="absolute -bottom-2 sm:-bottom-6 -right-2 sm:-right-6 bg-white rounded-2xl shadow-2xl p-3 sm:p-6 border border-orange-200">
                     <div class="text-center">
-                        <div class="text-3xl font-bold text-orange-600">99.8%</div>
+                        <div class="text-2xl font-bold text-orange-600">99.8%</div>
                         <div class="text-gray-600 text-sm font-medium">Quality Assurance Rate</div>
                     </div>
                 </div>
@@ -276,7 +276,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                             </svg>
                         </div>
-                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Environmental Policy</h2>
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900">Environmental Policy</h2>
                     </div>
                     <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                         We go beyond compliance, striving to lead the industry in <span class="font-semibold text-green-600">eco-friendly and sustainable practices</span> that respect our planet.
@@ -374,21 +374,21 @@
 
 <!-- Company at a Glance (Quick Stats) -->
 <section class="py-8 md:py-12 bg-orange-50">
-    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
+        <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
         <div>
-            <div class="text-3xl font-bold text-orange-600 mb-1">25+</div>
+            <div class="text-2xl font-bold text-orange-600 mb-1">25+</div>
             <div class="text-gray-700 text-sm">Years in Business</div>
         </div>
         <div>
-            <div class="text-3xl font-bold text-orange-600 mb-1">25M</div>
+            <div class="text-2xl font-bold text-orange-600 mb-1">25M</div>
             <div class="text-gray-700 text-sm">Meters Annual Production</div>
         </div>
         <div>
-            <div class="text-3xl font-bold text-orange-600 mb-1">120+</div>
+            <div class="text-2xl font-bold text-orange-600 mb-1">120+</div>
             <div class="text-gray-700 text-sm">Global Partners</div>
         </div>
         <div>
-            <div class="text-3xl font-bold text-orange-600 mb-1">15+</div>
+            <div class="text-2xl font-bold text-orange-600 mb-1">15+</div>
             <div class="text-gray-700 text-sm">Certifications</div>
         </div>
     </div>
@@ -396,7 +396,7 @@
 
 <!-- CTA Section -->
 <section class="py-12 md:py-20 bg-gradient-to-r from-orange-400 to-orange-700 text-center">
-     <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">Partner with Us</h3>
+    <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6">Partner with Us</h3>
      <p class="text-white text-base sm:text-lg mb-6 md:mb-8">Let's create sustainable and innovative textiles together.</p>
      <a href="{{ url('/#contact') }}"
          class="inline-block bg-white text-orange-600 px-6 sm:px-10 py-3 sm:py-4 font-semibold rounded-full shadow-lg hover:bg-gray-100 hover:scale-105 transform transition duration-300">
