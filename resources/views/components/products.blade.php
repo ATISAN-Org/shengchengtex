@@ -42,20 +42,7 @@
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6">
                         @foreach($products as $product)
                             <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
-                                @php
-                                    $imageUrl = 'https://source.unsplash.com/400x400/?fabric,textile';
-                                    if ($product->image) {
-                                        if (file_exists(public_path($product->image))) {
-                                            $imageUrl = asset($product->image);
-                                        } elseif (file_exists(storage_path('app/public/' . ltrim($product->image, '/')))) {
-                                            $imageUrl = asset('storage/' . ltrim($product->image, '/'));
-                                        } elseif (\Illuminate\Support\Str::startsWith($product->image, ['http://', 'https://'])) {
-                                            $imageUrl = $product->image;
-                                        }
-                                    }
-                                @endphp
-
-                                <img src="{{ $imageUrl }}"
+                                <img src="{{ $product->image_url }}"
                                     alt="{{ $product->name }}"
                                     class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
 

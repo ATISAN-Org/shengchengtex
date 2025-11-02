@@ -43,11 +43,18 @@ class ProductController extends Controller
 
         $data = $request->all();
 
-        // Handle image upload directly to public/uploads/products
         if ($request->hasFile('image')) {
             $file = $request->file('image');
             $filename = time() . '_' . $file->getClientOriginalName();
-            $file->move(public_path('uploads/products'), $filename);
+
+            $webroot = isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT'] ? rtrim($_SERVER['DOCUMENT_ROOT'], '/') : public_path();
+            $destinationDir = $webroot . '/uploads/products';
+
+            if (!file_exists($destinationDir)) {
+                mkdir($destinationDir, 0755, true);
+            }
+
+            $file->move($destinationDir, $filename);
             $data['image'] = 'uploads/products/' . $filename;
         }
 
@@ -88,16 +95,34 @@ class ProductController extends Controller
 
         $data = $request->all();
 
-        // Handle image upload directly to public/uploads/products
+        // Handle image upload and store in the webserver document root 'uploads/products'
         if ($request->hasFile('image')) {
-            // Delete old image if exists
-            if ($product->image && file_exists(public_path($product->image))) {
-                unlink(public_path($product->image));
+            // Delete old image if exists (check multiple possible locations)
+            if ($product->image) {
+                $oldRelative = ltrim($product->image, '/');
+                $pathsToCheck = [
+                    public_path($oldRelative),
+                    storage_path('app/public/' . $oldRelative),
+                ];
+                if (isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT']) {
+                    $pathsToCheck[] = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/' . $oldRelative;
+                }
+                foreach ($pathsToCheck as $p) {
+                    if ($p && file_exists($p)) {
+                        @unlink($p);
+                    }
+                }
             }
 
             $file = $request->file('image');
             $filename = time() . '_' . $file->getClientOriginalName();
-            $file->move(public_path('uploads/products'), $filename);
+
+            $webroot = isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT'] ? rtrim($_SERVER['DOCUMENT_ROOT'], '/') : public_path();
+            $destinationDir = $webroot . '/uploads/products';
+            if (!file_exists($destinationDir)) {
+                mkdir($destinationDir, 0755, true);
+            }
+            $file->move($destinationDir, $filename);
             $data['image'] = 'uploads/products/' . $filename;
         }
 
@@ -110,15 +135,24 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        // Delete image if exists on public path
+        // Delete image if exists (check public, storage, and webserver document root)
         if ($product->image) {
-            $publicPath = public_path($product->image);
+            $oldRelative = ltrim($product->image, '/');
+            $publicPath = public_path($oldRelative);
             if (file_exists($publicPath)) {
                 @unlink($publicPath);
             }
-            $storagePath = storage_path('app/public/' . ltrim($product->image, '/'));
+
+            $storagePath = storage_path('app/public/' . $oldRelative);
             if (file_exists($storagePath)) {
                 @unlink($storagePath);
+            }
+
+            if (isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT']) {
+                $docRootPath = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/' . $oldRelative;
+                if (file_exists($docRootPath)) {
+                    @unlink($docRootPath);
+                }
             }
         }
 

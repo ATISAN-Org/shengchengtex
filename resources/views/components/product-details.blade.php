@@ -6,22 +6,7 @@
         <!-- Product Header -->
         <div class="flex flex-col md:flex-row md:gap-12 items-start">
             <div class="md:w-1/2 mb-6 md:mb-0">
-                @php
-                    // Resolve image URL from either public path (uploads stored directly under public)
-                    // or storage/app/public (published via `php artisan storage:link`).
-                    $imageUrl = asset('images/no-image.png');
-                    if ($product->image) {
-                        if (file_exists(public_path($product->image))) {
-                            $imageUrl = asset($product->image);
-                        } elseif (file_exists(storage_path('app/public/' . ltrim($product->image, '/')))) {
-                            $imageUrl = asset('storage/' . ltrim($product->image, '/'));
-                        } elseif (\Illuminate\Support\Str::startsWith($product->image, ['http://', 'https://'])) {
-                            $imageUrl = $product->image;
-                        }
-                    }
-                @endphp
-
-                <img src="{{ $imageUrl }}"
+                <img src="{{ $product->image_url }}"
                     alt="{{ $product->name }}"
                     class="w-full h-[380px] object-cover rounded-xl shadow-md border border-gray-200 transition-transform duration-500 hover:scale-105">
             </div>

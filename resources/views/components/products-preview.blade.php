@@ -18,21 +18,8 @@
                     
                     <!-- Image -->
                     <div class="relative overflow-hidden">
-                        @php
-                            $imageUrl = 'https://source.unsplash.com/400x400/?fabric,textile';
-                            if ($product->image) {
-                                if (file_exists(public_path($product->image))) {
-                                    $imageUrl = asset($product->image);
-                                } elseif (file_exists(storage_path('app/public/' . ltrim($product->image, '/')))) {
-                                    $imageUrl = asset('storage/' . ltrim($product->image, '/'));
-                                } elseif (\Illuminate\Support\Str::startsWith($product->image, ['http://', 'https://'])) {
-                                    $imageUrl = $product->image;
-                                }
-                            }
-                        @endphp
-
                         <img 
-                            src="{{ $imageUrl }}" 
+                            src="{{ $product->image_url }}" 
                             alt="{{ $product->name }}" 
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition"></div>

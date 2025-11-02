@@ -46,4 +46,38 @@ class Product extends Model
     public function category() {
         return $this->belongsTo(Category::class);
     }
+
+    public function getImageUrlAttribute()
+    {
+        $img = $this->image;
+
+        $placeholder = asset('images/no-image.png');
+
+        if (!$img) {
+            return $placeholder;
+        }
+
+        $relative = ltrim($img, '/');
+
+        if (file_exists(public_path($relative))) {
+            return asset($relative);
+        }
+
+        if (file_exists(storage_path('app/public/' . $relative))) {
+            return asset('storage/' . $relative);
+        }
+
+        if (isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT']) {
+            $docPath = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/' . $relative;
+            if (file_exists($docPath)) {
+                return url('/' . $relative);
+            }
+        }
+
+        if (\Illuminate\Support\Str::startsWith($img, ['http://', 'https://'])) {
+            return $img;
+        }
+
+        return $placeholder;
+    }
 }
