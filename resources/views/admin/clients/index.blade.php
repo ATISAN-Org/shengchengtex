@@ -31,19 +31,7 @@
                 <tr class="border-t hover:bg-gray-50">
                     <td class="px-5 py-3">{{ $client->name }}</td>
                     <td class="px-5 py-3">
-                        @php
-                            $img = $client->image ? $client->image : null;
-                            $imgUrl = null;
-                            if ($img && file_exists(public_path($img))) {
-                                $imgUrl = asset($img);
-                            } elseif ($img && file_exists(public_path('storage/' . $img))) {
-                                // handle cases where images stored in storage/clients
-                                $imgUrl = asset('storage/' . $img);
-                            } else {
-                                $imgUrl = 'https://via.placeholder.com/48x48?text=No+Img';
-                            }
-                        @endphp
-                        <img src="{{ $imgUrl }}" class="w-12 h-12 rounded-full object-cover border border-gray-200 shadow-sm" alt="{{ $client->name }}">
+                        <img src="{{ $client->image_url ?? 'https://via.placeholder.com/48x48?text=No+Img' }}" class="w-12 h-12 rounded-full object-cover border border-gray-200 shadow-sm" alt="{{ $client->name }}">
                     </td>
                     <td class="px-5 py-3 max-w-xs truncate" title="{{ $client->testimonial }}">{{ $client->testimonial }}</td>
                     <td class="px-5 py-3 text-center space-x-2">

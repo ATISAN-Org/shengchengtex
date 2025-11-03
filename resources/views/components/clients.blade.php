@@ -20,10 +20,8 @@
 
             @foreach($displayClients as $client)
                 <div class="bg-white rounded-2xl shadow-md p-6 transform transition duration-500 hover:-translate-y-2 hover:scale-105">
-                    <div class="relative w-28 h-28 mx-auto mb-4">
-                        <img src="{{ $client->image && file_exists(public_path($client->image))
-                ? asset($client->image)
-                : 'https://source.unsplash.com/150x150/?business' }}" alt="{{ $client->name }}"
+                        <div class="relative w-28 h-28 mx-auto mb-4">
+                        <img src="{{ $client->image_url ?? 'https://source.unsplash.com/150x150/?business' }}" alt="{{ $client->name }}"
                              class="w-28 h-28 object-cover rounded-full border-4 border-orange-400 shadow-sm">
                     </div>
 

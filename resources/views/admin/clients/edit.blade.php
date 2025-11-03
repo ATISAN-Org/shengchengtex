@@ -30,7 +30,7 @@
         <label class="block font-semibold">Image</label>
         <input type="file" name="image" class="w-full border rounded p-2">
         @if($client->image)
-            <img src="{{ asset('storage/' . $client->image) }}" class="w-16 h-16 mt-2 rounded-full">
+            <img src="{{ $client->image_url }}" class="w-16 h-16 mt-2 rounded-full">
         @endif
     </div>
     <div class="mb-4">

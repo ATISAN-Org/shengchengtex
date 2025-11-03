@@ -36,14 +36,16 @@ class ClientController extends Controller
         if ($request->hasFile('image')) {
             $file = $request->file('image');
             $filename = time() . '_' . preg_replace('/\s+/', '_', $file->getClientOriginalName());
-            $destinationPath = public_path('uploads/clients');
+
+            $webroot = isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT'] ? rtrim($_SERVER['DOCUMENT_ROOT'], '/') : public_path();
+            $destinationPath = $webroot . '/uploads/clients';
 
             // Create directory if not exists
             if (!file_exists($destinationPath)) {
                 mkdir($destinationPath, 0755, true);
             }
 
-            // Move uploaded file to public/uploads/clients
+            // Move uploaded file to webroot/uploads/clients
             $file->move($destinationPath, $filename);
 
             // Save relative path to database
@@ -87,9 +89,27 @@ class ClientController extends Controller
         $path = $client->image;
 
         if ($request->hasFile('image')) {
+            if ($client->image) {
+                $oldRelative = ltrim($client->image, '/');
+                $pathsToCheck = [
+                    public_path($oldRelative),
+                    storage_path('app/public/' . $oldRelative),
+                ];
+                if (isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT']) {
+                    $pathsToCheck[] = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/' . $oldRelative;
+                }
+                foreach ($pathsToCheck as $p) {
+                    if ($p && file_exists($p)) {
+                        @unlink($p);
+                    }
+                }
+            }
+
             $file = $request->file('image');
             $filename = time() . '_' . preg_replace('/\s+/', '_', $file->getClientOriginalName());
-            $destinationPath = public_path('uploads/clients');
+
+            $webroot = isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT'] ? rtrim($_SERVER['DOCUMENT_ROOT'], '/') : public_path();
+            $destinationPath = $webroot . '/uploads/clients';
 
             if (!file_exists($destinationPath)) {
                 mkdir($destinationPath, 0755, true);
@@ -113,6 +133,37 @@ class ClientController extends Controller
         $client->update($data);
 
         return redirect()->route('clients.index')->with('success', 'Client updated successfully!');
+    }
+
+    /**
+     * Remove the specified client from storage.
+     */
+    public function destroy(Client $client)
+    {
+        // Delete image if exists (check public, storage, and webserver document root)
+        if ($client->image) {
+            $oldRelative = ltrim($client->image, '/');
+            $publicPath = public_path($oldRelative);
+            if (file_exists($publicPath)) {
+                @unlink($publicPath);
+            }
+
+            $storagePath = storage_path('app/public/' . $oldRelative);
+            if (file_exists($storagePath)) {
+                @unlink($storagePath);
+            }
+
+            if (isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT']) {
+                $docRootPath = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/' . $oldRelative;
+                if (file_exists($docRootPath)) {
+                    @unlink($docRootPath);
+                }
+            }
+        }
+
+        $client->delete();
+
+        return redirect()->route('clients.index')->with('success', 'Client deleted successfully!');
     }
 
 
