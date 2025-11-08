@@ -33,10 +33,10 @@
                 <a href="#" class="hover:text-pink-400 transition-colors">Instagram</a>
                 <a href="#" class="hover:text-blue-400 transition-colors">LinkedIn</a>
             </div>
-                <div class="flex flex-wrap items-center gap-2 mt-3">
-                    <span class="inline-flex items-center gap-1 bg-green-700 px-2 py-1 rounded text-xs font-bold text-white">BCI</span>
-                    <span class="inline-flex items-center gap-1 bg-blue-600 px-2 py-1 rounded text-xs font-bold text-white">Global Recycled Standard</span>
-                    <span class="inline-flex items-center gap-1 bg-yellow-500 px-2 py-1 rounded text-xs font-bold text-white">OEKO-TEX&reg; STANDARD 100</span>
+                <div class="mt-3 space-y-3">
+                    <img src="/images/footer1.png" alt="BCI" class="w-24 h-16 h-auto" />
+                    <img src="/images/footer2.png" alt="Global Recycled Standard" class="w-24 h-16 h-auto" />
+                    <img src="/images/footer3.png" alt="OEKO-TEX STANDARD 100" class="w-24 h-16 h-auto" />
                 </div>
         </div>
 
