@@ -33,32 +33,32 @@
                 <a href="#" class="hover:text-pink-400 transition-colors">Instagram</a>
                 <a href="#" class="hover:text-blue-400 transition-colors">LinkedIn</a>
             </div>
+                <div class="flex flex-wrap items-center gap-2 mt-3">
+                    <span class="inline-flex items-center gap-1 bg-green-700 px-2 py-1 rounded text-xs font-bold text-white">BCI</span>
+                    <span class="inline-flex items-center gap-1 bg-blue-600 px-2 py-1 rounded text-xs font-bold text-white">Global Recycled Standard</span>
+                    <span class="inline-flex items-center gap-1 bg-yellow-500 px-2 py-1 rounded text-xs font-bold text-white">OEKO-TEX&reg; STANDARD 100</span>
+                </div>
         </div>
 
         <!-- Company Info -->
         <div>
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Company Info</h3>
             <div class="space-y-2 text-gray-300">
-                <!-- TH TENGHONG Logo Style -->
-                <div class="mb-3">
+                <!-- TH TengHong Group Logo/Title -->
+                <div class="mb-1 flex items-center gap-2">
                     <div class="text-3xl font-bold leading-none tracking-wider">
                         <span style="color: #66a1a3;">T</span><span style="color: #787ead;">H</span>
                     </div>
-                    <div class="text-sm font-semibold tracking-widest" style="color: #888888;">TENGHONG</div>
+                    <div class="text-lg font-bold tracking-wide text-white ml-2">TengHong Group</div>
                 </div>
-                <div class="text-sm">
-                    <div class="font-semibold mb-1">Sister Concerns:</div>
-                    <ul class="space-y-1 text-xs text-gray-400">
-                        <li>• Shengcheng Textile</li>
+                <div class="text-xs font-semibold tracking-widest text-white mb-1">TENGHONG</div>
+                <div class="text-sm mt-2">
+                    <span class="font-bold">SISTER CONCERNS</span>:
+                    <ul class="space-y-1 text-xs text-gray-400 mt-1">
+                        <li>• ShengCheng Textile</li>
                         <li>• Shifeng Textile Co., Ltd</li>
                         <li>• Suzhou Yuerongcheng Textile Co., Ltd</li>
                     </ul>
-                </div>
-                <div class="mt-3 inline-flex items-center gap-2 bg-green-700 px-3 py-1.5 rounded text-xs font-bold text-white">
-                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    BCI CERTIFIED
                 </div>
             </div>
         </div>

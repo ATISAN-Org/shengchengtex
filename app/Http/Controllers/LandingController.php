@@ -7,6 +7,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Client;
+use Illuminate\Support\Facades\Mail;
 
 class LandingController extends Controller
 {
@@ -84,7 +85,21 @@ class LandingController extends Controller
             'message' => 'required|string',
         ]);
 
-        Contact::create($validated); // save to DB
+        $contact = Contact::create($validated); // save to DB
+
+        // Send email to sagar@yrc-tex.cn
+        Mail::raw(
+            "New Purchase Request / Query:\n\n" .
+            "Name: {$contact->name}\n" .
+            "Email: {$contact->email}\n" .
+            "Phone: {$contact->phone}\n" .
+            "Subject: {$contact->subject}\n" .
+            "Message: {$contact->message}",
+            function ($message) use ($contact) {
+                $message->to('sagar@yrc-tex.cn')
+                        ->subject('New Purchase Request / Query from Website');
+            }
+        );
 
         return back()->with('success', 'Your message has been submitted successfully.');
     }
