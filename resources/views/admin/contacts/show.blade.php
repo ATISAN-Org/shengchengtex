@@ -8,10 +8,11 @@
     <h2 class="text-2xl font-bold text-orange-500 mb-4">Contact Query Details</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-800">
-        <p><span class="font-semibold">Full Name:</span> {{ $contact->name }}</p>
-        <p><span class="font-semibold">Email:</span> {{ $contact->email }}</p>
-        <p><span class="font-semibold">Subject:</span> {{ $contact->subject ?? '-' }}</p>
-        <p><span class="font-semibold">Submitted At:</span> {{ $contact->created_at->format('d M Y, h:i A') }}</p>
+    <p><span class="font-semibold">Full Name:</span> {{ $contact->name }}</p>
+    <p><span class="font-semibold">Email:</span> {{ $contact->email }}</p>
+    <p><span class="font-semibold">Phone:</span> {{ $contact->phone ?? '-' }}</p>
+    <p><span class="font-semibold">Subject:</span> {{ $contact->subject ?? '-' }}</p>
+    <p><span class="font-semibold">Submitted At:</span> {{ $contact->created_at->format('d M Y, h:i A') }}</p>
     </div>
 
     <div class="mt-4">
