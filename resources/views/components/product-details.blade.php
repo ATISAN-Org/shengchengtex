@@ -69,7 +69,7 @@
                 <h2 class="text-xl font-semibold text-orange-500 mb-5 border-b border-gray-700 pb-2 uppercase">
                     Send Purchase Request / Query
                 </h2>
-                <form action="{{ route('product.request', $product->id) }}" method="POST"
+                <form action="{{ route('contact.submit') }}" method="POST"
                     class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     @csrf
                     <input type="text" name="name" placeholder="FULL NAME"

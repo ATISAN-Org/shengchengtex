@@ -16,6 +16,7 @@
                     <tr class="bg-gray-100 text-gray-700">
                         <th class="px-4 py-3 font-medium">Name</th>
                         <th class="px-4 py-3 font-medium">Email</th>
+                        <th class="px-4 py-3 font-medium">Phone</th>
                         <th class="px-4 py-3 font-medium">Subject</th>
                         <th class="px-4 py-3 font-medium">Message</th>
                         <th class="px-4 py-3 font-medium">Date</th>
@@ -27,6 +28,7 @@
                         <tr class="border-t hover:bg-gray-50">
                             <td class="px-4 py-3">{{ $contact->name }}</td>
                             <td class="px-4 py-3">{{ $contact->email }}</td>
+                            <td class="px-4 py-3">{{ $contact->phone ?? '-' }}</td>
                             <td class="px-4 py-3">{{ $contact->subject ?? '-' }}</td>
                             <td class="px-4 py-3" title="{{ $contact->message }}">{{ \Illuminate\Support\Str::limit($contact->message, 50) }}</td>
                             <td class="px-4 py-3">{{ $contact->created_at->format('d M Y') }}</td>
