@@ -39,17 +39,17 @@
                 <div class="flex flex-col sm:flex-row gap-8">
                     <!-- Buying House Column -->
                     @php
-                        // Be tolerant of different casing or null values in local_type
+                        // Use bangladeshi_role for filtering
                         $buyingHouse = $bangladeshiClients->filter(function($c){
-                            return isset($c->local_type) && strtolower($c->local_type) === 'buying_house';
+                            return isset($c->bangladeshi_role) && strtolower($c->bangladeshi_role) === 'buying_house';
                         })->sortBy('name');
 
                         $factoryList = $bangladeshiClients->filter(function($c){
-                            return isset($c->local_type) && strtolower($c->local_type) === 'factory';
+                            return isset($c->bangladeshi_role) && strtolower($c->bangladeshi_role) === 'factory';
                         })->sortBy('name');
-                        // Clients with no local_type set (created before migration or not selected)
+                        // Clients with no bangladeshi_role set (created before migration or not selected)
                         $others = $bangladeshiClients->filter(function($c){
-                            return !isset($c->local_type) || $c->local_type === null || trim($c->local_type) === '';
+                            return !isset($c->bangladeshi_role) || $c->bangladeshi_role === null || trim($c->bangladeshi_role) === '';
                         })->sortBy('name');
                     @endphp
 

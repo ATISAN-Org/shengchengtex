@@ -36,12 +36,12 @@
 
         <div class="mb-4" id="local-type-wrapper" style="display: none;">
             <label class="block font-semibold mb-1">Bangladeshi Role</label>
-            <select name="local_type" id="local_type" class="w-full border rounded p-2">
+            <select name="bangladeshi_role" id="bangladeshi_role" class="w-full border rounded p-2">
                 <option value="">Select Role</option>
-                <option value="buying_house" {{ old('local_type') == 'buying_house' ? 'selected' : '' }}>Buying House</option>
-                <option value="factory" {{ old('local_type') == 'factory' ? 'selected' : '' }}>Factory</option>
+                <option value="buying_house" {{ old('bangladeshi_role') == 'buying_house' ? 'selected' : '' }}>Buying House</option>
+                <option value="factory" {{ old('bangladeshi_role') == 'factory' ? 'selected' : '' }}>Factory</option>
             </select>
-            @error('local_type')
+            @error('bangladeshi_role')
                 <span class="text-red-600 text-sm">{{ $message }}</span>
             @enderror
         </div>

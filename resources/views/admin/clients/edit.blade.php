@@ -20,11 +20,14 @@
 
     <div class="mb-4" id="local-type-wrapper-edit" style="display: none;">
         <label class="block font-semibold mb-1">Bangladeshi Role</label>
-        <select name="local_type" id="local_type_edit" class="w-full border rounded p-2">
+        <select name="bangladeshi_role" id="bangladeshi_role_edit" class="w-full border rounded p-2">
             <option value="">Select Role</option>
-            <option value="buying_house" {{ $client->local_type == 'buying_house' ? 'selected' : '' }}>Buying House</option>
-            <option value="factory" {{ $client->local_type == 'factory' ? 'selected' : '' }}>Factory</option>
+            <option value="buying_house" {{ $client->bangladeshi_role == 'buying_house' ? 'selected' : '' }}>Buying House</option>
+            <option value="factory" {{ $client->bangladeshi_role == 'factory' ? 'selected' : '' }}>Factory</option>
         </select>
+        @error('bangladeshi_role')
+            <span class="text-red-600 text-sm">{{ $message }}</span>
+        @enderror
     </div>
     <div class="mb-4">
         <label class="block font-semibold">Image</label>

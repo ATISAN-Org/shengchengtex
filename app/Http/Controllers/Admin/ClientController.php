@@ -27,8 +27,7 @@ class ClientController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'testimonial' => 'nullable|string',
             'type' => 'required|in:international,bangladeshi',
-            'local_type' => 'required_if:type,bangladeshi|nullable|in:buying_house,factory',
-
+            'bangladeshi_role' => 'required_if:type,bangladeshi|nullable|in:buying_house,factory',
         ]);
 
         $path = null;
@@ -57,13 +56,8 @@ class ClientController extends Controller
             'image' => $path,
             'testimonial' => $request->testimonial,
             'type' => $request->type,
+            'bangladeshi_role' => $request->bangladeshi_role,
         ];
-
-        // Only include local_type if the DB column exists to avoid QueryException before running migrations
-        if (Schema::hasColumn('clients', 'local_type')) {
-            $data['local_type'] = $request->local_type;
-        }
-
         Client::create($data);
 
         return redirect()->route('clients.index')->with('success', 'Client added successfully!');
@@ -82,8 +76,7 @@ class ClientController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'testimonial' => 'nullable|string',
             'type' => 'required|in:international,bangladeshi',
-            'local_type' => 'required_if:type,bangladeshi|nullable|in:buying_house,factory',
-
+            'bangladeshi_role' => 'required_if:type,bangladeshi|nullable|in:buying_house,factory',
         ]);
 
         $path = $client->image;
@@ -124,12 +117,8 @@ class ClientController extends Controller
             'image' => $path,
             'testimonial' => $request->testimonial,
             'type' => $request->type,
+            'bangladeshi_role' => $request->bangladeshi_role,
         ];
-
-        if (Schema::hasColumn('clients', 'local_type')) {
-            $data['local_type'] = $request->local_type;
-        }
-
         $client->update($data);
 
         return redirect()->route('clients.index')->with('success', 'Client updated successfully!');

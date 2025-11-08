@@ -13,7 +13,7 @@ class Client extends Model
         'image',
         'testimonial',
         'type',
-        'local_type'
+        'bangladeshi_role'
     ];
 
     // Accessor for client image URL
