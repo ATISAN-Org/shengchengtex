@@ -58,7 +58,7 @@
                         <ul class="space-y-3">
                             @foreach($buyingHouse as $client)
                                 <li class="flex items-start gap-3">
-                                    <span class="w-4 h-4 mt-1 rounded-full border border-gray-400 flex-shrink-0"></span>
+                                    <span class="w-2 h-2 mt-2 rounded-full border border-gray-400 flex-shrink-0"></span>
                                     <span class="text-sm text-gray-800">{{ $client->name }}</span>
                                 </li>
                             @endforeach
@@ -71,7 +71,7 @@
                         <ul class="space-y-3">
                             @foreach($factoryList as $client)
                                 <li class="flex items-start gap-3">
-                                    <span class="w-4 h-4 mt-1 rounded-full border border-gray-400 flex-shrink-0"></span>
+                                    <span class="w-2 h-2 mt-2 rounded-full border border-gray-400 flex-shrink-0"></span>
                                     <span class="text-sm text-gray-800">{{ $client->name }}</span>
                                 </li>
                             @endforeach
