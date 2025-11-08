@@ -1,8 +1,8 @@
-<section id="products" class="relative min-h-screen bg-white flex flex-col justify-center overflow-hidden">
+<section id="products" class="relative mt-8 md:mt-0 md:min-h-screen bg-white flex flex-col justify-center overflow-hidden">
     <div class="container mx-auto px-4">
         <!-- Header -->
         <div class="text-center mb-16">
-            <h2 class="text-5xl md:text-6xl font-extrabold text-orange-600 mb-4 drop-shadow-sm">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-orange-600 mb-4 drop-shadow-sm">
                 Our Featured Products
             </h2>
             <p class="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">

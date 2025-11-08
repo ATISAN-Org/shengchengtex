@@ -4,7 +4,7 @@
     </div>
 @endif
 
-<section class="py-20 bg-gray-50">
+<section class="py-8 md:py-20 bg-gray-50">
     <div class="container mx-auto px-5 max-w-5xl">
         <!-- Heading -->
         <h2 class="text-4xl md:text-5xl font-extrabold mb-10 text-center text-orange-600">
@@ -12,7 +12,7 @@
         </h2>
 
         <!-- Contact Form -->
-        <form action="{{ route('contact.submit') }}" method="POST" class="bg-white rounded-3xl shadow-md p-10 space-y-6">
+        <form action="{{ route('contact.submit') }}" method="POST" class="bg-white rounded-3xl shadow-md p-4 md:p-10 space-y-6">
             @csrf
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input type="text" name="name" placeholder="Your Name" required

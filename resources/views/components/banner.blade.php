@@ -1,4 +1,4 @@
-<section class="relative w-full h-screen overflow-hidden">
+<section class="relative w-full md:h-screen overflow-hidden">
     <!-- Background Image with Parallax Effect -->
     <div 
         class="absolute inset-0 bg-cover bg-center transform scale-110 transition-transform duration-1000" 
@@ -10,20 +10,20 @@
     <div class="absolute inset-0 bg-black/40"></div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-5">
+    <div class="relative z-10 flex flex-col items-center justify-center text-center px-5 md:h-full">
         <!-- Heading -->
-        <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-2xl">
+        <h2 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 md:mb-6 leading-tight drop-shadow-2xl">
             Weaving Quality, Crafting Excellence
         </h2>
 
         <!-- Subheading -->
-        <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed text-white drop-shadow-md">
+        <p class="text-sm xs:text-base sm:text-lg md:text-xl mb-6 md:mb-10 max-w-xl md:max-w-2xl mx-auto leading-relaxed text-white drop-shadow-md">
             Shengcheng Textile provides premium fabrics and textiles for every need.
         </p>
 
         <!-- CTA Button -->
         <a href="{{ route('products.list') }}" 
-           class="inline-block bg-orange-600 text-white px-10 py-4 font-semibold rounded-lg shadow-lg hover:bg-orange-700 hover:scale-105 transform transition duration-300">
+           class="inline-block bg-orange-600 text-white px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-4 font-semibold rounded-lg shadow-lg hover:bg-orange-700 hover:scale-105 transform transition duration-300 text-base md:text-lg">
             Explore Products
         </a>
     </div>

@@ -1,5 +1,5 @@
-<section class="py-20 bg-gray-50">
-    <div class="w-4/5 mx-auto px-5 text-center">
+<section class="py-8 md:py-20 bg-gray-50">
+    <div class="md:w-4/5 mx-auto px-5 text-center">
 
         <!-- Section Header -->
         <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-orange-600 drop-shadow-md">

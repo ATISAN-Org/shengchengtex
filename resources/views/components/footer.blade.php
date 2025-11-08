@@ -70,6 +70,6 @@
 
     <!-- Bottom Note -->
     <div class="mt-10 text-center text-gray-400 text-sm">
-        &copy; 2025 <a class="font-bold hover:text-orange-400 transition-colors" href="https://atysan.xyz">ATYSAN</a>. All rights reserved.
+        &copy; 2025 <a class="font-bold hover:text-orange-400 transition-colors" href="https://atysan.xyz" target="_blank" rel="noopener noreferrer">ATYSAN</a>. All rights reserved.
     </div>
 </footer>

@@ -96,10 +96,12 @@
             <!-- Contact Info -->
             <div class="md:w-1/3 bg-gray-50 p-6 rounded-xl shadow-sm tracking-wide">
                 <h2 class="text-xl font-semibold text-orange-500 mb-3 uppercase">Contact Information</h2>
-                <p class="text-sm text-gray-700 uppercase">SECTOR-3, ROAD #18, HOUSE #22, UTTARA, DHAKA-1230, BANGLADESH</p>
-                <p class="text-sm text-gray-700 uppercase">📞 +8801739939469</p>
-                <p class="text-sm text-gray-700 uppercase">📧 TUSHAR@SHIFENGTEXTILE.COM | TUSHAR@NSD-TEX.COM</p>
-                <p class="text-sm text-gray-500 mt-1 uppercase">MON TO FRI — 9AM TO 6PM</p>
+                <p class="text-sm text-gray-700 uppercase">House # 9 (Floor-5A), Road # 4,</p>
+                <p class="text-sm text-gray-700 uppercase">Sector # 3, Uttara,</p>
+                <p class="text-sm text-gray-700 uppercase">Dhaka-1230, BANGLADESH</p>
+                <p class="text-sm text-gray-700 uppercase mt-2">Arifuzzaman Sagar –<br>Country Manager</p>
+                <p class="text-sm text-gray-700 uppercase mt-2">+880 1671927782</p>
+                <p class="text-sm text-gray-700 lowercase mt-2">sagar@yrc-tex.cn</p>
             </div>
 
         </div>
