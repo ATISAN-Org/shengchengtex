@@ -23,8 +23,8 @@
             <div class="mb-10">
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8">
                     @foreach($internationalClients as $client)
-                        <div class="flex items-center justify-center border-2 border-yellow-400 bg-white rounded-lg transition-all duration-300 hover:shadow-lg hover:border-yellow-500">
-                            <img src="{{ $client->image_url ?? 'https://via.placeholder.com/150x60?text=Client' }}" alt="{{ $client->name }}" class="max-w-full object-contain">
+                        <div class="flex items-center justify-center border-2 border-yellow-400 bg-white rounded-lg transition-all duration-300 hover:shadow-lg hover:border-yellow-500" style="height:170px;">
+                            <img src="{{ $client->image_url ?? 'https://via.placeholder.com/150x60?text=Client' }}" alt="{{ $client->name }}" class="w-[160px] h-[160px] object-contain mx-auto">
                         </div>
                     @endforeach
                 </div>
