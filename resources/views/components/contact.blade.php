@@ -64,7 +64,7 @@
                     </p>
                     <p class="flex items-center gap-3">
                         <i data-lucide="user" class="w-5 h-5 text-orange-400"></i>
-                        Mr. Roger – <span class="text-gray-500">Managing Director (Owner)</span>
+                        Ting Virginia – <span class="text-gray-500">Managing Director (Owner)</span>
                     </p>
                 </div>
             </div>
