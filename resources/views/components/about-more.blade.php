@@ -160,6 +160,11 @@
                 </div>
             </div>
         </div>
+        <div class="mt-10 w-full">
+            <div class="text-gray-800 text-base md:text-lg">
+                Our mission is to make SHENGCHENG TEXTILE your preferred company in all channels by delivering outstanding value, continuous feedback and excellent price by consistently fulfilling all of your requirements. We believe good fabric can make people happy. The look, feel, and even scent of a piece of fabric can instill familiarity, pleasure and comfort. This is why when producing knit fabrics and woven fabrics, we especially focus on their appearance, functionality, and the feel they generate when touched. By using yarns, dyes, and other materials that meet the industry standard, you can see the beautiful color and patterns, and feel the textures brought by different production techniques. Just as people dress in line with their style, we also use fabric to express ourselves. In each meter of our fabric, you will find our dedication. We love fabrics
+            </div>
+        </div>
     </div>
 </section>
 
@@ -249,7 +254,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    <div class="mt-10 w-full">
+        <div class="text-gray-800 text-base md:text-lg">
+            We are committed to conducting our operations in a manner that not only meets and exceeds the environmental legislations & regulations; we also strive to be the leaders in the industrial sector of the country by setting the benchmark for eco-friendly initiatives and sustainable business models. From the toxic ink to the wasteful material and water, the fabric industry often encounters sustainability challenges. As a member of the fabric production industry, we understand the importance of protecting the environment. To make our little contribution to the Earth, our factory uses only eco-friendly raw materials and dyes to make our fabrics, and we control the amount of the production water, energy and chemicals with the aim of reducing the waste of resources. Recycled materials would also be used for production with the client's knowledge and confirmation. We believe that career and business development should not take its toll on the environment.
+        </div>
 </section>
 
 <!-- Environmental Commitment Section -->
@@ -334,6 +342,11 @@
                 </div>
             </div>
         </div>
+    <div class="mt-10 w-full">
+        <div class="text-gray-800 text-base md:text-lg">
+            We are committed to conducting our operations in a manner that not only meets and exceeds the environmental legislations & regulations; we also strive to be the leaders in the industrial sector of the country by setting the benchmark for eco-friendly initiatives and sustainable business models. From the toxic ink to the wasteful material and water, the fabric industry often encounters sustainability challenges. As a member of the fabric production industry, we understand the importance of protecting the environment. To make our little contribution to the Earth, our factory uses only eco-friendly raw materials and dyes to make our fabrics, and we control the amount of the production water, energy and chemicals with the aim of reducing the waste of resources. Recycled materials would also be used for production with the client's knowledge and confirmation. We believe that career and business development should not take its toll on the environment.
+        </div>
+    </div>
     </div>
 </section>
 
@@ -373,6 +386,18 @@
             <p class="text-gray-700 mt-4 md:mt-6">
                 These certifications reflect our unwavering commitment to quality, safety, and sustainability — making every meter of fabric a responsible choice.
             </p>
+        </div>
+    </div>
+    <div class="mt-10 w-full w-11/12 md:w-4/5 mx-auto ">
+        <div class="text-gray-800 text-base md:text-lg">
+            At our fabric mill, we believe that true excellence comes with responsibility - responsibility toward our customers, our workers, and our planet.<br>
+            That’s why every fabric we produce follows the highest international sustainability and safety standards.<br>
+            We are proudly certified by:<br><br>
+            Global Recycle Standard (GRS) – Ensuring responsible recycling and sustainable production.<br><br>
+            Better Cotton Initiative (BCI) – Promoting better standards in cotton farming and global supply chain.<br><br>
+            OEKO-TEX® – Guaranteeing our fabrics are tested for harmful substances and safe for human use.<br><br>
+            Global Organic Textile Standard (GOTS) – Certifying organic fibers and environmentally friendly manufacturing.<br><br>
+            These certifications reflect our unwavering commitment to quality, safety, and sustainability, making every meter of fabric.
         </div>
     </div>
 </section>
