@@ -4,12 +4,13 @@
 
 @section('content')
     @include('components.banner')
-    <section id="products">
-        @include('components.products-preview', ['products' => $products, 'categories' => $categories])
-    </section>
 
     <section id="about">
         @include('components.about')
+    </section>
+
+    <section id="products">
+        @include('components.products-preview', ['products' => $products, 'categories' => $categories])
     </section>
 
     <section id="clients">

@@ -6,10 +6,8 @@
             <h2 class="text-5xl md:text-6xl font-extrabold mb-6 text-orange-600 tracking-tight">
                 About Us
             </h2>
-            <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
-                Chengcheng Textile Co., Ltd is a leading fabric manufacturer located in Shengze Town, Wujiang City -
-                China’s “Hometown of Silk.” With advanced facilities and strong global partnerships,
-                we deliver premium textiles worldwide with a focus on quality, innovation, and sustainability.
+            <p class="text-gray-700 text-lg leading-relaxed mb-8">
+               Welcome to the Shengcheng Textile Ltd which is the part of Thenhong Group.  We professional manufacturer for polyester based knit & Woven fabric. The factory head office is located 21 F No.79 xiushui road Shengze town Wujiang city China. The annual production of greige fabric is 25 million meters. We have been in the textile fabric field for more than 25 years. We are devoting ourselves to create a brand paragon for textile industry since its establishment. Our products take the middle and high-end line, we continue to develop new varieties and have guided the trend of fashion and functionality. We are now a comprehensive textile fabric company of collection of weaving, dyeing and finishing, sales.  After  years of development, our company has formed  own quality control system higher than the industry standard and reasonable price competitive mechanism, and has established a deep friendship and win-win business relationship with the vast number of customers at home and abroad.
             </p>
 
             <!-- Quick Highlights -->
