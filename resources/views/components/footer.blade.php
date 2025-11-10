@@ -1,5 +1,5 @@
 <footer class="bg-gray-900 text-white py-16 relative overflow-hidden">
-    <div class="container mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <div class="container mx-auto px-5 grid grid-cols-1 md:grid-cols-5 gap-10">
         <!-- Contact Info -->
         <div>
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Contact Us</h3>
@@ -28,16 +28,21 @@
         <!-- Social Links -->
         <div>
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Follow Us</h3>
-            <div class="flex space-x-6 text-lg">
+            <div class="flex flex-col gap-3 text-lg">
                 <a href="#" class="hover:text-orange-400 transition-colors">Facebook</a>
                 <a href="#" class="hover:text-pink-400 transition-colors">Instagram</a>
                 <a href="#" class="hover:text-blue-400 transition-colors">LinkedIn</a>
             </div>
-                <div class="mt-3 space-y-3">
-                    <img src="/images/footer1.png" alt="BCI" class="w-24 h-16 h-auto" />
-                    <img src="/images/footer2.png" alt="Global Recycled Standard" class="w-24 h-16 h-auto" />
-                    <img src="/images/footer3.png" alt="OEKO-TEX STANDARD 100" class="w-24 h-16 h-auto" />
-                </div>
+        </div>
+
+        <!-- Certified -->
+        <div>
+            <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Certified</h3>
+            <div class="mt-3 space-y-3">
+                <img src="/images/footer1.png" alt="BCI" class="w-24 h-16 h-auto" />
+                <img src="/images/footer2.png" alt="Global Recycled Standard" class="w-24 h-16 h-auto" />
+                <img src="/images/footer3.png" alt="OEKO-TEX STANDARD 100" class="w-24 h-16 h-auto" />
+            </div>
         </div>
 
         <!-- Company Info -->
