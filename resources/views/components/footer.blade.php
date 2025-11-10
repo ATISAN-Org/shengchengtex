@@ -5,6 +5,12 @@
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Contact Us</h3>
             <p class="mb-2">123 Textile Avenue, Dhaka, Bangladesh</p>
             <p class="mb-2">
+                SHENGZE XIN DONG CUN 3ZU,<br>
+                WUJIANG DISTRICT,<br>
+                SUZHOU CITY, JIANGSU PROVINCE, CHINA.
+            </p>
+            <p class="mb-2 font-semibold">Ting Virginia –<br>Managing Director (Owner)</p>
+            <p class="mb-2">
                 Email: 
                 <a href="mailto:sagar@yrc-tex.cn" class="hover:text-orange-400 transition-colors">sagar@yrc-tex.cn</a>
             </p>
