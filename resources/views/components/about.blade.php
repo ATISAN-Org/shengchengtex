@@ -1,4 +1,4 @@
-<section class="h-screen flex items-center bg-gray-50 relative overflow-hidden">
+<section class="h-screen flex items-center bg-gray-50 relative overflow-hidden pt-9 md:pt-20">
     <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 md:px-12">
 
         <!-- Text Content -->
@@ -36,9 +36,11 @@
         </div>
 
         <!-- Image Side -->
-        <div class="flex justify-center md:justify-end">
-            <img src="/images/1.png" alt="Textile Factory"
-                class="rounded-3xl shadow-2xl w-full object-cover">
+        <div class="flex justify-center md:justify-end h-full">
+            <div class="w-full h-[32rem] md:h-[36rem] flex items-center">
+                <img src="/images/1.png" alt="Textile Factory"
+                    class="rounded-3xl shadow-2xl w-full h-full object-cover" />
+            </div>
         </div>
     </div>
 
