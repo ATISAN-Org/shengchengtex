@@ -39,7 +39,7 @@
 
                     <!-- Products Grid -->
                     <!-- Products Grid -->
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         @foreach($products as $product)
                             <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
                                 <img src="{{ $product->image_url }}"
