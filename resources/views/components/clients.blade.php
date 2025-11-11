@@ -23,8 +23,6 @@
                 <img src="{{ $client->image_url ?? 'https://source.unsplash.com/150x150/?business' }}" alt="{{ $client->name }}"
                      class="w-28 h-28 object-cover rounded-full border-4 border-orange-400 shadow-sm">
             </div>
-
-            <h3 class="text-xl font-semibold mb-2 text-gray-800">{{ $client->name }}</h3>
             @if($client->testimonial)
                 <p class="text-gray-600 text-sm md:text-base italic mb-0">
                     "{{ $client->testimonial }}"

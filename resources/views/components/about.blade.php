@@ -3,28 +3,12 @@
 
         <!-- Text Content -->
         <div class="text-center md:text-left">
-            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 text-orange-600 tracking-tight">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-orange-600 tracking-tight">
                 About Us
             </h2>
             <p class="text-gray-700 text-lg leading-relaxed mb-8">
                Welcome to the Shengcheng Textile Ltd which is the part of Thenhong Group.  We professional manufacturer for polyester based knit & Woven fabric. The factory head office is located 21 F No.79 xiushui road Shengze town Wujiang city China. The annual production of greige fabric is 25 million meters. We have been in the textile fabric field for more than 25 years. We are devoting ourselves to create a brand paragon for textile industry since its establishment. Our products take the middle and high-end line, we continue to develop new varieties and have guided the trend of fashion and functionality. We are now a comprehensive textile fabric company of collection of weaving, dyeing and finishing, sales.  After  years of development, our company has formed  own quality control system higher than the industry standard and reasonable price competitive mechanism, and has established a deep friendship and win-win business relationship with the vast number of customers at home and abroad.
             </p>
-
-            <!-- Quick Highlights -->
-            <div class="grid grid-cols-3 gap-6 mb-8">
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-orange-600">20,000 m²</h3>
-                    <p class="text-gray-600 text-sm md:text-base">Modern facility</p>
-                </div>
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-orange-600">30M+</h3>
-                    <p class="text-gray-600 text-sm md:text-base">Yards annually</p>
-                </div>
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-orange-600">Global</h3>
-                    <p class="text-gray-600 text-sm md:text-base">Trusted partners</p>
-                </div>
-            </div>
 
             <!-- CTA Button -->
             <a href="{{ route('about-more') }}"
@@ -37,7 +21,7 @@
 
         <!-- Image Side -->
         <div class="flex justify-center md:justify-end">
-            <div class="w-full h-80 md:h-[36rem] flex items-center">
+            <div class="w-full h-64 md:h-[32rem] flex items-center">
                 <img src="/images/1.png" alt="Textile Factory"
                     class="rounded-3xl shadow-2xl w-full h-full object-cover" />
             </div>
