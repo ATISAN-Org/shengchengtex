@@ -15,18 +15,16 @@
             @foreach(collect($products)->take(10) as $product)
                 <a href="{{ route('products.details', $product->id) }}" 
                    class="group block rounded-md overflow-hidden bg-white hover:shadow-md transition duration-300 transform hover:-translate-y-1">
-                    
                     <!-- Image -->
-                    <div class="relative overflow-hidden">
+                    <div class="relative overflow-hidden flex-shrink-0 max-h-[15rem]">
                         <img 
                             src="{{ $product->image_url }}" 
                             alt="{{ $product->name }}" 
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
                     </div>
-
                     <!-- Product Name -->
-                    <div class="p-3 text-center">
+                    <div class="p-3 text-center flex flex-col justify-center">
                         <h3 class="text-sm font-medium text-gray-800">{{ $product->name }}</h3>
                         @if($product->short_description)
                             <p class="text-xs text-gray-500 mt-1 truncate">{{ $product->short_description }}</p>
