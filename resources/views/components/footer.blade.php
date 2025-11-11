@@ -3,20 +3,13 @@
         <!-- Contact Info -->
         <div>
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Contact Us</h3>
-            <p class="mb-2">123 Textile Avenue, Dhaka, Bangladesh</p>
+            <p class="mb-2">House # 9 (Floor-5A), Road # 4,<br>Sector # 3, Uttara,<br>Dhaka-1230, BANGLADESH</p>
+            <p class="mb-2 font-semibold">Arifuzzaman Sagar –<br>Country Manager</p>
             <p class="mb-2">
-                SHENGZE XIN DONG CUN 3ZU,<br>
-                WUJIANG DISTRICT,<br>
-                SUZHOU CITY, JIANGSU PROVINCE, CHINA.
-            </p>
-            <p class="mb-2 font-semibold">Ting Virginia –<br>Managing Director (Owner)</p>
-            <p class="mb-2">
-                Email: 
-                <a href="mailto:sagar@yrc-tex.cn" class="hover:text-orange-400 transition-colors">sagar@yrc-tex.cn</a>
+                <a href="tel:+8801671927782" class="hover:text-orange-400 transition-colors">+880 1671927782</a>
             </p>
             <p>
-                Phone: 
-                <a href="tel:+8801671927782" class="hover:text-orange-400 transition-colors">+880 1671927782</a>
+                <a href="mailto:sagar@yrc-tex.cn" class="hover:text-orange-400 transition-colors">sagar@yrc-tex.cn</a>
             </p>
         </div>
 
@@ -67,7 +60,6 @@
                     <span class="font-bold">SISTER CONCERNS</span>:
                     <ul class="space-y-1 text-xs text-gray-400 mt-1">
                         <li>• ShengCheng Textile</li>
-                        <li>• Shifeng Textile Co., Ltd</li>
                         <li>• Suzhou Yuerongcheng Textile Co., Ltd</li>
                     </ul>
                 </div>

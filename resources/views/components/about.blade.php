@@ -3,7 +3,7 @@
 
         <!-- Text Content -->
         <div class="text-center md:text-left">
-            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 text-orange-600 tracking-tight">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 text-orange-600 tracking-tight">Our Featured Products
                 About Us
             </h2>
             <p class="text-gray-700 text-lg leading-relaxed mb-8">
