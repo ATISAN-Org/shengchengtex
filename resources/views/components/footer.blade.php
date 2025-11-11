@@ -4,8 +4,8 @@
         <div>
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Contact Us</h3>
             <p class="mb-2">House # 9 (Floor-5A), Road # 4,<br>Sector # 3, Uttara,<br>Dhaka-1230, BANGLADESH</p>
-            <p class="mb-2 font-semibold">Arifuzzaman Sagar –<br>Country Manager</p>
-            <p class="mb-2">
+            <!-- <p class="mb-2 font-semibold">Arifuzzaman Sagar –<br>Country Manager</p> -->
+            <p>
                 <a href="tel:+8801671927782" class="hover:text-orange-400 transition-colors">+880 1671927782</a>
             </p>
             <p>
