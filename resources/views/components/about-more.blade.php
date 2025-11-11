@@ -256,7 +256,10 @@
         </div>
     <div class="mt-10 w-full">
         <div class="text-gray-800 text-base md:text-lg">
-            We are committed to conducting our operations in a manner that not only meets and exceeds the environmental legislations & regulations; we also strive to be the leaders in the industrial sector of the country by setting the benchmark for eco-friendly initiatives and sustainable business models. From the toxic ink to the wasteful material and water, the fabric industry often encounters sustainability challenges. As a member of the fabric production industry, we understand the importance of protecting the environment. To make our little contribution to the Earth, our factory uses only eco-friendly raw materials and dyes to make our fabrics, and we control the amount of the production water, energy and chemicals with the aim of reducing the waste of resources. Recycled materials would also be used for production with the client's knowledge and confirmation. We believe that career and business development should not take its toll on the environment.
+            At our company textile facility, every fabric goes through strict quality inspections.
+We believe in perfection — from yarn to finished product — ensuring consistency, durability, and customer trust.
+Our commitment is not just to quality, but to your satisfaction. Every fabric tested & trusted according buyer requirement. We believe quality is not an option, it’s a promise. From yarn to final fabric we maintain consistency. We know quality that builds long-terms trust with our buyers.
+Right fabric with right time delivery our professional planning keeps your orders one track. Our commitment is not just word it’s a responsibility. We value your time, so with a clear Time & Action plan we keep your supply chain smooth.
         </div>
 </section>
 
