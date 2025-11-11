@@ -38,7 +38,7 @@
                     <td class="px-5 py-3">{{ $prod->id }}</td>
                     <td class="px-5 py-3">{{ $prod->name }}</td>
                     <td class="px-5 py-3">{{ $prod->category->name ?? 'N/A' }}</td>
-                    <td class="px-5 py-3">${{ number_format($prod->price, 2) }}</td>
+                    <td class="px-5 py-3">{{ $prod->price !== null ? '$' . number_format($prod->price, 2) : '' }}</td>
                     <td class="px-5 py-3 text-center space-x-2">
                         <a href="{{ route('products.edit', $prod) }}" class="bg-yellow-500 text-white px-4 py-1 rounded hover:bg-yellow-600 text-sm">Edit</a>
                         <form action="{{ route('products.destroy', $prod) }}" method="POST" class="inline-block" onsubmit="return confirm('Delete this product?')">
