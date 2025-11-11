@@ -1,9 +1,9 @@
-<section class="h-screen flex items-center bg-gray-50 relative overflow-hidden pt-9 md:pt-20">
+<section class="h-screen flex items-center bg-gray-50 relative overflow-hidden pt-9 md:pt-20 pb-8 md:pb-16">
     <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 md:px-12">
 
         <!-- Text Content -->
         <div class="text-center md:text-left">
-            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 text-orange-600 tracking-tight">Our Featured Products
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 text-orange-600 tracking-tight">
                 About Us
             </h2>
             <p class="text-gray-700 text-lg leading-relaxed mb-8">

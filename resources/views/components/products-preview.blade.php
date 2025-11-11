@@ -16,7 +16,7 @@
                 <a href="{{ route('products.details', $product->id) }}" 
                    class="group block rounded-md overflow-hidden bg-white hover:shadow-md transition duration-300 transform hover:-translate-y-1">
                     <!-- Image -->
-                    <div class="relative overflow-hidden flex-shrink-0 max-h-[15rem]">
+                    <div class="relative overflow-hidden flex-shrink-0 h-[8rem] md:h-[13rem] max-h-[15rem]">
                         <img 
                             src="{{ $product->image_url }}" 
                             alt="{{ $product->name }}" 
