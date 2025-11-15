@@ -41,19 +41,15 @@
                     <!-- Products Grid -->
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         @foreach($products as $product)
-                            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                            <a href="{{ route('products.details', $product->id) }}" class="block bg-white rounded-xl shadow-lg overflow-hidden group">
                                 <img src="{{ $product->image_url }}"
-                                    alt="{{ $product->name }}"
-                                    class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                                     alt="{{ $product->name }}"
+                                     class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
 
                                 <div class="p-4 text-center">
                                     <h3 class="text-base font-semibold text-gray-800 mb-1">{{ $product->name }}</h3>
-                                    <a href="{{ route('products.details', $product->id) }}"
-                                        class="inline-block bg-orange-500 text-black px-4 py-2 text-xs rounded-full shadow hover:bg-orange-600 transition">
-                                        View
-                                    </a>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
 
