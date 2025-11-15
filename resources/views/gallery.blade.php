@@ -4,8 +4,6 @@
 
 @section('content')
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-semibold text-gray-800 mb-6">Gallery</h1>
-
         @if((empty($images) || count($images) === 0) && (empty($videos) || count($videos) === 0))
             <p class="text-gray-600">No media found in the gallery.</p>
         @endif
@@ -13,6 +11,7 @@
         {{-- Videos (highlighted top section) --}}
         @if(!empty($videos) && count($videos) > 0)
             <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Videos</h2>
                 <div class="space-y-6">
                         @foreach($videos as $video)
                             <div class="mb-4">
@@ -37,6 +36,7 @@
 
         {{-- Images grid --}}
         @if(!empty($images) && count($images) > 0)
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2">Images</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 @foreach($images as $file)
                     <div class="bg-white rounded shadow overflow-hidden">
