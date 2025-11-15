@@ -53,7 +53,7 @@
         <div id="media-modal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
             <div class="max-w-4xl w-full mx-4">
                 <div class="bg-white rounded overflow-hidden relative">
-                    <button id="modal-close" class="absolute top-3 right-3 text-gray-700 bg-white rounded-full p-2 hover:bg-gray-100">✕</button>
+                    <button id="modal-close" class="absolute top-3 right-3 z-50 text-gray-700 bg-white rounded-full p-2 hover:bg-gray-100">✕</button>
                     <div id="modal-content" class="w-full bg-black flex items-center justify-center" style="min-height:320px;"></div>
                 </div>
             </div>
@@ -139,5 +139,13 @@
                 closeMedia();
             }
         });
+        const modalCloseBtn = document.getElementById('modal-close');
+        if (modalCloseBtn) {
+            modalCloseBtn.addEventListener('click', (ev) => {
+                ev.preventDefault();
+                ev.stopPropagation();
+                closeMedia();
+            });
+        }
     </script>
 @endsection
