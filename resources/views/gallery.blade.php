@@ -15,9 +15,9 @@
             <div class="mb-8">
                 <div class="space-y-6">
                         @foreach($videos as $video)
-                            <div class="mb-6">
+                            <div class="mb-4">
                                 <div class="bg-gradient-to-r from-orange-50 to-white border-l-4 border-orange-500 rounded shadow overflow-hidden w-full max-w-md">
-                                    <button class="w-full open-media text-left" data-type="video" data-src="{{ $video['url'] }}" aria-label="Play video">
+                                    <button class="w-full open-media text-left" data-type="video" data-src="{{ $video['url'] }}" data-poster="{{ $video['poster'] ?? '' }}" aria-label="Play video">
                                         <div class="relative h-60 md:h-68 bg-gray-900 flex items-center justify-center bg-center bg-cover">
                                             @if(!empty($video['poster']))
                                                 <span style="background-image: url('{{ $video['poster'] }}');" class="absolute inset-0 bg-center bg-cover" aria-hidden="true"></span>
@@ -37,7 +37,6 @@
 
         {{-- Images grid --}}
         @if(!empty($images) && count($images) > 0)
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Photos</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 @foreach($images as $file)
                     <div class="bg-white rounded shadow overflow-hidden">
@@ -62,7 +61,7 @@
     </div>
 
     <script>
-        function openMedia(type, src) {
+        function openMedia(type, src, poster) {
             const container = document.getElementById('modal-content');
             container.innerHTML = '';
 
@@ -77,7 +76,18 @@
                 video.controls = true;
                 video.autoplay = true;
                 video.playsInline = true;
+                // constrain modal video width to max-w-md for a smaller player
                 video.className = 'w-full h-auto max-h-[75vh] bg-black';
+
+                // set poster if provided, otherwise use a simple black SVG poster
+                if (poster && poster.length > 0) {
+                    try { video.setAttribute('poster', poster); } catch (e) {}
+                } else {
+                    const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720"><rect width="100%" height="100%" fill="#000"/><polygon points="520,360 820,260 820,460" fill="#fff"/></svg>';
+                    const data = 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+                    try { video.setAttribute('poster', data); } catch (e) {}
+                }
+
                 container.appendChild(video);
             }
 
@@ -111,11 +121,15 @@
             if (open) {
                 const type = open.getAttribute('data-type');
                 const src = open.getAttribute('data-src');
-                openMedia(type, src);
+                const poster = open.getAttribute('data-poster');
+                openMedia(type, src, poster);
+                return;
             }
 
-            if (e.target.id === 'modal-close') {
+            // close button may contain nested elements (svg/text); use closest()
+            if (e.target.closest('#modal-close')) {
                 closeMedia();
+                return;
             }
         });
 
