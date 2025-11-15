@@ -10,7 +10,7 @@
             services in strict accordance with its policy to enhance quality and strengthen the brand’s value.
         </p>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-10 mb-10">
     @php
         $collection = collect($clients);
         // Take 8 international clients

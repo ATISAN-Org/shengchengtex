@@ -1,5 +1,5 @@
 <section class="md:h-screen flex items-center bg-gray-50 relative pt-9 md:pt-20 pb-8 md:pb-16">
-    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-4 md:px-12">
+    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-2 md:px-12">
 
         <!-- Text Content -->
         <div class="text-center md:text-left">
@@ -21,9 +21,9 @@
 
         <!-- Image Side -->
         <div class="flex justify-center md:justify-end">
-            <div class="w-full h-64 md:h-[32rem] flex items-center">
+            <div class="w-full h-56 md:h-[32rem] flex items-center">
                 <img src="/images/1.png" alt="Textile Factory"
-                    class="rounded-3xl shadow-2xl w-full h-full object-cover" />
+                    class="rounded-xl md:rounded-3xl shadow-2xl w-full h-full object-cover" />
             </div>
         </div>
     </div>

@@ -51,9 +51,9 @@
         </form>
 
         <!-- Contact Details -->
-        <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
             <!-- China Office -->
-            <div class="bg-white shadow-lg rounded-3xl p-10 text-left hover:shadow-2xl transition duration-300">
+            <div class="bg-white shadow-lg rounded-3xl p-6 md:p-10 text-left hover:shadow-2xl transition duration-300">
                 <h3 class="text-2xl font-bold text-orange-600 mb-6 flex items-center gap-2">
                     <i data-lucide="building-2" class="w-6 h-6"></i> China Office
                 </h3>
@@ -68,9 +68,8 @@
                     </p>
                 </div>
             </div>
-
             <!-- Bangladesh Office -->
-            <div class="bg-white shadow-lg rounded-3xl p-10 text-left hover:shadow-2xl transition duration-300">
+            <div class="bg-white shadow-lg rounded-3xl p-6 md:p-10 text-left hover:shadow-2xl transition duration-300">
                 <h3 class="text-2xl font-bold text-orange-600 mb-6 flex items-center gap-2">
                     <i data-lucide="building" class="w-6 h-6"></i> Bangladesh Office
                 </h3>

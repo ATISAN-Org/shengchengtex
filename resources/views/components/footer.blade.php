@@ -1,5 +1,5 @@
 <footer class="bg-gray-900 text-white py-16 relative overflow-hidden">
-    <div class="container mx-auto px-5 grid grid-cols-1 md:grid-cols-5 gap-10">
+    <div class="container mx-auto px-6 md:px-5 grid grid-cols-1 md:grid-cols-5 gap-10">
         <!-- Contact Info -->
         <div>
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Contact Us</h3>
