@@ -76,19 +76,25 @@
                 video.controls = true;
                 video.autoplay = true;
                 video.playsInline = true;
-                // constrain modal video width to max-w-md for a smaller player
                 video.className = 'w-full h-auto max-h-[75vh] bg-black';
+                try { video.removeAttribute('poster'); } catch (e) {}
 
-                // set poster if provided, otherwise use a simple black SVG poster
-                if (poster && poster.length > 0) {
-                    try { video.setAttribute('poster', poster); } catch (e) {}
-                } else {
-                    const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720"><rect width="100%" height="100%" fill="#000"/><polygon points="520,360 820,260 820,460" fill="#fff"/></svg>';
-                    const data = 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
-                    try { video.setAttribute('poster', data); } catch (e) {}
-                }
+                video.addEventListener('loadedmetadata', function () {
+                    try { video.controls = true; } catch (e) {}
+                });
 
                 container.appendChild(video);
+
+                setTimeout(() => {
+                    try {
+                        const playPromise = video.play();
+                        if (playPromise && typeof playPromise.then === 'function') {
+                            playPromise.catch(() => {/* autoplay blocked; user can press play */});
+                        }
+                    } catch (e) {
+                        // ignore
+                    }
+                }, 50);
             }
 
             const modal = document.getElementById('media-modal');
