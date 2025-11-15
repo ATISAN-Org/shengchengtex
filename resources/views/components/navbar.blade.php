@@ -16,6 +16,9 @@
             <a href="{{ route('about-more') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 About Us
             </a>
+            <a href="{{ route('gallery') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+                Gallery
+            </a>
             <a href="{{ route('clients-more') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 Clients
             </a>
@@ -40,6 +43,7 @@
             <a href="{{ route('landing') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Home</a>
             <a href="{{ route('products.list') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Products</a>
             <a href="{{ route('about-more') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">About Us</a>
+            <a href="{{ route('gallery') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Gallery</a>
             <a href="{{ url('/#contact') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Contact</a>
             <a href="{{ route('clients-more') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Clients</a>
         </div>
