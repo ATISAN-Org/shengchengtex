@@ -58,12 +58,17 @@
                     <p class="text-gray-700 text-sm leading-relaxed">{{ $product->basic_info }}</p>
                 </div>
             @endif
+            @if($product->payment_terms)
+                <div class="mt-6">
+                    <h3 class="text-lg font-semibold text-orange-500 mb-2 uppercase">Payment Terms</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed whitespace-pre-line">{{ $product->payment_terms }}</p>
+                </div>
+            @endif
         </div>
 
         <!-- Contact Section -->
         <div class="flex flex-col md:flex-row gap-6">
 
-            <!-- Request Form -->
             <!-- Request Form -->
             <div class="md:w-2/3 bg-gray-900 text-white p-6 rounded-xl shadow-md tracking-wide">
                 <h2 class="text-xl font-semibold text-orange-500 mb-5 border-b border-gray-700 pb-2 uppercase">
