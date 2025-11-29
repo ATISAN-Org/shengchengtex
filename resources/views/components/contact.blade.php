@@ -60,7 +60,11 @@
                 <div class="space-y-3 text-gray-700">
                     <p class="flex items-start gap-3">
                         <i data-lucide="map-pin" class="w-5 h-5 text-orange-400"></i>
-                        SHENGZE XIN DONG CUN 3ZU,<br>WUJIANG DISTRICT,<br>SUZHOU CITY, JIANGSU PROVINCE, CHINA.
+                        21 F, No.79 Xiushui Road,<br>South Third Ring Road, Shengze Town, Wujin, Changzhou City, China
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-orange-400"></i>
+                        <a href="tel:+8615995553897" class="text-gray-700 hover:text-orange-500">+8615995553897</a>
                     </p>
                     <p class="flex items-center gap-3">
                         <i data-lucide="user" class="w-5 h-5 text-orange-400"></i>
