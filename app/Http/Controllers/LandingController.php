@@ -51,7 +51,7 @@ class LandingController extends Controller
             $query->where('price', '<=', $request->price_max);
         }
 
-        $products = $query->paginate(12)->withQueryString(); // maintain filters in pagination
+        $products = $query->paginate(20)->withQueryString(); // maintain filters in pagination
 
         return view('components.products', compact('categories', 'products'));
     }

@@ -64,11 +64,11 @@
                 <aside class="w-full lg:w-64 hidden lg:block">
                     <div class="bg-white rounded-xl shadow p-6">
                         <h3 class="text-2xl font-bold text-orange-500 mb-4">Categories</h3>
-                        <ul class="space-y-2">
+                        <ul class="space-y-2 list-disc list-inside">
                             @foreach($categories as $category)
-                                <li>
+                                <li class="text-gray-800">
                                     <a href="{{ route('products.list', ['category' => $category->id]) }}"
-                                        class="text-gray-800 hover:text-orange-500 transition-colors">
+                                        class="hover:text-orange-500 transition-colors">
                                         {{ $category->name }}
                                     </a>
                                 </li>

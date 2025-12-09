@@ -58,17 +58,23 @@
                     <i data-lucide="building-2" class="w-6 h-6"></i> China Office
                 </h3>
                 <div class="space-y-3 text-gray-700">
-                    <p class="flex items-start gap-3">
-                        <i data-lucide="map-pin" class="w-5 h-5 text-orange-400"></i>
-                        21 F, No.79 Xiushui Road,<br>South Third Ring Road, Shengze Town, Wujin, Changzhou City, China
-                    </p>
+                    <!-- Name and Designation -->
+                    <div>
+                        <p class="flex items-center gap-3 text-lg font-semibold">
+                            <i data-lucide="user" class="w-5 h-5 text-orange-400"></i>
+                            Ting Virginia
+                        </p>
+                        <p class="pl-8 font-semibold">Managing Director (Owner)</p>
+                    </div>
+                    <!-- Phone -->
                     <p class="flex items-center gap-3">
                         <i data-lucide="phone" class="w-5 h-5 text-orange-400"></i>
                         <a href="tel:+8615995553897" class="text-gray-700 hover:text-orange-500">+8615995553897</a>
                     </p>
-                    <p class="flex items-center gap-3">
-                        <i data-lucide="user" class="w-5 h-5 text-orange-400"></i>
-                        Ting Virginia – <span class="text-gray-500">Managing Director (Owner)</span>
+                    <!-- Address -->
+                    <p class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-orange-400"></i>
+                        21 F, No.79 Xiushui Road,<br>South Third Ring Road, Shengze Town, Wujin, Changzhou City, China
                     </p>
                 </div>
             </div>
@@ -77,22 +83,28 @@
                 <h3 class="text-2xl font-bold text-orange-600 mb-6 flex items-center gap-2">
                     <i data-lucide="building" class="w-6 h-6"></i> Bangladesh Office
                 </h3>
-                <div class="space-y-2 text-gray-700">
-                    <p class="flex items-start gap-3">
-                        <i data-lucide="map-pin" class="w-5 h-5 text-orange-400"></i>
-                        House # 9 (Floor-5A), Road # 4,<br>Sector # 3, Uttara,<br>Dhaka-1230, BANGLADESH
-                    </p>
-                    <p class="flex items-center gap-3">
-                        <i data-lucide="user" class="w-5 h-5 text-orange-400"></i>
-                        Arifuzzaman Sagar – <span class="text-gray-500">Country Manager</span>
-                    </p>
+                <div class="space-y-3 text-gray-700">
+                    <!-- Name and Designation -->
+                    <div>
+                        <p class="flex items-center gap-3 text-lg font-semibold">
+                            <i data-lucide="user" class="w-5 h-5 text-orange-400"></i>
+                            Arifuzzaman Sagar
+                        </p>
+                        <p class="pl-8 font-semibold">Country Manager</p>
+                    </div>
+                    <!-- Phone -->
                     <p class="flex items-center gap-3">
                         <i data-lucide="phone" class="w-5 h-5 text-orange-400"></i>
                         +880 1671927782
                     </p>
+                    <!-- Email -->
                     <p class="flex items-center gap-3">
                         <i data-lucide="mail" class="w-5 h-5 text-orange-400"></i>
                         sagar@yrc-tex.cn
+                    </p>
+                    <!-- Address -->
+                    <p class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-orange-400"></i>House #9 (Floor-5A), Road #4, Sector #3, Uttara, Dhaka-1230, BANGLADESH
                     </p>
                 </div>
             </div>
