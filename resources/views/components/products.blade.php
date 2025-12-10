@@ -63,7 +63,7 @@
                 <!-- Sidebar (Right, Desktop Only) -->
                 <aside class="w-full lg:w-64 hidden lg:block">
                     <div class="bg-white rounded-xl shadow p-6">
-                        <h3 class="text-2xl font-bold text-orange-500 mb-4">Categories</h3>
+                        <h3 class="text-xl font-bold text-orange-500 mb-4 pb-1 border-b-2 border-orange-500">Product Categories</h3>
                         <ul class="space-y-2 list-disc list-inside">
                             @foreach($categories as $category)
                                 <li class="text-gray-800">
