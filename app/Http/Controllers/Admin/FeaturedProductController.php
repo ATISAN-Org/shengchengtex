@@ -23,32 +23,23 @@ class FeaturedProductController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->validate([
+        $request->validate([
             'name' => 'required|string|max:255',
             'category_id' => 'required|exists:categories,id',
-            'price' => 'required|numeric',
-            'image' => 'nullable|file|image|max:2048',
-            'composition' => 'nullable|string',
-            'color' => 'nullable|string',
-            'width' => 'nullable|string',
-            'reference_no' => 'nullable|string',
-            'fabric_name' => 'nullable|string',
-            'type' => 'nullable|string',
-            'samples' => 'nullable|string',
-            'origin' => 'nullable|string',
-            'moq' => 'nullable|string',
-            'export' => 'nullable|string',
-            'weight' => 'nullable|string',
-            'package' => 'nullable|string',
-            'capacity' => 'nullable|string',
-            'format' => 'nullable|string',
-            'payment_terms' => 'nullable|string',
-            'delivery_time' => 'nullable|string',
-            'port_in_bd' => 'nullable|string',
-            'basic_info' => 'nullable|string',
+            'price' => ['nullable', 'string', 'regex:/^\d+(\.\d{1,2})?$/'],
+            'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         ]);
+        $data = $request->all();
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('uploads/products', 'public');
+            $file = $request->file('image');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $webroot = isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT'] ? rtrim($_SERVER['DOCUMENT_ROOT'], '/') : public_path();
+            $destinationDir = $webroot . '/uploads/products';
+            if (!file_exists($destinationDir)) {
+                mkdir($destinationDir, 0755, true);
+            }
+            $file->move($destinationDir, $filename);
+            $data['image'] = 'uploads/products/' . $filename;
         }
         FeaturedProduct::create($data);
         return redirect()->route('featured_products.index')->with('success', 'Featured product added successfully.');
@@ -62,32 +53,39 @@ class FeaturedProductController extends Controller
 
     public function update(Request $request, FeaturedProduct $featured_product)
     {
-        $data = $request->validate([
+        $request->validate([
             'name' => 'required|string|max:255',
             'category_id' => 'required|exists:categories,id',
-            'price' => 'required|numeric',
-            'image' => 'nullable|file|image|max:2048',
-            'composition' => 'nullable|string',
-            'color' => 'nullable|string',
-            'width' => 'nullable|string',
-            'reference_no' => 'nullable|string',
-            'fabric_name' => 'nullable|string',
-            'type' => 'nullable|string',
-            'samples' => 'nullable|string',
-            'origin' => 'nullable|string',
-            'moq' => 'nullable|string',
-            'export' => 'nullable|string',
-            'weight' => 'nullable|string',
-            'package' => 'nullable|string',
-            'capacity' => 'nullable|string',
-            'format' => 'nullable|string',
-            'payment_terms' => 'nullable|string',
-            'delivery_time' => 'nullable|string',
-            'port_in_bd' => 'nullable|string',
-            'basic_info' => 'nullable|string',
+            'price' => ['nullable', 'string', 'regex:/^\d+(\.\d{1,2})?$/'],
+            'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         ]);
+        $data = $request->all();
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('uploads/products', 'public');
+            // Delete old image if exists
+            if ($featured_product->image) {
+                $oldRelative = ltrim($featured_product->image, '/');
+                $pathsToCheck = [
+                    public_path($oldRelative),
+                    storage_path('app/public/' . $oldRelative),
+                ];
+                if (isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT']) {
+                    $pathsToCheck[] = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/' . $oldRelative;
+                }
+                foreach ($pathsToCheck as $p) {
+                    if ($p && file_exists($p)) {
+                        @unlink($p);
+                    }
+                }
+            }
+            $file = $request->file('image');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $webroot = isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT'] ? rtrim($_SERVER['DOCUMENT_ROOT'], '/') : public_path();
+            $destinationDir = $webroot . '/uploads/products';
+            if (!file_exists($destinationDir)) {
+                mkdir($destinationDir, 0755, true);
+            }
+            $file->move($destinationDir, $filename);
+            $data['image'] = 'uploads/products/' . $filename;
         }
         $featured_product->update($data);
         return redirect()->route('featured_products.index')->with('success', 'Featured product updated successfully.');
