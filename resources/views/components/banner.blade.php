@@ -1,12 +1,15 @@
-<section class="relative w-full md:h-screen overflow-hidden">
+
+<section class="relative w-full overflow-hidden flex items-center justify-center">
     <!-- Background Image with Parallax Effect -->
-    <div 
-        class="absolute inset-0 bg-cover bg-center transform scale-110 transition-transform duration-1000" 
-        style="background-image: url('{{ asset('images/bann 2.5-01.jpg') }}');" 
-        id="banner-bg">
+    <div class="absolute inset-0 w-full h-full">
+        <img 
+            src="{{ asset('images/bann 2.5-01.jpg') }}" 
+            alt="Banner" 
+            class="w-full h-full object-contain object-center block md:object-cover md:scale-110 transition-transform duration-1000" 
+            id="banner-bg"
+        >
     </div>
-    <div class="relative z-10 flex flex-col items-center justify-center text-center px-5 md:h-full py-6 md:py-0">
-    </div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-center px-5 pointer-events-none h-[40vw] min-h-[220px] md:h-screen"></div>
 </section>
 
 <!-- Tailwind Custom Animation -->
@@ -25,8 +28,14 @@
 <!-- Simple Parallax JS -->
 <script>
     const banner = document.getElementById('banner-bg');
-    window.addEventListener('scroll', () => {
-        let offset = window.scrollY;
-        banner.style.transform = `translateY(${offset * 0.3}px) scale(1.1)`;
-    });
+    function handleParallax() {
+        if (window.innerWidth >= 768) {
+            let offset = window.scrollY;
+            banner.style.transform = `translateY(${offset * 0.3}px) scale(1.1)`;
+        } else {
+            banner.style.transform = '';
+        }
+    }
+    window.addEventListener('scroll', handleParallax);
+    window.addEventListener('resize', handleParallax);
 </script>

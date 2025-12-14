@@ -34,12 +34,12 @@ class FeaturedProductController extends Controller
             $file = $request->file('image');
             $filename = time() . '_' . $file->getClientOriginalName();
             $webroot = isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT'] ? rtrim($_SERVER['DOCUMENT_ROOT'], '/') : public_path();
-            $destinationDir = $webroot . '/uploads/products';
+            $destinationDir = $webroot . '/uploads/featured_products';
             if (!file_exists($destinationDir)) {
                 mkdir($destinationDir, 0755, true);
             }
             $file->move($destinationDir, $filename);
-            $data['image'] = 'uploads/products/' . $filename;
+            $data['image'] = 'uploads/featured_products/' . $filename;
         }
         FeaturedProduct::create($data);
         return redirect()->route('featured_products.index')->with('success', 'Featured product added successfully.');
@@ -80,12 +80,12 @@ class FeaturedProductController extends Controller
             $file = $request->file('image');
             $filename = time() . '_' . $file->getClientOriginalName();
             $webroot = isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT'] ? rtrim($_SERVER['DOCUMENT_ROOT'], '/') : public_path();
-            $destinationDir = $webroot . '/uploads/products';
+            $destinationDir = $webroot . '/uploads/featured_products';
             if (!file_exists($destinationDir)) {
                 mkdir($destinationDir, 0755, true);
             }
             $file->move($destinationDir, $filename);
-            $data['image'] = 'uploads/products/' . $filename;
+            $data['image'] = 'uploads/featured_products/' . $filename;
         }
         $featured_product->update($data);
         return redirect()->route('featured_products.index')->with('success', 'Featured product updated successfully.');
