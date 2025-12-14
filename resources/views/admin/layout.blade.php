@@ -76,6 +76,11 @@
         <i class="fas fa-boxes w-5 mr-3 text-center"></i>
         <span>Products</span>
     </a>
+        <a href="{{ route('featured_products.index') }}" 
+           class="sidebar-link flex items-center py-3 px-4 rounded transition-all duration-200 {{ request()->routeIs('featured_products.*') ? 'active' : '' }}">
+            <i class="fas fa-star w-5 mr-3 text-center"></i>
+            <span>Featured Products</span>
+        </a>
     <a href="{{ route('categories.index') }}" 
        class="sidebar-link flex items-center py-3 px-4 rounded transition-all duration-200 {{ request()->routeIs('categories.*') ? 'active' : '' }}">
         <i class="fas fa-tags w-5 mr-3 text-center"></i>

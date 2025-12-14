@@ -12,13 +12,13 @@
 
         <!-- Product Grid -->
         <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
-            @foreach(collect($products)->take(10) as $product)
-                <a href="{{ route('products.details', $product->id) }}" 
+            @foreach(\App\Models\FeaturedProduct::latest()->take(15)->get() as $product)
+                <a href="{{ route('featured_products.details', $product->id) }}" 
                    class="group block rounded-md overflow-hidden bg-white hover:shadow-md transition duration-300 transform hover:-translate-y-1">
                     <!-- Image -->
                     <div class="relative overflow-hidden flex-shrink-0 h-[8rem] md:h-[13rem] max-h-[15rem]">
                         <img 
-                            src="{{ $product->image_url }}" 
+                            src="{{ $product->image_url ?? asset('images/no-image.png') }}" 
                             alt="{{ $product->name }}" 
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition"></div>

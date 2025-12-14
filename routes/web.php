@@ -1,4 +1,15 @@
+
 <?php
+
+use App\Models\FeaturedProduct;
+// Featured product details page
+Route::get('/featured_products/{featured_product}', function (FeaturedProduct $featured_product) {
+    $categories = \App\Models\Category::all();
+    return view('components.product-details', [
+        'product' => $featured_product,
+        'categories' => $categories
+    ]);
+})->name('featured_products.details');
 
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ProductRequestController;
@@ -91,6 +102,7 @@ Route::prefix('admin')->middleware('admin.session')->group(function () {
 
     // Resources
     Route::resource('products', ProductController::class);
+    Route::resource('featured_products', \App\Http\Controllers\Admin\FeaturedProductController::class);
     Route::resource('categories', CategoryController::class);
     Route::resource('clients', ClientController::class);
     Route::resource('employees', EmployeeController::class);

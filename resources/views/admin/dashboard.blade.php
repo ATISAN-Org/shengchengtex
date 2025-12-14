@@ -25,7 +25,22 @@
             View Products <i class="fas fa-arrow-right ml-2"></i>
         </a>
     </div>
-    
+
+    <div class="stat-card bg-gradient-to-r from-pink-500 to-pink-600 text-white p-5 rounded-xl shadow">
+        <div class="flex justify-between items-start">
+            <div>
+                <h3 class="font-semibold text-lg">Featured Products</h3>
+                <p class="text-3xl font-bold mt-2">{{ $featuredProductsCount ?? 0 }}</p>
+            </div>
+            <div class="bg-pink-400 p-3 rounded-lg">
+                <i class="fas fa-star text-white text-xl"></i>
+            </div>
+        </div>
+        <a href="{{ route('featured_products.index') }}" class="mt-4 inline-flex items-center text-sm font-medium text-pink-100 hover:text-white transition">
+            View Featured Products <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+    </div>
+
     <div class="stat-card bg-gradient-to-r from-green-500 to-green-600 text-white p-5 rounded-xl shadow">
         <div class="flex justify-between items-start">
             <div>
@@ -40,7 +55,7 @@
             View Categories <i class="fas fa-arrow-right ml-2"></i>
         </a>
     </div>
-    
+
     <div class="stat-card bg-gradient-to-r from-amber-500 to-amber-600 text-white p-5 rounded-xl shadow">
         <div class="flex justify-between items-start">
             <div>
@@ -55,7 +70,7 @@
             View Orders <i class="fas fa-arrow-right ml-2"></i>
         </a>
     </div>
-    
+
     <div class="stat-card bg-gradient-to-r from-red-500 to-red-600 text-white p-5 rounded-xl shadow">
         <div class="flex justify-between items-start">
             <div>

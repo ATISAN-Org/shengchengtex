@@ -15,6 +15,7 @@ class DashboardController extends Controller
             'categoriesCount' => Category::count(),
             'ordersCount' => 0, // replace with real count if available
             'usersCount' => 0,  // replace with real count if available
+            'featuredProductsCount' => \App\Models\FeaturedProduct::count(),
         ]);
     }
 }
