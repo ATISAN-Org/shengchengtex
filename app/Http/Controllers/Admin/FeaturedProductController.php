@@ -27,7 +27,7 @@ class FeaturedProductController extends Controller
             'name' => 'required|string|max:255',
             'category_id' => 'required|exists:categories,id',
             'price' => 'required|numeric',
-            'image' => 'nullable|string',
+            'image' => 'nullable|file|image|max:2048',
             'composition' => 'nullable|string',
             'color' => 'nullable|string',
             'width' => 'nullable|string',
@@ -47,6 +47,9 @@ class FeaturedProductController extends Controller
             'port_in_bd' => 'nullable|string',
             'basic_info' => 'nullable|string',
         ]);
+        if ($request->hasFile('image')) {
+            $data['image'] = $request->file('image')->store('uploads/products', 'public');
+        }
         FeaturedProduct::create($data);
         return redirect()->route('featured_products.index')->with('success', 'Featured product added successfully.');
     }
@@ -63,7 +66,7 @@ class FeaturedProductController extends Controller
             'name' => 'required|string|max:255',
             'category_id' => 'required|exists:categories,id',
             'price' => 'required|numeric',
-            'image' => 'nullable|string',
+            'image' => 'nullable|file|image|max:2048',
             'composition' => 'nullable|string',
             'color' => 'nullable|string',
             'width' => 'nullable|string',
@@ -83,6 +86,9 @@ class FeaturedProductController extends Controller
             'port_in_bd' => 'nullable|string',
             'basic_info' => 'nullable|string',
         ]);
+        if ($request->hasFile('image')) {
+            $data['image'] = $request->file('image')->store('uploads/products', 'public');
+        }
         $featured_product->update($data);
         return redirect()->route('featured_products.index')->with('success', 'Featured product updated successfully.');
     }
