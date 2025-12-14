@@ -12,21 +12,9 @@
                 <!-- Products Grid (Left/Main) -->
                 <div class="flex-1">
 
-                    <!-- Mobile Filter Toggle -->
-                    <div x-data="{ open: false }" class="lg:hidden mb-4">
-                        <button @click="open = !open"
-                            class="bg-orange-500 text-black px-4 py-2 rounded shadow w-full flex justify-between items-center">
-                            <span>Filters</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                                <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 15l7-7 7 7" />
-                            </svg>
-                        </button>
-
-                        <div x-show="open" x-transition class="mt-2 bg-white p-4 rounded shadow">
+                    <!-- Mobile Filter Always Visible -->
+                    <div class="lg:hidden mb-4">
+                        <div class="bg-white p-2 lg:p-4 rounded shadow">
                             @include('components.products-filter-form')
                         </div>
                     </div>
