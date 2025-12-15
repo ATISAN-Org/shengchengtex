@@ -12,7 +12,7 @@
 
         <!-- Product Grid -->
         <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
-            @foreach(\App\Models\FeaturedProduct::latest()->take(15)->get() as $product)
+            @foreach(\App\Models\FeaturedProduct::oldest()->take(15)->get() as $product)
                 <a href="{{ route('featured_products.details', $product->id) }}" 
                    class="group block rounded-md overflow-hidden bg-white hover:shadow-md transition duration-300 transform hover:-translate-y-1">
                     <!-- Image -->
