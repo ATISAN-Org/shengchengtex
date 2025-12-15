@@ -1,15 +1,15 @@
 
 <section class="relative w-full overflow-hidden flex items-center justify-center">
     <!-- Background Image with Parallax Effect -->
-    <div class="absolute inset-0 w-full h-full">
+    <div class="relative w-full flex items-center justify-center" style="background: #fff;">
         <img 
             src="{{ asset('images/bann 2.5-01.jpg') }}" 
             alt="Banner" 
-            class="w-full h-full object-contain object-center block md:object-cover md:scale-110 transition-transform duration-1000" 
+            class="w-full max-w-full h-auto object-contain object-center block transition-transform duration-1000" 
             id="banner-bg"
+            style="aspect-ratio: 4267/2175;"
         >
     </div>
-    <div class="relative z-10 flex flex-col items-center justify-center text-center px-5 pointer-events-none h-[40vw] min-h-[220px] md:h-screen"></div>
 </section>
 
 <!-- Tailwind Custom Animation -->
@@ -31,7 +31,7 @@
     function handleParallax() {
         if (window.innerWidth >= 768) {
             let offset = window.scrollY;
-            banner.style.transform = `translateY(${offset * 0.3}px) scale(1.1)`;
+            banner.style.transform = `translateY(${offset * 0.3}px)`;
         } else {
             banner.style.transform = '';
         }
