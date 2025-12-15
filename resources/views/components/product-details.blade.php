@@ -13,7 +13,7 @@
 
             <div class="md:w-1/2 space-y-6 tracking-wide">
                 <h1 class="text-3xl md:text-4xl font-extrabold text-orange-500 uppercase">
-                    {{ $product->fabric_name ?? $product->name }}
+                    {{ $product->name ?? $product->fabric_name }}
                 </h1>
                 <p class="text-2xl text-black font-semibold uppercase">
                     @if(!is_null($product->price) && $product->price !== '')
