@@ -1,4 +1,4 @@
-<section class="md:h-screen flex items-center bg-gray-50 relative pt-9 md:pt-20 pb-8 md:pb-16">
+<section class="flex items-center bg-gray-50 relative pt-9 md:pt-20 pb-8 md:pb-16 lg:pt-32 lg:pb-32">
     <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-2 md:px-12">
 
         <!-- Text Content -->
