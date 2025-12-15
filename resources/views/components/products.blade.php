@@ -27,12 +27,12 @@
 
                     <!-- Products Grid -->
                     <!-- Products Grid -->
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
                         @foreach($products as $product)
                             <a href="{{ route('products.details', $product->id) }}" class="block bg-white rounded-xl shadow-lg overflow-hidden group">
                                 <img src="{{ $product->image_url }}"
                                      alt="{{ $product->name }}"
-                                     class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-44 md:h-48 object-cover group-hover:scale-105 transition-transform duration-500">
 
                                 <div class="p-4 text-center">
                                     <h3 class="text-base font-semibold text-gray-800 mb-1">{{ $product->name }}</h3>
