@@ -30,6 +30,9 @@ class FeaturedProductController extends Controller
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         ]);
         $data = $request->all();
+        if (empty($data['price'])) {
+            $data['price'] = 0;
+        }
         if ($request->hasFile('image')) {
             $file = $request->file('image');
             $filename = time() . '_' . $file->getClientOriginalName();
@@ -60,6 +63,9 @@ class FeaturedProductController extends Controller
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         ]);
         $data = $request->all();
+        if (empty($data['price'])) {
+            $data['price'] = 0;
+        }
         if ($request->hasFile('image')) {
             // Delete old image if exists
             if ($featured_product->image) {
