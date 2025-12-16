@@ -15,7 +15,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::with('category')->latest()->get();
+        $products = \Cache::remember('products_page_' . request('page', 1), 3600, function () {
+            return Product::with('category')->latest()->paginate(20);
+        });
         return view('admin.products.index', compact('products'));
     }
 

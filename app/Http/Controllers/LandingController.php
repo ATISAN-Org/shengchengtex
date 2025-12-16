@@ -99,7 +99,7 @@ class LandingController extends Controller
                 $message->to('sagar@yrc-tex.cn')
                         ->subject('New Purchase Request / Query from Website');
             }
-        );
+        )->queue();
 
         return back()->with('success', 'Your message has been submitted successfully.');
     }
