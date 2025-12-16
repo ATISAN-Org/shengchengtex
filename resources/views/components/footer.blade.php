@@ -38,8 +38,8 @@
         <div>
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Certified</h3>
             <div class="mt-3 space-y-3">
-                <img src="/images/footer1.png" alt="BCI" class="w-24 h-16 h-auto" />
-                <img src="/images/footer21.png" alt="Global Recycled Standard" class="w-24 h-16 h-auto" />
+                <img src="/images/footer1.png" alt="BCI" class="w-24 h-12 h-auto" />
+                <img src="/images/footer21.png" alt="Global Recycled Standard" class="w-24 h-12 h-auto" />
                 <img src="/images/footer3.png" alt="OEKO-TEX STANDARD 100" class="w-24 h-16 h-auto" />
             </div>
         </div>

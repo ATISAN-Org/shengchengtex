@@ -3,7 +3,7 @@
     <!-- Background Image with Parallax Effect -->
     <div class="relative w-full flex items-center justify-center" style="background: #fff;">
         <img 
-            src="{{ asset('images/bann.jpg') }}" 
+            src="{{ asset('images/bann-min.jpg') }}" 
             alt="Banner" 
             class="w-full max-w-full h-auto object-contain object-center block transition-transform duration-1000" 
             id="banner-bg"

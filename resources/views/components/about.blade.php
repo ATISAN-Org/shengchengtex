@@ -22,7 +22,7 @@
         <!-- Image Side -->
         <div class="flex justify-center md:justify-end">
             <div class="w-full h-56 md:h-[32rem] flex items-center">
-                <img src="/images/1.png" alt="Textile Factory"
+                <img src="/images/1-min.png" alt="Textile Factory"
                     class="rounded-xl md:rounded-3xl shadow-2xl w-full h-full object-cover" />
             </div>
         </div>
