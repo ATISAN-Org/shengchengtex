@@ -3,9 +3,9 @@
 @section('title', 'Products - Shengcheng Textile')
 
 @section('content')
-    <section class="py-16 bg-orange-50">
+    <section class="py-8 md:py-12 bg-orange-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-orange-500 mb-8">All Products</h2>
+            <h2 class="text-3xl lg:text-4xl font-bold text-orange-500 mb-4 md:mb-8">All Products</h2>
 
             <div class="flex flex-col lg:flex-row gap-8">
 
@@ -27,12 +27,12 @@
 
                     <!-- Products Grid -->
                     <!-- Products Grid -->
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-9">
                         @foreach($products as $product)
-                            <a href="{{ route('products.details', $product->id) }}" class="block bg-white rounded-xl shadow-lg overflow-hidden group">
+                            <a href="{{ route('products.details', $product->id) }}" class="block bg-white rounded-md shadow overflow-hidden group">
                                 <img src="{{ $product->image_url }}"
                                      alt="{{ $product->name }}"
-                                     class="w-full h-44 md:h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                                     class="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-500">
 
                                 <div class="p-4 text-center">
                                     <h3 class="text-base font-semibold text-gray-800 mb-1">{{ $product->name }}</h3>

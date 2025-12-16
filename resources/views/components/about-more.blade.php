@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Hero Section with Stats -->
-<section class="relative py-24 bg-gradient-to-br from-orange-50 via-white to-amber-50 overflow-hidden">
+<section class="relative py-6 lg:py-16 bg-gradient-to-br from-orange-50 via-white to-amber-50 overflow-hidden">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-10">
         <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ea580c\" fill-opacity=\"0.1\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"2\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
@@ -26,7 +26,7 @@
                     <span class="block text-orange-600">for 25+ Years</span>
                 </h1>
                 
-                <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
+                <p class="text-base text-justify sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                     Shengcheng Textile Ltd is a leading manufacturer of premium polyester-based knit & woven fabrics, delivering <span class="font-semibold text-orange-600">25 million meters</span> annually with uncompromising quality and sustainable practices.
                 </p>
 
@@ -81,7 +81,7 @@
             </div>
         </div>
         <div class="mt-10 w-full">
-            <div class="text-gray-800 text-base md:text-lg">
+            <div class="text-gray-800 text-justify text-base md:text-lg">
                 Welcome to the Shengcheng Textile Ltd which is the part of Thenhong Group.  We professional manufacturer for polyester based knit & Woven fabric. The factory head office is located at 21 F, No.79 Xiushui Road, South Third Ring Road, Shengze Town, Wujin, Changzhou City, China. The annual production of greige fabric is 25 million meters. We have been in the textile fabric field for more than 25 years. We are devoting ourselves to create a brand paragon for textile industry since its establishment. Our products take the middle and high-end line, we continue to develop new varieties and have guided the trend of fashion and functionality. We are now a comprehensive textile fabric company of collection of weaving, dyeing and finishing, sales.  After  years of development, our company has formed  own quality control system higher than the industry standard and reasonable price competitive mechanism, and has established a deep friendship and win-win business relationship with the vast number of customers at home and abroad.
             </div>
         </div>
@@ -115,7 +115,7 @@
                         </div>
                         <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900">Our Mission</h2>
                     </div>
-                    <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
+                    <p class="text-base text-justify sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                         To make <span class="font-semibold text-orange-600">SHENGCHENG TEXTILE</span> your preferred partner by delivering outstanding value, excellent pricing, and consistently fulfilling all your requirements.
                     </p>
                 </div>
@@ -130,7 +130,7 @@
                         </div>
                         <div>
                             <h4 class="font-semibold text-gray-900 mb-1">Fabric That Brings Joy</h4>
-                            <p class="text-gray-700">We believe good fabric makes people happy — the look, feel, and even scent instills comfort and pleasure in every creation.</p>
+                            <p class="text-gray-700 text-justify">We believe good fabric makes people happy - the look, feel, and even scent instills comfort and pleasure in every creation.</p>
                         </div>
                     </div>
 
@@ -161,7 +161,7 @@
             </div>
         </div>
         <div class="mt-10 w-full">
-            <div class="text-gray-800 text-base md:text-lg">
+            <div class="text-gray-800 text-justify text-base md:text-lg">
                 Our mission is to make SHENGCHENG TEXTILE your preferred company in all channels by delivering outstanding value, continuous feedback and excellent price by consistently fulfilling all of your requirements. We believe good fabric can make people happy. The look, feel, and even scent of a piece of fabric can instill familiarity, pleasure and comfort. This is why when producing knit fabrics and woven fabrics, we especially focus on their appearance, functionality, and the feel they generate when touched. By using yarns, dyes, and other materials that meet the industry standard, you can see the beautiful color and patterns, and feel the textures brought by different production techniques. Just as people dress in line with their style, we also use fabric to express ourselves. In each meter of our fabric, you will find our dedication. We love fabrics
             </div>
         </div>
@@ -255,9 +255,9 @@
             </div>
         </div>
     <div class="mt-10 w-full">
-        <div class="text-gray-800 text-base md:text-lg">
+        <div class="text-gray-800 text-justify text-base md:text-lg">
             At our company textile facility, every fabric goes through strict quality inspections.
-We believe in perfection — from yarn to finished product — ensuring consistency, durability, and customer trust.
+We believe in perfection - from yarn to finished product - ensuring consistency, durability, and customer trust.
 Our commitment is not just to quality, but to your satisfaction. Every fabric tested & trusted according buyer requirement. We believe quality is not an option, it’s a promise. From yarn to final fabric we maintain consistency. We know quality that builds long-terms trust with our buyers.
 Right fabric with right time delivery our professional planning keeps your orders one track. Our commitment is not just word it’s a responsibility. We value your time, so with a clear Time & Action plan we keep your supply chain smooth.
         </div>
@@ -346,7 +346,7 @@ Right fabric with right time delivery our professional planning keeps your order
             </div>
         </div>
     <div class="mt-10 w-full">
-        <div class="text-gray-800 text-base md:text-lg">
+        <div class="text-gray-800 text-base text-justify md:text-lg">
             We are committed to conducting our operations in a manner that not only meets and exceeds the environmental legislations & regulations; we also strive to be the leaders in the industrial sector of the country by setting the benchmark for eco-friendly initiatives and sustainable business models. From the toxic ink to the wasteful material and water, the fabric industry often encounters sustainability challenges. As a member of the fabric production industry, we understand the importance of protecting the environment. To make our little contribution to the Earth, our factory uses only eco-friendly raw materials and dyes to make our fabrics, and we control the amount of the production water, energy and chemicals with the aim of reducing the waste of resources. Recycled materials would also be used for production with the client's knowledge and confirmation. We believe that career and business development should not take its toll on the environment.
         </div>
     </div>
@@ -387,7 +387,7 @@ Right fabric with right time delivery our professional planning keeps your order
                 </div>
             </div>
             <p class="text-gray-700 mt-4 md:mt-6">
-                These certifications reflect our unwavering commitment to quality, safety, and sustainability — making every meter of fabric a responsible choice.
+                These certifications reflect our unwavering commitment to quality, safety, and sustainability - making every meter of fabric a responsible choice.
             </p>
         </div>
     </div>
@@ -396,10 +396,10 @@ Right fabric with right time delivery our professional planning keeps your order
             At our fabric mill, we believe that true excellence comes with responsibility - responsibility toward our customers, our workers, and our planet.<br>
             That’s why every fabric we produce follows the highest international sustainability and safety standards.<br>
             We are proudly certified by:<br><br>
-            Global Recycle Standard (GRS) – Ensuring responsible recycling and sustainable production.<br><br>
-            Better Cotton Initiative (BCI) – Promoting better standards in cotton farming and global supply chain.<br><br>
-            OEKO-TEX® – Guaranteeing our fabrics are tested for harmful substances and safe for human use.<br><br>
-            Global Organic Textile Standard (GOTS) – Certifying organic fibers and environmentally friendly manufacturing.<br><br>
+            Global Recycle Standard (GRS) - Ensuring responsible recycling and sustainable production.<br><br>
+            Better Cotton Initiative (BCI) - Promoting better standards in cotton farming and global supply chain.<br><br>
+            OEKO-TEX® - Guaranteeing our fabrics are tested for harmful substances and safe for human use.<br><br>
+            Global Organic Textile Standard (GOTS) - Certifying organic fibers and environmentally friendly manufacturing.<br><br>
             These certifications reflect our unwavering commitment to quality, safety, and sustainability, making every meter of fabric.
         </div>
     </div>
