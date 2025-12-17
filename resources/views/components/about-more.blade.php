@@ -50,7 +50,7 @@
             <!-- Right Image with Floating Elements -->
             <div class="relative">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="{{ asset('images/1-min.png') }}" 
+                    <img src="{{ asset('images/1.png') }}" 
                          alt="Shengcheng Textile Manufacturing Facility" 
                          class="w-full h-48 sm:h-64 md:h-[500px] object-cover transform hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -95,7 +95,7 @@
             <!-- Left: Mission Image -->
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="{{ asset('images/2-min.png') }}" 
+                    <img src="{{ asset('images/2.png') }}" 
                          alt="Our Mission - Quality Fabric Production" 
                          class="w-full h-48 sm:h-64 md:h-[500px] object-cover">
                 </div>
@@ -241,7 +241,7 @@
             <!-- Right: Quality Image -->
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="{{ asset('images/3-min.png') }}" 
+                    <img src="{{ asset('images/3.png') }}" 
                          alt="Quality Control Process" 
                          class="w-full h-48 sm:h-64 md:h-[600px] object-cover">
                 </div>
@@ -270,7 +270,7 @@ Right fabric with right time delivery our professional planning keeps your order
             <!-- Left: Environmental Image -->
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="{{ asset('images/4-min.jpg') }}" 
+                    <img src="{{ asset('images/4.jpg') }}" 
                          alt="Environmental Sustainability" 
                          class="w-full h-48 sm:h-64 md:h-[500px] object-cover">
                 </div>
@@ -358,7 +358,7 @@ Right fabric with right time delivery our professional planning keeps your order
     <div class="w-11/12 md:w-4/5 mx-auto flex flex-col lg:flex-row-reverse gap-6 md:gap-12 items-center">
         <!-- Right: Certification Image -->
         <div class="lg:w-1/2 flex justify-center">
-            <img src="{{ asset('images/5-min.jpg') }}" alt="Certifications" class="rounded-3xl shadow-2xl w-full h-48 sm:h-64 md:h-auto object-cover">
+            <img src="{{ asset('images/5.jpg') }}" alt="Certifications" class="rounded-3xl shadow-2xl w-full h-48 sm:h-64 md:h-auto object-cover">
         </div>
         <!-- Left: Content -->
     <div class="lg:w-1/2 space-y-4 md:space-y-6">
