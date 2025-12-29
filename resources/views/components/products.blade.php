@@ -39,7 +39,7 @@
     <form method="GET" action="{{ route('products.list') }}" class="bg-white p-3 rounded shadow">
 
         <!-- ALL CATEGORIES OPTION ON TOP -->
-        <div class="mb-3">
+        <div class="mb-4"> <!-- increased margin-bottom -->
             <label class="flex items-center justify-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == '' ? 'bg-orange-500 text-black' : '' }}">
                 <input type="radio" name="category" value="" onchange="this.form.submit()"
                        class="mr-2 {{ request('category') == '' ? 'accent-white' : 'accent-orange-500' }}"
@@ -48,11 +48,12 @@
             </label>
         </div>
 
-        <div class="grid grid-cols-2 gap-2 mb-3">
+        <!-- WOVEN & KNIT -->
+        <div class="grid grid-cols-2 gap-2 mb-4">
             <!-- WOVEN LEFT -->
             @if($wovenCats->count())
-            <div>
-                <p class="text-sm font-semibold text-gray-900 mb-2 text-left">WOVEN</p>
+            <div class="space-y-2">
+                <p class="text-sm font-semibold text-gray-900 mb-1 text-left">WOVEN</p>
                 @foreach($wovenCats as $cat)
                     <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
                         <input type="radio" name="category" value="{{ $cat->id }}" 
@@ -67,8 +68,8 @@
 
             <!-- KNIT RIGHT -->
             @if($knitCats->count())
-            <div>
-                <p class="text-sm font-semibold text-gray-900 mb-2 text-left">KNIT</p>
+            <div class="space-y-2">
+                <p class="text-sm font-semibold text-gray-900 mb-1 text-left">KNIT</p>
                 @foreach($knitCats as $cat)
                     <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
                         <input type="radio" name="category" value="{{ $cat->id }}" 
@@ -82,10 +83,10 @@
             @endif
         </div>
 
-        <!-- OTHERS FULL WIDTH BELOW -->
+        <!-- OTHERS FULL WIDTH BELOW (grid-cols-2 for empty space) -->
         @if($otherCats->count())
-        <div class="mb-3">
-            <p class="text-sm font-semibold text-gray-900 mb-2 text-left">OTHERS</p>
+        <div class="grid grid-cols-2 gap-2 mb-3">
+            <p class="text-sm font-semibold text-gray-900 col-span-2 mb-1 text-left">OTHERS</p>
             @foreach($otherCats as $cat)
                 <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
                     <input type="radio" name="category" value="{{ $cat->id }}" 
@@ -114,6 +115,7 @@
         </div>
     </form>
 </div>
+
 
 
                 <!-- FILTER FORM (Desktop) -->
