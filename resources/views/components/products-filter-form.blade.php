@@ -25,7 +25,8 @@
     </div>
 
     <input type="text" name="color" placeholder="Color" value="{{ request('color') }}" class="border rounded px-2 py-1 text-sm w-20 sm:w-24">
-    <input type="text" name="type" placeholder="Type" value="{{ request('type') }}" class="border rounded px-2 py-1 text-sm w-20 sm:w-24">
+    <!-- Hide type input, type is now selected via buttons -->
+    <input type="hidden" name="type" value="{{ request('type') }}">
     <input type="text" name="fabric_name" placeholder="Fabric" value="{{ request('fabric_name') }}" class="border rounded px-2 py-1 text-sm w-24 sm:w-28">
 
     <button type="submit" class="bg-orange-500 text-black px-3 py-1 text-sm rounded shadow hover:bg-orange-600 transition">Filter</button>
