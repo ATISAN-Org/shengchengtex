@@ -11,21 +11,22 @@
         </h2>
 
         @php
-            $KNIT = 'KNIT FABRIC';
-            $WOVEN = 'WOVEN FABRIC- WR/ NONE WR';
-            $currentType = request('type');
+            // Regex-based categorization
+            $knitCats = $categories->filter(function($cat) {
+                return $cat->products->contains(function($product) {
+                    return preg_match('/KNIT/i', $product->type);
+                });
+            });
 
-            $knitCats = $categories->filter(fn($cat) =>
-                $cat->products()->where('type', $KNIT)->exists()
-            );
+            $wovenCats = $categories->filter(function($cat) {
+                return $cat->products->contains(function($product) {
+                    return preg_match('/WOVEN/i', $product->type);
+                });
+            });
 
-            $wovenCats = $categories->filter(fn($cat) =>
-                $cat->products()->where('type', $WOVEN)->exists()
-            );
-
-            $otherCats = $categories->filter(fn($cat) =>
-                !$knitCats->contains($cat) && !$wovenCats->contains($cat)
-            );
+            $otherCats = $categories->filter(function($cat) use ($knitCats, $wovenCats) {
+                return !$knitCats->contains($cat) && !$wovenCats->contains($cat);
+            });
         @endphp
 
         <div class="flex flex-col lg:flex-row gap-8">
@@ -34,89 +35,86 @@
             <div class="flex-1">
 
                 <!-- MOBILE CATEGORY GRID (radio buttons) -->
-               <!-- MOBILE CATEGORY GRID (radio buttons) -->
-<div class="lg:hidden w-full mb-4">
-    <form method="GET" action="{{ route('products.list') }}" class="bg-white p-3 rounded shadow">
+                <div class="lg:hidden w-full mb-4">
+                    <form method="GET" action="{{ route('products.list') }}" class="bg-white p-3 rounded shadow">
 
-        <!-- ALL CATEGORIES OPTION ON TOP -->
-        <div class="mb-4"> <!-- increased margin-bottom -->
-            <label class="flex items-center justify-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == '' ? 'bg-orange-500 text-black' : '' }}">
-                <input type="radio" name="category" value="" onchange="this.form.submit()"
-                       class="mr-2 {{ request('category') == '' ? 'accent-white' : 'accent-orange-500' }}"
-                       {{ request('category') == '' ? 'checked' : '' }}>
-                All Categories
-            </label>
-        </div>
+                        <!-- ALL CATEGORIES OPTION ON TOP -->
+                        <div class="mb-4">
+                            <label class="flex items-center justify-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == '' ? 'bg-orange-500 text-black' : '' }}">
+                                <input type="radio" name="category" value="" onchange="this.form.submit()"
+                                       class="mr-2 {{ request('category') == '' ? 'accent-white' : 'accent-orange-500' }}"
+                                       {{ request('category') == '' ? 'checked' : '' }}>
+                                All Categories
+                            </label>
+                        </div>
 
-        <!-- WOVEN & KNIT -->
-        <div class="grid grid-cols-2 gap-2 mb-4">
-            <!-- WOVEN LEFT -->
-            @if($wovenCats->count())
-            <div class="space-y-2">
-                <p class="text-sm font-semibold text-gray-900 mb-1 text-left">WOVEN</p>
-                @foreach($wovenCats as $cat)
-                    <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
-                        <input type="radio" name="category" value="{{ $cat->id }}" 
-                               onchange="this.form.submit()" 
-                               class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
-                               {{ request('category') == $cat->id ? 'checked' : '' }}>
-                        <span class="truncate">{{ $cat->name }}</span>
-                    </label>
-                @endforeach
-            </div>
-            @endif
+                        <!-- WOVEN & KNIT -->
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <!-- WOVEN LEFT -->
+                            @if($wovenCats->count())
+                            <div class="space-y-2">
+                                <p class="text-sm font-semibold text-gray-900 mb-1 text-left">WOVEN</p>
+                                @foreach($wovenCats as $cat)
+                                    <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
+                                        <input type="radio" name="category" value="{{ $cat->id }}" 
+                                               onchange="this.form.submit()" 
+                                               class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
+                                               {{ request('category') == $cat->id ? 'checked' : '' }}>
+                                        <span class="truncate">{{ $cat->name }}</span>
+                                    </label>
+                                @endforeach
+                            </div>
+                            @endif
 
-            <!-- KNIT RIGHT -->
-            @if($knitCats->count())
-            <div class="space-y-2">
-                <p class="text-sm font-semibold text-gray-900 mb-1 text-left">KNIT</p>
-                @foreach($knitCats as $cat)
-                    <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
-                        <input type="radio" name="category" value="{{ $cat->id }}" 
-                               onchange="this.form.submit()" 
-                               class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
-                               {{ request('category') == $cat->id ? 'checked' : '' }}>
-                        <span class="truncate">{{ $cat->name }}</span>
-                    </label>
-                @endforeach
-            </div>
-            @endif
-        </div>
+                            <!-- KNIT RIGHT -->
+                            @if($knitCats->count())
+                            <div class="space-y-2">
+                                <p class="text-sm font-semibold text-gray-900 mb-1 text-left">KNIT</p>
+                                @foreach($knitCats as $cat)
+                                    <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
+                                        <input type="radio" name="category" value="{{ $cat->id }}" 
+                                               onchange="this.form.submit()" 
+                                               class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
+                                               {{ request('category') == $cat->id ? 'checked' : '' }}>
+                                        <span class="truncate">{{ $cat->name }}</span>
+                                    </label>
+                                @endforeach
+                            </div>
+                            @endif
+                        </div>
 
-        <!-- OTHERS FULL WIDTH BELOW (grid-cols-2 for empty space) -->
-        @if($otherCats->count())
-        <div class="grid grid-cols-2 gap-2 mb-3">
-            <p class="text-sm font-semibold text-gray-900 col-span-2 mb-1 text-left">OTHERS</p>
-            @foreach($otherCats as $cat)
-                <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
-                    <input type="radio" name="category" value="{{ $cat->id }}" 
-                           onchange="this.form.submit()" 
-                           class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
-                           {{ request('category') == $cat->id ? 'checked' : '' }}>
-                    <span class="truncate">{{ $cat->name }}</span>
-                </label>
-            @endforeach
-        </div>
-        @endif
+                        <!-- OTHERS FULL WIDTH BELOW (grid-cols-2 for empty space) -->
+                        @if($otherCats->count())
+                        <div class="grid grid-cols-2 gap-3 mb-3">
+                            <p class="text-sm font-semibold text-gray-900 col-span-2 mb-1 text-left">OTHERS</p>
+                            @foreach($otherCats as $cat)
+                                <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
+                                    <input type="radio" name="category" value="{{ $cat->id }}" 
+                                           onchange="this.form.submit()" 
+                                           class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
+                                           {{ request('category') == $cat->id ? 'checked' : '' }}>
+                                    <span class="truncate">{{ $cat->name }}</span>
+                                </label>
+                            @endforeach
+                        </div>
+                        @endif
 
-        <!-- Hidden type input -->
-        <input type="hidden" name="type" value="{{ request('type') }}">
+                        <!-- Hidden type input -->
+                        <input type="hidden" name="type" value="{{ request('type') }}">
 
-        <!-- Other filters -->
-        <div class="flex flex-wrap gap-2 w-full lg:w-auto mt-2">
-            <input type="text" name="color" placeholder="Color" value="{{ request('color') }}" 
-                   class="border rounded px-2 py-1 text-sm w-20 sm:w-24">
-            <input type="text" name="fabric_name" placeholder="Fabric" value="{{ request('fabric_name') }}" 
-                   class="border rounded px-2 py-1 text-sm w-24 sm:w-28">
-            <button type="submit" 
-                    class="bg-orange-500 text-black px-3 py-1 text-sm rounded shadow hover:bg-orange-600 transition">
-                Filter
-            </button>
-        </div>
-    </form>
-</div>
-
-
+                        <!-- Other filters -->
+                        <div class="flex flex-wrap gap-2 w-full lg:w-auto mt-2">
+                            <input type="text" name="color" placeholder="Color" value="{{ request('color') }}" 
+                                   class="border rounded px-2 py-1 text-sm w-20 sm:w-24">
+                            <input type="text" name="fabric_name" placeholder="Fabric" value="{{ request('fabric_name') }}" 
+                                   class="border rounded px-2 py-1 text-sm w-24 sm:w-28">
+                            <button type="submit" 
+                                    class="bg-orange-500 text-black px-3 py-1 text-sm rounded shadow hover:bg-orange-600 transition">
+                                Filter
+                            </button>
+                        </div>
+                    </form>
+                </div>
 
                 <!-- FILTER FORM (Desktop) -->
                 <div class="hidden lg:block mb-6">
@@ -160,7 +158,7 @@
                     <ul class="space-y-2 list-disc list-inside mb-5 text-base text-gray-700">
                         @foreach($wovenCats as $cat)
                             <li>
-                                <a href="{{ route('products.list', array_merge(request()->except('page'), ['category' => $cat->id, 'type' => $WOVEN])) }}"
+                                <a href="{{ route('products.list', array_merge(request()->except('page'), ['category' => $cat->id])) }}"
                                    class="hover:text-orange-500">
                                    {{ $cat->name }}
                                 </a>
@@ -173,7 +171,7 @@
                     <ul class="space-y-2 list-disc list-inside mb-5 text-base text-gray-700">
                         @foreach($knitCats as $cat)
                             <li>
-                                <a href="{{ route('products.list', array_merge(request()->except('page'), ['category' => $cat->id, 'type' => $KNIT])) }}"
+                                <a href="{{ route('products.list', array_merge(request()->except('page'), ['category' => $cat->id])) }}"
                                    class="hover:text-orange-500">
                                    {{ $cat->name }}
                                 </a>

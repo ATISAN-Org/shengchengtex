@@ -1,19 +1,20 @@
 @php
-    $KNIT = 'KNIT FABRIC';
-    $WOVEN = 'WOVEN FABRIC- WR/ NONE WR';
+    // Regex-based categorization
+    $knitCats = $categories->filter(function($cat) {
+        return $cat->products->contains(function($product) {
+            return preg_match('/KNIT/i', $product->type);
+        });
+    });
 
-    // Filter categories by product type
-    $wovenCats = $categories->filter(fn($cat) => 
-        $cat->products()->where('type', $WOVEN)->exists()
-    );
-    
-    $knitCats = $categories->filter(fn($cat) => 
-        $cat->products()->where('type', $KNIT)->exists()
-    );
-    
-    $otherCats = $categories->filter(fn($cat) => 
-        !$wovenCats->contains($cat) && !$knitCats->contains($cat)
-    );
+    $wovenCats = $categories->filter(function($cat) {
+        return $cat->products->contains(function($product) {
+            return preg_match('/WOVEN/i', $product->type);
+        });
+    });
+
+    $otherCats = $categories->filter(function($cat) use ($knitCats, $wovenCats) {
+        return !$knitCats->contains($cat) && !$wovenCats->contains($cat);
+    });
 @endphp
 
 <form method="GET" action="{{ route('products.list') }}" class="flex flex-wrap gap-2 items-end">
@@ -31,64 +32,10 @@
     <!-- MOBILE CATEGORY GRID (radio buttons) -->
     <div class="lg:hidden w-full mb-4">
         <div class="bg-white p-3 rounded shadow">
-            
-            <!-- WOVEN (LEFT SIDE) -->
-            @if($wovenCats->count())
-            <div class="mb-3">
-                <p class="text-sm font-semibold text-gray-900 mb-2">WOVEN</p>
-                <div class="grid grid-cols-2 gap-2">
-                    @foreach($wovenCats as $cat)
-                        <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : 'bg-gray-100' }}">
-                            <input type="radio" name="category" value="{{ $cat->id }}" 
-                                   onchange="this.form.submit()" 
-                                   class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
-                                   {{ request('category') == $cat->id ? 'checked' : '' }}>
-                            <span class="truncate">{{ $cat->name }}</span>
-                        </label>
-                    @endforeach
-                </div>
-            </div>
-            @endif
 
-            <!-- KNIT (RIGHT SIDE) -->
-            @if($knitCats->count())
-            <div class="mb-3">
-                <p class="text-sm font-semibold text-gray-900 mb-2">KNIT</p>
-                <div class="grid grid-cols-2 gap-2">
-                    @foreach($knitCats as $cat)
-                        <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : 'bg-gray-100' }}">
-                            <input type="radio" name="category" value="{{ $cat->id }}" 
-                                   onchange="this.form.submit()" 
-                                   class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
-                                   {{ request('category') == $cat->id ? 'checked' : '' }}>
-                            <span class="truncate">{{ $cat->name }}</span>
-                        </label>
-                    @endforeach
-                </div>
-            </div>
-            @endif
-
-            <!-- OTHERS (BOTTOM - below both WOVEN and KNIT) -->
-            @if($otherCats->count())
-            <div class="mb-3">
-                <p class="text-sm font-semibold text-gray-900 mb-2">OTHERS</p>
-                <div class="grid grid-cols-2 gap-2">
-                    @foreach($otherCats as $cat)
-                        <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : 'bg-gray-100' }}">
-                            <input type="radio" name="category" value="{{ $cat->id }}" 
-                                   onchange="this.form.submit()" 
-                                   class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
-                                   {{ request('category') == $cat->id ? 'checked' : '' }}>
-                            <span class="truncate">{{ $cat->name }}</span>
-                        </label>
-                    @endforeach
-                </div>
-            </div>
-            @endif
-
-            <!-- ALL CATEGORIES OPTION -->
-            <div class="pt-3 border-t border-gray-200">
-                <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == '' ? 'bg-orange-500 text-black' : 'bg-gray-100' }}">
+            <!-- ALL CATEGORIES OPTION ON TOP -->
+            <div class="mb-4">
+                <label class="flex items-center justify-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == '' ? 'bg-orange-500 text-black' : '' }}">
                     <input type="radio" name="category" value="" onchange="this.form.submit()"
                            class="mr-2 {{ request('category') == '' ? 'accent-white' : 'accent-orange-500' }}"
                            {{ request('category') == '' ? 'checked' : '' }}>
@@ -96,20 +43,73 @@
                 </label>
             </div>
 
-        </div>
-    </div>
+            <!-- WOVEN & KNIT -->
+            <div class="grid grid-cols-2 gap-3 mb-4">
+                <!-- WOVEN -->
+                @if($wovenCats->count())
+                <div class="space-y-2">
+                    <p class="text-sm font-semibold text-gray-900 mb-1 text-left">WOVEN</p>
+                    @foreach($wovenCats as $cat)
+                        <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
+                            <input type="radio" name="category" value="{{ $cat->id }}" 
+                                   onchange="this.form.submit()" 
+                                   class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
+                                   {{ request('category') == $cat->id ? 'checked' : '' }}>
+                            <span class="truncate">{{ $cat->name }}</span>
+                        </label>
+                    @endforeach
+                </div>
+                @endif
 
-    <!-- OTHER FILTER FIELDS (Color, Fabric, etc.) -->
-    <div class="flex flex-wrap gap-2 w-full lg:w-auto">
-        <input type="text" name="color" placeholder="Color" value="{{ request('color') }}" 
-               class="border rounded px-2 py-1 text-sm w-20 sm:w-24">
-        <input type="hidden" name="type" value="{{ request('type') }}">
-        <input type="text" name="fabric_name" placeholder="Fabric" value="{{ request('fabric_name') }}" 
-               class="border rounded px-2 py-1 text-sm w-24 sm:w-28">
-        <button type="submit" 
-                class="bg-orange-500 text-black px-3 py-1 text-sm rounded shadow hover:bg-orange-600 transition">
-            Filter
-        </button>
+                <!-- KNIT -->
+                @if($knitCats->count())
+                <div class="space-y-2">
+                    <p class="text-sm font-semibold text-gray-900 mb-1 text-left">KNIT</p>
+                    @foreach($knitCats as $cat)
+                        <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
+                            <input type="radio" name="category" value="{{ $cat->id }}" 
+                                   onchange="this.form.submit()" 
+                                   class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
+                                   {{ request('category') == $cat->id ? 'checked' : '' }}>
+                            <span class="truncate">{{ $cat->name }}</span>
+                        </label>
+                    @endforeach
+                </div>
+                @endif
+            </div>
+
+            <!-- OTHERS FULL WIDTH BELOW (grid-cols-2) -->
+            @if($otherCats->count())
+            <div class="grid grid-cols-2 gap-3 mb-3">
+                <p class="text-sm font-semibold text-gray-900 col-span-2 mb-1 text-left">OTHERS</p>
+                @foreach($otherCats as $cat)
+                    <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
+                        <input type="radio" name="category" value="{{ $cat->id }}" 
+                               onchange="this.form.submit()" 
+                               class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
+                               {{ request('category') == $cat->id ? 'checked' : '' }}>
+                        <span class="truncate">{{ $cat->name }}</span>
+                    </label>
+                @endforeach
+            </div>
+            @endif
+
+            <!-- Hidden type input -->
+            <input type="hidden" name="type" value="{{ request('type') }}">
+
+            <!-- Other filters -->
+            <div class="flex flex-wrap gap-2 w-full lg:w-auto mt-2">
+                <input type="text" name="color" placeholder="Color" value="{{ request('color') }}" 
+                       class="border rounded px-2 py-1 text-sm w-20 sm:w-24">
+                <input type="text" name="fabric_name" placeholder="Fabric" value="{{ request('fabric_name') }}" 
+                       class="border rounded px-2 py-1 text-sm w-24 sm:w-28">
+                <button type="submit" 
+                        class="bg-orange-500 text-black px-3 py-1 text-sm rounded shadow hover:bg-orange-600 transition">
+                    Filter
+                </button>
+            </div>
+
+        </div>
     </div>
 
 </form>
