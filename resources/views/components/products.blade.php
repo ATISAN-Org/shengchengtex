@@ -80,12 +80,12 @@
                         Product Categories
                     </h3>
 
-                    <!-- KNIT -->
-                    <p class="text-lg font-semibold text-gray-900 mb-3">KNIT</p>
+                    <!-- WOVEN -->
+                    <p class="text-lg font-semibold text-gray-900 mb-3">WOVEN</p>
                     <ul class="space-y-2 list-disc list-inside mb-5 text-base text-gray-700">
-                        @foreach($knitCats as $cat)
+                        @foreach($wovenCats as $cat)
                             <li>
-                                <a href="{{ route('products.list', array_merge(request()->except('page'), ['category' => $cat->id, 'type' => $KNIT])) }}"
+                                <a href="{{ route('products.list', array_merge(request()->except('page'), ['category' => $cat->id, 'type' => $WOVEN])) }}"
                                    class="hover:text-orange-500">
                                    {{ $cat->name }}
                                 </a>
@@ -93,12 +93,12 @@
                         @endforeach
                     </ul>
 
-                    <!-- WOVEN -->
-                    <p class="text-lg font-semibold text-gray-900 mb-3">WOVEN</p>
+                    <!-- KNIT -->
+                    <p class="text-lg font-semibold text-gray-900 mb-3">KNIT</p>
                     <ul class="space-y-2 list-disc list-inside mb-5 text-base text-gray-700">
-                        @foreach($wovenCats as $cat)
+                        @foreach($knitCats as $cat)
                             <li>
-                                <a href="{{ route('products.list', array_merge(request()->except('page'), ['category' => $cat->id, 'type' => $WOVEN])) }}"
+                                <a href="{{ route('products.list', array_merge(request()->except('page'), ['category' => $cat->id, 'type' => $KNIT])) }}"
                                    class="hover:text-orange-500">
                                    {{ $cat->name }}
                                 </a>
