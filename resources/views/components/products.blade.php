@@ -40,7 +40,7 @@
 
         <!-- ALL CATEGORIES OPTION ON TOP -->
         <div class="mb-3">
-            <label class="flex items-center justify-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == '' ? 'bg-orange-500 text-black' : 'bg-gray-100' }}">
+            <label class="flex items-center justify-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == '' ? 'bg-orange-500 text-black' : '' }}">
                 <input type="radio" name="category" value="" onchange="this.form.submit()"
                        class="mr-2 {{ request('category') == '' ? 'accent-white' : 'accent-orange-500' }}"
                        {{ request('category') == '' ? 'checked' : '' }}>
@@ -54,7 +54,7 @@
             <div>
                 <p class="text-sm font-semibold text-gray-900 mb-2 text-left">WOVEN</p>
                 @foreach($wovenCats as $cat)
-                    <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : 'bg-gray-100' }}">
+                    <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
                         <input type="radio" name="category" value="{{ $cat->id }}" 
                                onchange="this.form.submit()" 
                                class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
@@ -70,7 +70,7 @@
             <div>
                 <p class="text-sm font-semibold text-gray-900 mb-2 text-left">KNIT</p>
                 @foreach($knitCats as $cat)
-                    <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : 'bg-gray-100' }}">
+                    <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
                         <input type="radio" name="category" value="{{ $cat->id }}" 
                                onchange="this.form.submit()" 
                                class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
@@ -87,7 +87,7 @@
         <div class="mb-3">
             <p class="text-sm font-semibold text-gray-900 mb-2 text-left">OTHERS</p>
             @foreach($otherCats as $cat)
-                <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : 'bg-gray-100' }}">
+                <label class="flex items-center rounded px-2 py-1 text-xs w-full cursor-pointer {{ request('category') == $cat->id ? 'bg-orange-500 text-black' : '' }}">
                     <input type="radio" name="category" value="{{ $cat->id }}" 
                            onchange="this.form.submit()" 
                            class="mr-2 {{ request('category') == $cat->id ? 'accent-white' : 'accent-orange-500' }}"
