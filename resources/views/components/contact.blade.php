@@ -64,7 +64,7 @@
                             <i data-lucide="user" class="w-5 h-5 text-orange-400"></i>
                             Ting Virginia
                         </p>
-                        <p class="pl-8 font-semibold">Managing Director (Owner)</p>
+                        <p class="pl-8 font-semibold">Managing Director</p>
                     </div>
                     <!-- Phone -->
                     <p class="flex items-center gap-3">

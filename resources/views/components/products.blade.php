@@ -5,7 +5,7 @@
 @section('content')
     <section class="py-8 md:py-12 bg-orange-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl lg:text-4xl font-bold text-orange-500 mb-4 md:mb-8">All Products</h2>
+            <h2 class="text-3xl lg:text-4xl text-center lg:text-left font-bold text-orange-500 mb-4 md:mb-8">All Products</h2>
 
             <div class="flex flex-col lg:flex-row gap-8">
 
