@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
-class GalleryController extends Controller
+class FacilityProcessController extends Controller
 {
     public function index()
     {
-        $dir = $this->galleryPath();
+        $dir = $this->facilityProcessPath();
         $images = [];
         $videos = [];
 
@@ -23,7 +23,7 @@ class GalleryController extends Controller
             foreach ($all as $f) {
                 $ext = strtolower($f->getExtension());
                 $name = $f->getFilename();
-                $url = asset('images/gallery/' . $name);
+                $url = asset('images/facility-process/' . $name);
 
                 if (in_array($ext, ['mp4', 'webm', 'ogg'])) {
                     $basename = pathinfo($name, PATHINFO_FILENAME);
@@ -31,7 +31,7 @@ class GalleryController extends Controller
                     foreach (['jpg', 'jpeg', 'png', 'webp'] as $pext) {
                         $candidate = $dir . DIRECTORY_SEPARATOR . $basename . '.' . $pext;
                         if (File::exists($candidate)) {
-                            $poster = asset('images/gallery/' . $basename . '.' . $pext);
+                            $poster = asset('images/facility-process/' . $basename . '.' . $pext);
                             break;
                         }
                     }
@@ -42,13 +42,13 @@ class GalleryController extends Controller
             }
         }
 
-        return view('gallery', compact('images', 'videos'));
+        return view('facility-process', compact('images', 'videos'));
     }
 
     public function stream($file)
     {
         $safe = basename($file);
-        $dir = $this->galleryPath();
+        $dir = $this->facilityProcessPath();
         $path = $dir . DIRECTORY_SEPARATOR . $safe;
 
         if (!File::exists($path)) {
@@ -104,11 +104,11 @@ class GalleryController extends Controller
         return $response;
     }
 
-    protected function galleryPath()
+    protected function facilityProcessPath()
     {
         $candidates = [
-            public_path('images/gallery'),
-            dirname(base_path()) . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'gallery',
+            public_path('images/facility-process'),
+            dirname(base_path()) . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'facility-process',
         ];
 
         foreach ($candidates as $p) {
@@ -117,6 +117,6 @@ class GalleryController extends Controller
             }
         }
 
-        return public_path('images/gallery');
+        return public_path('images/facility-process');
     }
 }

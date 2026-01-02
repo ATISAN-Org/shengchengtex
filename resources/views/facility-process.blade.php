@@ -1,47 +1,57 @@
 @extends('layouts.app')
 
-@section('title', 'Gallery')
+@section('title', 'Facility & Process')
 
 @section('content')
     <div class="container mx-auto px-4 py-8">
-        @if((empty($images) || count($images) === 0) && (empty($videos) || count($videos) === 0))
-            <p class="text-gray-600">No media found in the gallery.</p>
+        @if ((empty($images) || count($images) === 0) && (empty($videos) || count($videos) === 0))
+            <p class="text-gray-600">No media found in Facility & Process.</p>
         @endif
 
         {{-- Videos (highlighted top section) --}}
-        @if(!empty($videos) && count($videos) > 0)
+        @if (!empty($videos) && count($videos) > 0)
             <div class="mb-8">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-4">Videos</h2>
                 <div class="space-y-6">
-                        @foreach($videos as $video)
-                            <div class="mb-4">
-                                <div class="bg-gradient-to-r from-orange-50 to-white border-l-4 border-orange-500 rounded shadow overflow-hidden w-full max-w-md">
-                                    <button class="w-full open-media text-left" data-type="video" data-src="{{ $video['url'] }}" data-poster="{{ $video['poster'] ?? '' }}" aria-label="Play video">
-                                        <div class="relative h-60 md:h-68 bg-gray-900 flex items-center justify-center bg-center bg-cover">
-                                            @if(!empty($video['poster']))
-                                                <span style="background-image: url('{{ $video['poster'] }}');" class="absolute inset-0 bg-center bg-cover" aria-hidden="true"></span>
-                                            @endif
-                                            <div class="relative z-10 flex items-center justify-center">
-                                                <svg class="w-16 h-16 text-white opacity-95" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
-                                            </div>
-                                            <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-semibold px-2 py-1 rounded">Video</span>
+                    @foreach ($videos as $video)
+                        <div class="mb-4">
+                            <div
+                                class="bg-gradient-to-r from-orange-50 to-white border-l-4 border-orange-500 rounded shadow overflow-hidden w-full max-w-md">
+                                <button class="w-full open-media text-left" data-type="video" data-src="{{ $video['url'] }}"
+                                    data-poster="{{ $video['poster'] ?? '' }}" aria-label="Play video">
+                                    <div
+                                        class="relative h-60 md:h-68 bg-gray-900 flex items-center justify-center bg-center bg-cover">
+                                        @if (!empty($video['poster']))
+                                            <span style="background-image: url('{{ $video['poster'] }}');"
+                                                class="absolute inset-0 bg-center bg-cover" aria-hidden="true"></span>
+                                        @endif
+                                        <div class="relative z-10 flex items-center justify-center">
+                                            <svg class="w-16 h-16 text-white opacity-95" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path d="M4 4l12 6-12 6V4z" />
+                                            </svg>
                                         </div>
-                                    </button>
-                                </div>
+                                        <span
+                                            class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-semibold px-2 py-1 rounded">Video</span>
+                                    </div>
+                                </button>
                             </div>
-                        @endforeach
+                        </div>
+                    @endforeach
                 </div>
             </div>
         @endif
 
         {{-- Images grid --}}
-        @if(!empty($images) && count($images) > 0)
-        <h2 class="text-2xl font-semibold text-gray-800 mb-2">Images</h2>
+        @if (!empty($images) && count($images) > 0)
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Images</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                @foreach($images as $file)
+                @foreach ($images as $file)
                     <div class="bg-white rounded shadow overflow-hidden">
-                        <button class="w-full h-full focus:outline-none open-media" data-type="image" data-src="{{ $file['url'] }}" aria-label="Open image">
-                            <img src="{{ $file['url'] }}" alt="{{ $file['name'] }}" class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300">
+                        <button class="w-full h-full focus:outline-none open-media" data-type="image"
+                            data-src="{{ $file['url'] }}" aria-label="Open image">
+                            <img src="{{ $file['url'] }}" alt="{{ $file['name'] }}"
+                                class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300">
                         </button>
                         <div class="p-3 text-sm text-gray-700 truncate">{{ $file['name'] }}</div>
                     </div>
@@ -53,8 +63,10 @@
         <div id="media-modal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
             <div class="max-w-4xl w-full mx-4">
                 <div class="bg-white rounded overflow-hidden relative">
-                    <button id="modal-close" class="absolute top-3 right-3 z-50 text-gray-700 bg-white rounded-full p-2 hover:bg-gray-100">✕</button>
-                    <div id="modal-content" class="w-full bg-black flex items-center justify-center" style="min-height:320px;"></div>
+                    <button id="modal-close"
+                        class="absolute top-3 right-3 z-50 text-gray-700 bg-white rounded-full p-2 hover:bg-gray-100">✕</button>
+                    <div id="modal-content" class="w-full bg-black flex items-center justify-center"
+                        style="min-height:320px;"></div>
                 </div>
             </div>
         </div>
@@ -77,10 +89,14 @@
                 video.autoplay = true;
                 video.playsInline = true;
                 video.className = 'w-full h-auto max-h-[75vh] bg-black';
-                try { video.removeAttribute('poster'); } catch (e) {}
+                try {
+                    video.removeAttribute('poster');
+                } catch (e) {}
 
-                video.addEventListener('loadedmetadata', function () {
-                    try { video.controls = true; } catch (e) {}
+                video.addEventListener('loadedmetadata', function() {
+                    try {
+                        video.controls = true;
+                    } catch (e) {}
                 });
 
                 container.appendChild(video);
@@ -89,7 +105,8 @@
                     try {
                         const playPromise = video.play();
                         if (playPromise && typeof playPromise.then === 'function') {
-                            playPromise.catch(() => {/* autoplay blocked; user can press play */});
+                            playPromise.catch(() => {
+                                /* autoplay blocked; user can press play */ });
                         }
                     } catch (e) {
                         // ignore
@@ -122,7 +139,7 @@
         }
 
         // Delegate click handlers to handle dynamic content reliably
-        document.addEventListener('click', function (e) {
+        document.addEventListener('click', function(e) {
             const open = e.target.closest('.open-media');
             if (open) {
                 const type = open.getAttribute('data-type');

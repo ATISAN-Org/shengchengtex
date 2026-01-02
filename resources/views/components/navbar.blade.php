@@ -1,28 +1,36 @@
 <header class="bg-white shadow-md sticky top-0 z-50 transition-all duration-500">
-    <div id="header-container" class="container mx-auto flex justify-between items-center py-4 px-5 transition-all duration-500">
+    <div id="header-container"
+        class="container mx-auto flex justify-between items-center py-4 px-5 transition-all duration-500">
         <!-- Logo -->
-        <a href="{{ route('landing') }}" class="flex items-center space-x-3 transform hover:scale-105 transition-all duration-500">
+        <a href="{{ route('landing') }}"
+            class="flex items-center space-x-3 transform hover:scale-105 transition-all duration-500">
             <img id="logo-img" src="{{ asset('images/logo.jpeg') }}" alt="Shengcheng Textile Logo" class="h-12 w-auto">
         </a>
 
         <!-- Desktop Menu -->
         <nav class="hidden md:flex space-x-8 text-lg font-medium">
-            <a href="{{ route('landing') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+            <a href="{{ route('landing') }}"
+                class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 Home
             </a>
-            <a href="{{ route('products.list') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+            <a href="{{ route('products.list') }}"
+                class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 Products
             </a>
-            <a href="{{ route('about-more') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+            <a href="{{ route('about-more') }}"
+                class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 About Us
             </a>
-            <a href="{{ route('gallery') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
-                Gallery
+            <a href="{{ route('facility-process') }}"
+                class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+                Facility &amp; Process
             </a>
-            <a href="{{ route('clients-more') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+            <a href="{{ route('clients-more') }}"
+                class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 Clients
             </a>
-            <a href="{{ url('/#contact') }}" class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
+            <a href="{{ url('/#contact') }}"
+                class="relative text-gray-800 group px-3 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
                 Contact
             </a>
         </nav>
@@ -40,12 +48,20 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg overflow-hidden">
         <div class="flex flex-col items-center py-4 space-y-3">
-            <a href="{{ route('landing') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Home</a>
-            <a href="{{ route('products.list') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Products</a>
-            <a href="{{ route('about-more') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">About Us</a>
-            <a href="{{ route('gallery') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Gallery</a>
-            <a href="{{ url('/#contact') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Contact</a>
-            <a href="{{ route('clients-more') }}" class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Clients</a>
+            <a href="{{ route('landing') }}"
+                class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Home</a>
+            <a href="{{ route('products.list') }}"
+                class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Products</a>
+            <a href="{{ route('about-more') }}"
+                class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">About
+                Us</a>
+            <a href="{{ route('facility-process') }}"
+                class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Facility
+                &amp; Process</a>
+            <a href="{{ url('/#contact') }}"
+                class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Contact</a>
+            <a href="{{ route('clients-more') }}"
+                class="mobile-item w-full text-center py-3 text-gray-800 hover:bg-orange-500 hover:text-white rounded transition-colors duration-300">Clients</a>
         </div>
     </div>
 

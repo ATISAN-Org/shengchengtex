@@ -52,7 +52,7 @@ Route::post('/contact', [LandingController::class, 'submitContact'])->name('cont
 
 Route::view('/about-more', 'components.about-more')->name('about-more');
 Route::get('/clients-more', [LandingController::class, 'clientsMore'])->name('clients-more');
-Route::get('/gallery', [\App\Http\Controllers\GalleryController::class, 'index'])->name('gallery');
+Route::get('/facility-process', [\App\Http\Controllers\FacilityProcessController::class, 'index'])->name('facility-process');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 /*
