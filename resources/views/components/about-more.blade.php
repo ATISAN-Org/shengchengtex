@@ -139,7 +139,7 @@
             </p>
         </div>
         <!-- Knitting Process Flowchart -->
-        <div class="w-fullFINISHING">
+        <div class="w-fullFINISHING my-10">
             <h2 class="text-xl md:text-2xl font-bold text-orange-600 mb-6 uppercase tracking-wide text-left w-full">Process
                 of Knitting</h2>
             <div class="w-full flex flex-col items-center">
