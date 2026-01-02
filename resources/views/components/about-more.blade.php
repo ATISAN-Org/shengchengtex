@@ -8,7 +8,7 @@
             Weaving <span class="block text-sm font-normal text-gray-700">(As our woven fabrication)</span></h2>
         <div class="w-full flex flex-col items-center">
             <!-- Cross Grid Layout -->
-            <div class="grid grid-cols-7 grid-rows-5 gap-4 md:gap-6 min-h-[350px] min-w-[650px] mx-auto relative">
+            <div class="grid grid-cols-7 grid-rows-5 gap-4 md:gap-5 mx-auto relative">
 
                 <!-- Horizontal Sequential Flow Arrows (YARN → WEAVING → INSPECTION → LAMINATION → FINAL → SHIPMENT) -->
 
@@ -139,7 +139,8 @@
             <h2 class="text-xl md:text-2xl font-bold text-orange-600 mb-6 uppercase tracking-wide text-left w-full">Process
                 of Knitting</h2>
             <div class="w-full flex flex-col items-center">
-                <div class="grid grid-cols-7 grid-rows-5 gap-4 md:gap-6 min-h-[350px] min-w-[650px] mx-auto relative">
+                <div
+                    class="grid grid-cols-7 grid-rows-5 gap-x-2 md:gap-x-3 gap-y-7 md:gap-y-9 min-h-[350px] min-w-[650px] mx-auto relative">
 
                     <!-- Horizontal Sequential Flow Arrows (YARN → KNITTING → INSPECTION → COMPACTING → FINAL → SHIPMENT) -->
 
