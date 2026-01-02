@@ -10,47 +10,41 @@
             <!-- Cross Grid Layout -->
             <div class="grid grid-cols-7 grid-rows-5 gap-4 md:gap-6 min-h-[350px] min-w-[650px] mx-auto relative">
 
-                <!-- Vertical connecting line (only between boxes) -->
-                <div class="absolute left-1/2 top-[20%] bottom-[20%] w-1 transform -translate-x-1/2 z-0">
-                    <div class="h-full w-full bg-orange-500"></div>
-                    <!-- Arrow markers -->
-                    <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <div
-                            class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-500">
-                        </div>
-                    </div>
-                    <div class="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <div
-                            class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-500">
-                        </div>
-                    </div>
+                <!-- Horizontal Sequential Flow Arrows (YARN → WEAVING → INSPECTION → LAMINATION → FINAL → SHIPMENT) -->
+
+                <!-- Arrow from YARN to WEAVING -->
+                <div class="absolute left-[12%] top-1/2 transform -translate-y-1/2 z-0">
+                    <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M5 10 L15 5 L15 15 Z" />
+                    </svg>
                 </div>
 
-                <!-- Horizontal connecting line (only between left side and center) -->
-                <div class="absolute left-[14%] right-[50%] top-1/2 h-1 bg-orange-500 z-0 transform -translate-y-1/2">
-                    <div class="absolute right-0 top-1/2 transform translate-y-1/2">
-                        <div
-                            class="w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-orange-500">
-                        </div>
-                    </div>
+                <!-- Arrow from WEAVING to INSPECTION -->
+                <div class="absolute left-[27%] top-1/2 transform -translate-y-1/2 z-0">
+                    <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M5 10 L15 5 L15 15 Z" />
+                    </svg>
                 </div>
 
-                <!-- Horizontal connecting line from LAMINATION to FINAL INSPECTION -->
-                <div class="absolute left-[50%] right-[42%] top-1/2 h-1 bg-orange-500 z-0 transform -translate-y-1/2">
-                    <div class="absolute left-0 top-1/2 transform translate-y-1/2">
-                        <div
-                            class="w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-orange-500">
-                        </div>
-                    </div>
+                <!-- Arrow from INSPECTION to LAMINATION -->
+                <div class="absolute left-[42%] top-1/2 transform -translate-y-1/2 z-0">
+                    <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M5 10 L15 5 L15 15 Z" />
+                    </svg>
                 </div>
 
-                <!-- Horizontal connecting line from FINAL INSPECTION to SHIPMENT -->
-                <div class="absolute left-[57%] right-[14%] top-1/2 h-1 bg-orange-500 z-0 transform -translate-y-1/2">
-                    <div class="absolute left-0 top-1/2 transform translate-y-1/2">
-                        <div
-                            class="w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-orange-500">
-                        </div>
-                    </div>
+                <!-- Arrow from LAMINATION to FINAL -->
+                <div class="absolute left-[57%] top-1/2 transform -translate-y-1/2 z-0">
+                    <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M5 10 L15 5 L15 15 Z" />
+                    </svg>
+                </div>
+
+                <!-- Arrow from FINAL to SHIPMENT -->
+                <div class="absolute left-[72%] top-1/2 transform -translate-y-1/2 z-0">
+                    <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M5 10 L15 5 L15 15 Z" />
+                    </svg>
                 </div>
 
                 <!-- Top vertical -->
@@ -87,7 +81,7 @@
                 <!-- Center intersection -->
                 <div class="col-start-4 row-start-3 flex items-center justify-center z-20">
                     <div
-                        class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
+                        class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-xl px-6 py-3 text-base md:text-lg">
                         LAMINATION</div>
                 </div>
                 <div class="col-start-5 row-start-3 flex items-center justify-center z-10">
@@ -141,20 +135,81 @@
             </p>
         </div>
         <!-- Knitting Process Flowchart -->
-        <div class="w-full mb-8">
+        <div class="w-full my-8 md:my-12">
             <h2 class="text-xl md:text-2xl font-bold text-orange-600 mb-6 uppercase tracking-wide text-left w-full">Process
                 of Knitting</h2>
             <div class="w-full flex flex-col items-center">
-                <div class="grid grid-cols-7 grid-rows-5 gap-4 md:gap-6 mx-auto relative">
+                <div class="grid grid-cols-7 grid-rows-5 gap-4 md:gap-6 min-h-[350px] min-w-[650px] mx-auto relative">
+
+                    <!-- Horizontal Sequential Flow Arrows (YARN → KNITTING → INSPECTION → COMPACTING → FINAL → SHIPMENT) -->
+
+                    <!-- Arrow from YARN to KNITTING -->
+                    <div class="absolute left-[12%] top-1/2 transform -translate-y-1/2 z-0">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5 10 L15 5 L15 15 Z" />
+                        </svg>
+                    </div>
+
+                    <!-- Arrow from KNITTING to INSPECTION -->
+                    <div class="absolute left-[27%] top-1/2 transform -translate-y-1/2 z-0">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5 10 L15 5 L15 15 Z" />
+                        </svg>
+                    </div>
+
+                    <!-- Arrow from INSPECTION to COMPACTING -->
+                    <div class="absolute left-[42%] top-1/2 transform -translate-y-1/2 z-0">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5 10 L15 5 L15 15 Z" />
+                        </svg>
+                    </div>
+
+                    <!-- Arrow from COMPACTING to FINAL -->
+                    <div class="absolute left-[57%] top-1/2 transform -translate-y-1/2 z-0">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5 10 L15 5 L15 15 Z" />
+                        </svg>
+                    </div>
+
+                    <!-- Arrow from FINAL to SHIPMENT -->
+                    <div class="absolute left-[72%] top-1/2 transform -translate-y-1/2 z-0">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5 10 L15 5 L15 15 Z" />
+                        </svg>
+                    </div>
+
+                    <!-- Vertical Sequential Flow Arrows (HYDRO → STENTER → COMPACTING → FINISHING) -->
+
+                    <!-- Arrow from HYDRO to STENTER -->
+                    <div class="absolute left-1/2 top-[15%] transform -translate-x-1/2 z-0">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 3 L5 12 L15 12 Z" />
+                        </svg>
+                    </div>
+
+                    <!-- Arrow from STENTER to COMPACTING -->
+                    <div class="absolute left-1/2 top-[40%] transform -translate-x-1/2 z-0">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 3 L5 12 L15 12 Z" />
+                        </svg>
+                    </div>
+
+                    <!-- Arrow from COMPACTING to FINISHING -->
+                    <div class="absolute left-1/2 top-[65%] transform -translate-x-1/2 z-0">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 3 L5 12 L15 12 Z" />
+                        </svg>
+                    </div>
+
                     <!-- Top vertical -->
-                    <div class="col-start-4 row-start-1 flex items-center justify-center">
+                    <div class="col-start-4 row-start-1 flex items-center justify-center z-10">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
                             <span class="font-bold">HYDROEXTRACTION</span><br><span class="text-sm font-normal">/
                                 DE-WATERING</span>
                         </div>
                     </div>
-                    <div class="col-start-4 row-start-2 flex items-center justify-center">
+                    <div class="col-start-4 row-start-2 flex items-center justify-center z-10">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
                             <span class="font-bold">STENTER</span><br><span class="text-sm font-normal">/ HEAT
@@ -162,88 +217,50 @@
                         </div>
                     </div>
                     <!-- Left to right -->
-                    <div class="col-start-1 row-start-3 flex items-center justify-center">
+                    <div class="col-start-1 row-start-3 flex items-center justify-center z-10">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
                             <span class="font-bold">YARN</span><br><span class="text-sm font-normal">PREPARATION</span>
                         </div>
                     </div>
-                    <div class="col-start-2 row-start-3 flex items-center justify-center">
+                    <div class="col-start-2 row-start-3 flex items-center justify-center z-10">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
                             <span class="font-bold">KNITTING</span><br><span class="text-sm font-normal">GREY</span>
                         </div>
                     </div>
-                    <div class="col-start-3 row-start-3 flex items-center justify-center">
+                    <div class="col-start-3 row-start-3 flex items-center justify-center z-10">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
                             <span class="font-bold">INSPECTION</span><br><span class="text-sm font-normal">& DYEING</span>
                         </div>
                     </div>
-                    <div class="col-start-4 row-start-3 flex items-center justify-center">
+                    <div class="col-start-4 row-start-3 flex items-center justify-center z-20">
                         <div
-                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-xl px-6 py-3 text-base md:text-lg text-center">
                             <span class="font-bold">COMPACTING</span><br><span class="text-sm font-normal">/
                                 PRE-SHRINKING</span>
                         </div>
                     </div>
-                    <div class="col-start-5 row-start-3 flex items-center justify-center">
+                    <div class="col-start-5 row-start-3 flex items-center justify-center z-10">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
                             <span class="font-bold">FINAL</span><br><span class="text-sm font-normal">INSPECTION</span>
                         </div>
                     </div>
-                    <div class="col-start-6 row-start-3 flex items-center justify-center">
+                    <div class="col-start-6 row-start-3 flex items-center justify-center z-10">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
                             <span class="font-bold">SHIPMENT</span>
                         </div>
                     </div>
                     <!-- Bottom vertical -->
-                    <div class="col-start-4 row-start-4 flex items-center justify-center">
+                    <div class="col-start-4 row-start-4 flex items-center justify-center z-10">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
                             <span class="font-bold">FINISHING</span>
                         </div>
                     </div>
-                    <!-- Flowchart Arrows: Horizontal (between cards, outside boxes) -->
-                    <svg class="absolute left-0 top-[52%] pointer-events-none" width="650" height="0"
-                        style="z-index:1;" viewBox="0 0 650 0" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <marker id="arrowheadk" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
-                                orient="auto">
-                                <polygon points="0 0, 10 3.5, 0 7" fill="#ea580c" />
-                            </marker>
-                        </defs>
-                        <line x1="70" y1="0" x2="135" y2="0" stroke="#ea580c"
-                            stroke-width="3" marker-end="url(#arrowheadk)" />
-                        <line x1="165" y1="0" x2="230" y2="0" stroke="#ea580c"
-                            stroke-width="3" marker-end="url(#arrowheadk)" />
-                        <line x1="260" y1="0" x2="325" y2="0" stroke="#ea580c"
-                            stroke-width="3" marker-end="url(#arrowheadk)" />
-                        <line x1="355" y1="0" x2="420" y2="0" stroke="#ea580c"
-                            stroke-width="3" marker-end="url(#arrowheadk)" />
-                        <line x1="450" y1="0" x2="515" y2="0" stroke="#ea580c"
-                            stroke-width="3" marker-end="url(#arrowheadk)" />
-                    </svg>
-                    <!-- Flowchart Arrows: Vertical (between cards, outside boxes) -->
-                    <svg class="absolute left-[52%] top-0 pointer-events-none" width="0" height="350"
-                        style="z-index:1;" viewBox="0 0 0 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <marker id="arrowheadvk" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
-                                orient="auto">
-                                <polygon points="0 0, 10 3.5, 0 7" fill="#ea580c" />
-                            </marker>
-                        </defs>
-                        <line x1="0" y1="20" x2="0" y2="65" stroke="#ea580c"
-                            stroke-width="3" marker-end="url(#arrowheadvk)" />
-                        <line x1="0" y1="95" x2="0" y2="140" stroke="#ea580c"
-                            stroke-width="3" marker-end="url(#arrowheadvk)" />
-                        <line x1="0" y1="170" x2="0" y2="215" stroke="#ea580c"
-                            stroke-width="3" marker-end="url(#arrowheadvk)" />
-                        <line x1="0" y1="245" x2="0" y2="290" stroke="#ea580c"
-                            stroke-width="3" marker-end="url(#arrowheadvk)" />
-                    </svg>
                 </div>
             </div>
             <div class="w-full">
