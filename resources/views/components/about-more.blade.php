@@ -15,35 +15,35 @@
                 <!-- Arrow from YARN to WEAVING -->
                 <div class="absolute left-[12%] top-1/2 transform -translate-y-1/2 z-0">
                     <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M5 10 L15 5 L15 15 Z" />
+                        <path d="M15 10 L5 5 L5 15 Z" />
                     </svg>
                 </div>
 
                 <!-- Arrow from WEAVING to INSPECTION -->
                 <div class="absolute left-[26%] top-1/2 transform -translate-y-1/2 z-0">
                     <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M5 10 L15 5 L15 15 Z" />
+                        <path d="M15 10 L5 5 L5 15 Z" />
                     </svg>
                 </div>
 
                 <!-- Arrow from INSPECTION to LAMINATION -->
                 <div class="absolute left-[41%] top-1/2 transform -translate-y-1/2 z-0">
                     <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M5 10 L15 5 L15 15 Z" />
+                        <path d="M15 10 L5 5 L5 15 Z" />
                     </svg>
                 </div>
 
                 <!-- Arrow from LAMINATION to FINAL -->
                 <div class="absolute left-[57%] top-1/2 transform -translate-y-1/2 z-0">
                     <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M5 10 L15 5 L15 15 Z" />
+                        <path d="M15 10 L5 5 L5 15 Z" />
                     </svg>
                 </div>
 
                 <!-- Arrow from FINAL to SHIPMENT -->
                 <div class="absolute left-[70%] top-1/2 transform -translate-y-1/2 z-0">
                     <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M5 10 L15 5 L15 15 Z" />
+                        <path d="M15 10 L5 5 L5 15 Z" />
                     </svg>
                 </div>
 
@@ -147,36 +147,36 @@
                     <!-- Arrow from YARN to KNITTING -->
                     <div class="absolute left-[12%] top-1/2 transform -translate-y-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M5 10 L15 5 L15 15 Z" />
-                        </svg>
+                        <path d="M15 10 L5 5 L5 15 Z" />
+                    </svg>
                     </div>
 
                     <!-- Arrow from KNITTING to INSPECTION -->
                     <div class="absolute left-[27%] top-1/2 transform -translate-y-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M5 10 L15 5 L15 15 Z" />
-                        </svg>
+                        <path d="M15 10 L5 5 L5 15 Z" />
+                    </svg>
                     </div>
 
                     <!-- Arrow from INSPECTION to COMPACTING -->
                     <div class="absolute left-[41%] top-1/2 transform -translate-y-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M5 10 L15 5 L15 15 Z" />
-                        </svg>
+                        <path d="M15 10 L5 5 L5 15 Z" />
+                    </svg>
                     </div>
 
                     <!-- Arrow from COMPACTING to FINAL -->
                     <div class="absolute left-[57%] top-1/2 transform -translate-y-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M5 10 L15 5 L15 15 Z" />
-                        </svg>
+                        <path d="M15 10 L5 5 L5 15 Z" />
+                    </svg>
                     </div>
 
                     <!-- Arrow from FINAL to SHIPMENT -->
                     <div class="absolute left-[70%] top-1/2 transform -translate-y-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M5 10 L15 5 L15 15 Z" />
-                        </svg>
+                        <path d="M15 10 L5 5 L5 15 Z" />
+                    </svg>
                     </div>
 
                     <!-- Vertical Sequential Flow Arrows (HYDRO → STENTER → COMPACTING → FINISHING) -->
