@@ -8,7 +8,7 @@
             Weaving <span class="block text-sm font-normal text-gray-700">(As our woven fabrication)</span></h2>
         <div class="w-full flex flex-col items-center">
             <!-- Cross Grid Layout -->
-            <div class="grid grid-cols-7 grid-rows-5 gap-4 md:gap-5 mx-auto relative">
+            <div class="grid grid-cols-7 grid-rows-5 gap-x-4 md:gap-x-5 gap-y-1 mx-auto relative">
 
                 <!-- Horizontal Sequential Flow Arrows (YARN → WEAVING → INSPECTION → LAMINATION → FINAL → SHIPMENT) -->
 
