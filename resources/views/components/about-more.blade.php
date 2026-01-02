@@ -4,66 +4,267 @@
 @section('content')
     <!-- Process of Weaving Flowchart -->
     <section class="w-11/12 md:w-4/5 mx-auto flex flex-col items-center py-8 md:py-12 bg-white">
-        <h2 class="text-xl md:text-2xl font-bold text-orange-600 mb-6 uppercase tracking-wide">Process of Weaving <span
-                class="block text-sm font-normal text-gray-700">(As our woven fabrication)</span></h2>
+        <!-- Knitting Process Flowchart -->
+        <div class="w-full mb-12">
+            <h2 class="text-xl md:text-2xl font-bold text-orange-600 mb-6 uppercase tracking-wide text-left w-full">Process
+                of Knitting</h2>
+            <div class="w-full flex flex-col items-center">
+                <div class="grid grid-cols-7 grid-rows-5 gap-4 md:gap-6 min-h-[350px] min-w-[650px] mx-auto relative">
+                    <!-- Top vertical -->
+                    <div class="col-start-4 row-start-1 flex items-center justify-center">
+                        <div
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            HYDRO<br>EXTRACTION /<br>DE-WATRING</div>
+                    </div>
+                    <div class="col-start-4 row-start-2 flex items-center justify-center">
+                        <div
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            STENTER /<br>HEAT SETTING</div>
+                    </div>
+                    <!-- Left to right -->
+                    <div class="col-start-1 row-start-3 flex items-center justify-center">
+                        <div
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            YARN<br>PREPARATION</div>
+                    </div>
+                    <div class="col-start-2 row-start-3 flex items-center justify-center">
+                        <div
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            KNITTING<br>GREY</div>
+                    </div>
+                    <div class="col-start-3 row-start-3 flex items-center justify-center">
+                        <div
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            INSPECTION<br>& DYEING</div>
+                    </div>
+                    <div class="col-start-4 row-start-3 flex items-center justify-center">
+                        <div
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            OMPACTING /<br>PRE-SHRINKING</div>
+                    </div>
+                    <div class="col-start-5 row-start-3 flex items-center justify-center">
+                        <div
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            FINAL<br>INSPECTION</div>
+                    </div>
+                    <div class="col-start-6 row-start-3 flex items-center justify-center">
+                        <div
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            SHIPMENT</div>
+                    </div>
+                    <!-- Bottom vertical -->
+                    <div class="col-start-4 row-start-4 flex items-center justify-center">
+                        <div
+                            class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
+                            FINISHING</div>
+                    </div>
+                    <!-- Flowchart Arrows: Horizontal (between cards, outside boxes) -->
+                    <svg class="absolute left-0 top-[52%] pointer-events-none" width="650" height="0"
+                        style="z-index:1;" viewBox="0 0 650 0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <marker id="arrowheadk" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+                                orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#ea580c" />
+                            </marker>
+                        </defs>
+                        <line x1="70" y1="0" x2="135" y2="0" stroke="#ea580c" stroke-width="3"
+                            marker-end="url(#arrowheadk)" />
+                        <line x1="165" y1="0" x2="230" y2="0" stroke="#ea580c" stroke-width="3"
+                            marker-end="url(#arrowheadk)" />
+                        <line x1="260" y1="0" x2="325" y2="0" stroke="#ea580c" stroke-width="3"
+                            marker-end="url(#arrowheadk)" />
+                        <line x1="355" y1="0" x2="420" y2="0" stroke="#ea580c" stroke-width="3"
+                            marker-end="url(#arrowheadk)" />
+                        <line x1="450" y1="0" x2="515" y2="0" stroke="#ea580c" stroke-width="3"
+                            marker-end="url(#arrowheadk)" />
+                    </svg>
+                    <!-- Flowchart Arrows: Vertical (between cards, outside boxes) -->
+                    <svg class="absolute left-[52%] top-0 pointer-events-none" width="0" height="350"
+                        style="z-index:1;" viewBox="0 0 0 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <marker id="arrowheadvk" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+                                orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#ea580c" />
+                            </marker>
+                        </defs>
+                        <line x1="0" y1="20" x2="0" y2="65" stroke="#ea580c" stroke-width="3"
+                            marker-end="url(#arrowheadvk)" />
+                        <line x1="0" y1="95" x2="0" y2="140" stroke="#ea580c" stroke-width="3"
+                            marker-end="url(#arrowheadvk)" />
+                        <line x1="0" y1="170" x2="0" y2="215" stroke="#ea580c"
+                            stroke-width="3" marker-end="url(#arrowheadvk)" />
+                        <line x1="0" y1="245" x2="0" y2="290" stroke="#ea580c"
+                            stroke-width="3" marker-end="url(#arrowheadvk)" />
+                    </svg>
+                </div>
+            </div>
+            <div class="w-full mt-8">
+                <p class="text-gray-800 text-base md:text-lg text-left">
+                    Our knitting process begins with <b>Yarn Preparation</b>, where we carefully select and prepare
+                    high-quality yarns to ensure smooth machine performance and consistent fabric quality. By maintaining
+                    strict control at this initial stage, we ensure uniform strength, appearance, and reliability throughout
+                    production.<br><br>
+                    During <b>Knitting (Grey Fabric Production)</b>, we use modern knitting machines to convert yarn into
+                    grey fabric according to specific design and technical requirements. Our focus at this stage is on
+                    achieving precise fabric structure, elasticity, and GSM consistency.<br><br>
+                    Every roll of grey fabric goes through <b>Grey Fabric Inspection</b>, where our quality team checks for
+                    knitting defects, holes, oil stains, and construction irregularities. Early-stage inspection allows us
+                    to minimize defects and maintain high production efficiency.<br><br>
+                    We then carry out <b>Dyeing</b> using controlled and standardized dyeing procedures to achieve accurate
+                    shades, uniform color distribution, and excellent color fastness. Our dyeing process is closely
+                    monitored to meet both buyer requirements and international quality standards.<br><br>
+                    After dyeing, we perform <b>Hydro Extraction / Dewatering</b> to remove excess water efficiently,
+                    followed by <b>Drying</b> under controlled conditions to stabilize the fabric before heat
+                    treatment.<br><br>
+                    The fabric then passes through <b>Stenter / Heat Setting</b>, where we apply precise heat control to
+                    stabilize fabric structure, improve dimensional stability, and reduce unwanted shrinkage. Additional
+                    <b>Drying</b> ensures proper moisture balance before final setting.<br><br>
+                    At the <b>Stenter / Heat Setting (Width & GSM Setting)</b> stage, we accurately control fabric width and
+                    GSM as per customer specifications. This step reflects our technical capability and commitment to
+                    consistency.<br><br>
+                    We further enhance fabric performance through <b>Compacting / Pre-Shrinking</b>, which allows us to
+                    control shrinkage, improve softness, and ensure long-term dimensional stability.<br><br>
+                    Our <b>Finishing</b> process adds the final touch by improving fabric hand feel, appearance, and
+                    performance characteristics according to end-use requirements.<br><br>
+                    Finally, every fabric undergoes <b>Final Inspection</b>, where we ensure quality, measurements, and
+                    overall compliance before approval for packing and delivery.
+                </p>
+            </div>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-orange-600 mb-6 uppercase tracking-wide text-left w-full">Process of
+            Weaving <span class="block text-sm font-normal text-gray-700">(As our woven fabrication)</span></h2>
         <div class="w-full flex flex-col items-center">
             <!-- Cross Grid Layout -->
             <div class="grid grid-cols-7 grid-rows-5 gap-4 md:gap-6 min-h-[350px] min-w-[650px] mx-auto relative">
+
+                <!-- Vertical connecting line (only between boxes) -->
+                <div class="absolute left-1/2 top-[20%] bottom-[20%] w-1 transform -translate-x-1/2 z-0">
+                    <div class="h-full w-full bg-orange-500"></div>
+                    <!-- Arrow markers -->
+                    <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div
+                            class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-500">
+                        </div>
+                    </div>
+                    <div class="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div
+                            class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horizontal connecting line (only between left side and center) -->
+                <div class="absolute left-[14%] right-[50%] top-1/2 h-1 bg-orange-500 z-0 transform -translate-y-1/2">
+                    <div class="absolute right-0 top-1/2 transform translate-y-1/2">
+                        <div
+                            class="w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-orange-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horizontal connecting line from LAMINATION to FINAL INSPECTION -->
+                <div class="absolute left-[50%] right-[42%] top-1/2 h-1 bg-orange-500 z-0 transform -translate-y-1/2">
+                    <div class="absolute left-0 top-1/2 transform translate-y-1/2">
+                        <div
+                            class="w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-orange-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horizontal connecting line from FINAL INSPECTION to SHIPMENT -->
+                <div class="absolute left-[57%] right-[14%] top-1/2 h-1 bg-orange-500 z-0 transform -translate-y-1/2">
+                    <div class="absolute left-0 top-1/2 transform translate-y-1/2">
+                        <div
+                            class="w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-orange-500">
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Top vertical -->
-                <div class="col-start-4 row-start-1 flex items-center justify-center">
+                <div class="col-start-4 row-start-1 flex items-center justify-center z-10">
                     <div
                         class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
                         CIRE</div>
                 </div>
-                <div class="col-start-4 row-start-2 flex items-center justify-center">
+                <div class="col-start-4 row-start-2 flex items-center justify-center z-10">
                     <div
                         class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
                         COATING</div>
                 </div>
                 <!-- Left to right -->
-                <div class="col-start-1 row-start-3 flex items-center justify-center">
+                <div class="col-start-1 row-start-3 flex items-center justify-center z-10">
                     <div
                         class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
-                        YARN<br><span class="text-sm font-normal">PREPARATION</span></div>
+                        <span class="font-bold">YARN</span><br><span class="text-sm font-normal">PREPARATION</span>
+                    </div>
                 </div>
-                <div class="col-start-2 row-start-3 flex items-center justify-center">
+                <div class="col-start-2 row-start-3 flex items-center justify-center z-10">
                     <div
                         class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
-                        WEAVING<br><span class="text-sm font-normal">GREY</span></div>
+                        <span class="font-bold">WEAVING</span><br><span class="text-sm font-normal">GREY</span>
+                    </div>
                 </div>
-                <div class="col-start-3 row-start-3 flex items-center justify-center">
+                <div class="col-start-3 row-start-3 flex items-center justify-center z-10">
                     <div
                         class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
-                        INSPECTION<br><span class="text-sm font-normal">& DYEING</span></div>
+                        <span class="font-bold">INSPECTION</span><br><span class="text-sm font-normal">& DYEING</span>
+                    </div>
                 </div>
                 <!-- Center intersection -->
-                <div class="col-start-4 row-start-3 flex items-center justify-center">
-                    <div
-                        class="bg-orange-100 border-4 border-orange-400 text-orange-800 font-extrabold rounded-2xl shadow-2xl px-8 py-5 text-lg md:text-xl">
-                        LAMINATION</div>
-                </div>
-                <div class="col-start-5 row-start-3 flex items-center justify-center">
+                <div class="col-start-4 row-start-3 flex items-center justify-center z-20">
                     <div
                         class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
-                        FINAL<br><span class="text-sm font-normal">INSPECTION</span></div>
+                        LAMINATION</div>
                 </div>
-                <div class="col-start-6 row-start-3 flex items-center justify-center">
+                <div class="col-start-5 row-start-3 flex items-center justify-center z-10">
+                    <div
+                        class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
+                        <span class="font-bold">FINAL</span><br><span class="text-sm font-normal">INSPECTION</span>
+                    </div>
+                </div>
+                <div class="col-start-6 row-start-3 flex items-center justify-center z-10">
                     <div
                         class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
                         SHIPMENT</div>
                 </div>
                 <!-- Bottom vertical -->
-                <div class="col-start-4 row-start-4 flex items-center justify-center">
+                <div class="col-start-4 row-start-4 flex items-center justify-center z-10">
                     <div
                         class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
                         BONDING</div>
                 </div>
-                <div class="col-start-4 row-start-5 flex items-center justify-center">
+                <div class="col-start-4 row-start-5 flex items-center justify-center z-10">
                     <div
                         class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
-                        PRITING</div>
+                        PRINTING</div>
                 </div>
             </div>
+        </div>
+        <div class="w-full mt-8">
+            <p class="text-gray-800 text-justify text-base md:text-lg text-left">
+                Our weaving process begins with <b>Weaving</b>, where we convert yarn into high-quality woven fabric using
+                controlled production techniques. At this stage, we ensure fabric construction, strength, and consistency
+                according to the intended end use. Our in-house weaving capability allows us to maintain full control over
+                fabric structure and performance.<br><br>
+                Once weaving is completed, the fabric moves to the <b>Dyeing</b> stage. We carry out dyeing under carefully
+                monitored conditions to achieve accurate shades, uniform color penetration, and excellent color fastness.
+                Our dyeing process is designed to meet buyer specifications and international quality standards.<br><br>
+                Depending on product requirements, the dyed fabric then undergoes a series of value-added finishing
+                processes, including <b>Cire</b>, <b>Coating</b>, <b>Lamination</b>, <b>Bonding</b>, and
+                <b>Printing</b>.<br>
+                Through <b>Cire</b>, we enhance fabric surface appearance and smoothness.<br>
+                <b>Coating</b> allows us to improve functional properties such as water resistance or durability.<br>
+                <b>Lamination</b> adds technical layers to meet performance needs.<br>
+                <b>Bonding</b> strengthens fabric structure and combines multiple layers effectively.<br>
+                <b>Printing</b> enables us to deliver customized designs and patterns as per customer demand.<br>
+                These processes reflect our versatility and technical strength in handling a wide range of woven fabric
+                finishes under one roof.<br><br>
+                After finishing, every fabric passes through a detailed <b>Inspection</b> process. Our quality control team
+                checks fabric appearance, measurements, finishing quality, and overall compliance to ensure only approved
+                fabrics move forward.<br><br>
+                Finally, the inspected fabric is prepared for <b>Shipment</b>, where we ensure proper packing, labeling, and
+                documentation to guarantee safe delivery and customer satisfaction.
+            </p>
         </div>
     </section>
 
@@ -130,7 +331,8 @@
                         class="absolute -top-2 sm:-top-4 -left-2 sm:-left-4 bg-white rounded-2xl shadow-xl p-2 sm:p-4 border border-orange-100">
                         <div class="flex items-center gap-3">
                             <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
