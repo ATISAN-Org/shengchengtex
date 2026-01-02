@@ -8,7 +8,7 @@
             Weaving <span class="block text-sm font-normal text-gray-700">(As our woven fabrication)</span></h2>
         <div class="w-full flex flex-col items-center">
             <!-- Cross Grid Layout -->
-            <div class="grid grid-cols-7 grid-rows-5 gap-x-4 md:gap-x-5 gap-y-1 mx-auto relative">
+            <div class="grid grid-cols-7 grid-rows-5 gap-x-4 md:gap-x-7 gap-y-1 mx-auto relative">
 
                 <!-- Horizontal Sequential Flow Arrows (YARN → WEAVING → INSPECTION → LAMINATION → FINAL → SHIPMENT) -->
 
@@ -20,14 +20,14 @@
                 </div>
 
                 <!-- Arrow from WEAVING to INSPECTION -->
-                <div class="absolute left-[27%] top-1/2 transform -translate-y-1/2 z-0">
+                <div class="absolute left-[26%] top-1/2 transform -translate-y-1/2 z-0">
                     <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M5 10 L15 5 L15 15 Z" />
                     </svg>
                 </div>
 
                 <!-- Arrow from INSPECTION to LAMINATION -->
-                <div class="absolute left-[42%] top-1/2 transform -translate-y-1/2 z-0">
+                <div class="absolute left-[41%] top-1/2 transform -translate-y-1/2 z-0">
                     <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M5 10 L15 5 L15 15 Z" />
                     </svg>
@@ -41,7 +41,7 @@
                 </div>
 
                 <!-- Arrow from FINAL to SHIPMENT -->
-                <div class="absolute left-[72%] top-1/2 transform -translate-y-1/2 z-0">
+                <div class="absolute left-[70%] top-1/2 transform -translate-y-1/2 z-0">
                     <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M5 10 L15 5 L15 15 Z" />
                     </svg>
@@ -159,7 +159,7 @@
                     </div>
 
                     <!-- Arrow from INSPECTION to COMPACTING -->
-                    <div class="absolute left-[42%] top-1/2 transform -translate-y-1/2 z-0">
+                    <div class="absolute left-[41%] top-1/2 transform -translate-y-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M5 10 L15 5 L15 15 Z" />
                         </svg>
@@ -173,7 +173,7 @@
                     </div>
 
                     <!-- Arrow from FINAL to SHIPMENT -->
-                    <div class="absolute left-[72%] top-1/2 transform -translate-y-1/2 z-0">
+                    <div class="absolute left-[70%] top-1/2 transform -translate-y-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M5 10 L15 5 L15 15 Z" />
                         </svg>
@@ -182,21 +182,21 @@
                     <!-- Vertical Sequential Flow Arrows (HYDRO → STENTER → COMPACTING → FINISHING) -->
 
                     <!-- Arrow from HYDRO to STENTER -->
-                    <div class="absolute left-1/2 top-[15%] transform -translate-x-1/2 z-0">
+                    <div class="absolute left-1/2 top-[16%] transform -translate-x-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 3 L5 12 L15 12 Z" />
                         </svg>
                     </div>
 
                     <!-- Arrow from STENTER to COMPACTING -->
-                    <div class="absolute left-1/2 top-[40%] transform -translate-x-1/2 z-0">
+                    <div class="absolute left-1/2 top-[38%] transform -translate-x-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 3 L5 12 L15 12 Z" />
                         </svg>
                     </div>
 
                     <!-- Arrow from COMPACTING to FINISHING -->
-                    <div class="absolute left-1/2 top-[65%] transform -translate-x-1/2 z-0">
+                    <div class="absolute left-1/2 top-[60%] transform -translate-x-1/2 z-0">
                         <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 3 L5 12 L15 12 Z" />
                         </svg>
