@@ -40,7 +40,7 @@
         <!-- Image Side -->
         <div class="flex justify-center md:justify-end">
             <div class="w-full h-96 md:h-[43rem] flex items-center">
-                <img src="/images/1.jpeg" alt="Textile Factory"
+                <img src="/images/1.png" alt="Textile Factory"
                     class="rounded-xl md:rounded-3xl shadow-2xl w-full h-full object-cover" />
             </div>
         </div>
