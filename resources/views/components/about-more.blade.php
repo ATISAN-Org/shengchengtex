@@ -14,7 +14,7 @@
             <!-- Left Content -->
             <div class="space-y-8">
                 <!-- Badge -->
-                <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"/>
                     </svg>
@@ -22,12 +22,11 @@
                 </div>
                 
                 <h1 class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                    Weaving Excellence
-                    <span class="block text-orange-600">for 25+ Years</span>
+                   Excellence of Mill
                 </h1>
                 
                 <p class="text-base text-justify sm:text-lg md:text-xl text-gray-700 leading-relaxed">
-                    Shengcheng Textile Ltd is a leading manufacturer of premium polyester-based knit & woven fabrics, delivering <span class="font-semibold text-orange-600">25 million meters</span> annually with uncompromising quality and sustainable practices.
+                    Shengcheng Textile Ltd is a leading manufacturer of premium polyester-based knit & woven fabrics, delivering 25 million meters annually with uncompromising quality and sustainable practices
                 </p>
 
                 <!-- Quick Stats -->
@@ -50,7 +49,7 @@
             <!-- Right Image with Floating Elements -->
             <div class="relative">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="{{ asset('images/1.png') }}" 
+                    <img src="{{ asset('images/1.jpeg') }}" 
                          alt="Shengcheng Textile Manufacturing Facility" 
                          class="w-full h-48 sm:h-64 md:h-[500px] object-cover transform hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -82,7 +81,11 @@
         </div>
         <div class="mt-10 w-full">
             <div class="text-gray-800 text-justify text-base md:text-lg">
-                Welcome to the Shengcheng Textile Ltd which is the part of Thenhong Group.  We professional manufacturer for polyester based knit & Woven fabric. The factory head office is located at 21 F, No.79 Xiushui Road, South Third Ring Road, Shengze Town, Wujin, Changzhou City, China. The annual production of greige fabric is 25 million meters. We have been in the textile fabric field for more than 25 years. We are devoting ourselves to create a brand paragon for textile industry since its establishment. Our products take the middle and high-end line, we continue to develop new varieties and have guided the trend of fashion and functionality. We are now a comprehensive textile fabric company of collection of weaving, dyeing and finishing, sales.  After  years of development, our company has formed  own quality control system higher than the industry standard and reasonable price competitive mechanism, and has established a deep friendship and win-win business relationship with the vast number of customers at home and abroad.
+                With over 25 years of manufacturing expertise, Shengcheng Textile Ltd specializes in the production of both knitted and woven fabrics, serving global apparel brands, wholesalers, and sourcing companies. Our strong production capability allows us to meet large-volume export demands with consistent quality and on-time delivery.
+Our mill is equipped with modern knitting and weaving machines, supported by advanced dyeing and finishing facilities, ensuring superior fabric performance, color fastness, and durability. Vertically integrated operations give us full control over every stage of production—from greige fabric to finished output—resulting in stable quality and competitive pricing.
+We offer a wide range of polyester-based fabrics suitable for fashion wear, sportswear, outerwear, uniforms, and functional applications. Continuous product development and trend-driven innovation enable us to provide customized solutions based on buyer requirements.
+Quality assurance is maintained through a strict inspection system that complies with international export standards. In parallel, we actively adopt sustainable and energy-efficient manufacturing practices to support responsible sourcing and long-term partnerships.
+With reliability, scalability, and professionalism at our core, Shengcheng Textile Ltd stands as a trusted export-oriented mill for knit and woven fabrics worldwide.
             </div>
         </div>
     </div>
