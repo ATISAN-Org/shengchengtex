@@ -150,28 +150,30 @@
 
         <div class="w-full mt-6 sm:mt-8">
             <p class="text-gray-800 text-justify text-sm sm:text-base md:text-lg text-left">
-                Our weaving process begins with **Weaving**, where we convert yarn into high-quality woven fabric using
-                controlled production techniques. At this stage, we ensure fabric construction, strength, and consistency
-                according to the intended end use. Our in-house weaving capability allows us to maintain full control over
-                fabric structure and performance. Once weaving is completed, the fabric moves to the **Dyeing** stage. We
-                carry out dyeing under carefully monitored conditions to achieve accurate shades, uniform color penetration,
-                and
-                excellent color fastness.
-                Our dyeing process is designed to meet buyer specifications and international quality standards.
-                Depending on product requirements, the dyed fabric then undergoes a series of value-added finishing
-                processes, including **Cire**, **Coating**, **Lamination**, **Bonding**, and **Printing**.
-                Through Cire, we enhance fabric surface appearance and smoothness.
-                Coating allows us to improve functional properties such as water resistance or durability.
-                Lamination adds technical layers to meet performance needs.
-                Bonding strengthens fabric structure and combines multiple layers effectively.
-                Printing enables us to deliver customized designs and patterns as per customer demand.
+                <strong>Our weaving process begins with Weaving</strong>, where we convert yarn into high-quality woven
+                fabric using controlled production techniques. At this stage, we ensure fabric construction, strength, and
+                consistency according to the intended end use. Our in-house weaving capability allows us to maintain full
+                control over fabric structure and performance.<br><br>
+                <strong>Once weaving is completed, the fabric moves to the Dyeing stage.</strong> We carry out dyeing under
+                carefully monitored conditions to achieve accurate shades, uniform color penetration, and excellent color
+                fastness. Our dyeing process is designed to meet buyer specifications and international quality
+                standards.<br><br>
+                <strong>Depending on product requirements, the dyed fabric then undergoes a series of value-added finishing
+                    processes, including Cire, Coating, Lamination, Bonding, and Printing.</strong><br>
+                <strong>Through Cire</strong>, we enhance fabric surface appearance and smoothness.<br>
+                <strong>Coating</strong> allows us to improve functional properties such as water resistance or
+                durability.<br>
+                <strong>Lamination</strong> adds technical layers to meet performance needs.<br>
+                <strong>Bonding</strong> strengthens fabric structure and combines multiple layers effectively.<br>
+                <strong>Printing</strong> enables us to deliver customized designs and patterns as per customer
+                demand.<br><br>
                 These processes reflect our versatility and technical strength in handling a wide range of woven fabric
-                finishes under one roof.
-                After finishing, every fabric passes through a detailed **Inspection** process. Our quality control team
-                checks fabric appearance, measurements, finishing quality, and overall compliance to ensure only approved
-                fabrics move forward.
-                Finally, the inspected fabric is prepared for **Shipment**, where we ensure proper packing, labeling, and
-                documentation to guarantee safe delivery and customer satisfaction.
+                finishes under one roof.<br><br>
+                <strong>After finishing, every fabric passes through a detailed Inspection process.</strong> Our quality
+                control team checks fabric appearance, measurements, finishing quality, and overall compliance to ensure
+                only approved fabrics move forward.<br><br>
+                <strong>Finally, the inspected fabric is prepared for Shipment</strong>, where we ensure proper packing,
+                labeling, and documentation to guarantee safe delivery and customer satisfaction.
             </p>
         </div>
 
@@ -312,28 +314,33 @@
 
             <div class="w-full mt-4 sm:mt-6">
                 <p class="text-gray-800 text-justify text-sm sm:text-base md:text-lg text-left">
-                    Our knitting process begins with **Yarn Preparation**, where we carefully select and prepare
-                    high-quality yarns to ensure smooth machine performance and consistent fabric quality. By maintaining
-                    strict control at this initial stage, we ensure uniform strength, appearance, and reliability throughout
-                    production. During **Knitting (Grey Fabric Production)**, we use modern knitting machines to convert
+                    <strong>Our knitting process begins with Yarn Preparation</strong>, where we carefully select and
+                    prepare high-quality yarns to ensure smooth machine performance and consistent fabric quality. By
+                    maintaining strict control at this initial stage, we ensure uniform strength, appearance, and
+                    reliability throughout production.<br><br>
+                    <strong>During Knitting (Grey Fabric Production)</strong>, we use modern knitting machines to convert
                     yarn into grey fabric according to specific design and technical requirements. Our focus at this stage
-                    is on achieving precise fabric structure, elasticity, and GSM consistency. Every roll of grey fabric
-                    goes through **Grey Fabric Inspection**, where our quality team checks for knitting defects, holes, oil
-                    stains, and construction irregularities. Early-stage inspection allows us to minimize defects and
-                    maintain high production efficiency. We then carry out **Dyeing** using controlled and standardized
-                    dyeing procedures to achieve accurate shades, uniform color distribution, and excellent color fastness.
-                    Our dyeing process is closely monitored to meet both buyer requirements and international quality
-                    standards. After dyeing, we perform **Hydro Extraction / Dewatering** to remove excess water
+                    is on achieving precise fabric structure, elasticity, and GSM consistency.<br><br>
+                    <strong>Every roll of grey fabric goes through Grey Fabric Inspection</strong>, where our quality team
+                    checks for knitting defects, holes, oil stains, and construction irregularities. Early-stage inspection
+                    allows us to minimize defects and maintain high production efficiency.<br><br>
+                    <strong>We then carry out Dyeing</strong> using controlled and standardized dyeing procedures to achieve
+                    accurate shades, uniform color distribution, and excellent color fastness. Our dyeing process is closely
+                    monitored to meet both buyer requirements and international quality standards.<br><br>
+                    <strong>After dyeing, we perform Hydro Extraction / Dewatering</strong> to remove excess water
                     efficiently, followed by Drying under controlled conditions to stabilize the fabric before heat
-                    treatment. The fabric then passes through **Stenter / Heat Setting**, where we apply precise heat
+                    treatment.<br><br>
+                    <strong>The fabric then passes through Stenter / Heat Setting</strong>, where we apply precise heat
                     control to stabilize fabric structure, improve dimensional stability, and reduce unwanted shrinkage.
-                    Additional drying ensures proper moisture balance before final setting. At the Stenter / Heat Setting
-                    (Width & GSM Setting) stage, we accurately control fabric width and GSM as per customer specifications.
-                    This step reflects our technical capability and commitment to consistency. We further enhance fabric
-                    performance through **Compacting / Pre-Shrinking**, which allows us to control shrinkage, improve
-                    softness, and ensure long-term dimensional stability. Our **Finishing** process adds the final touch by
-                    improving fabric hand feel, appearance, and performance characteristics according to end-use
-                    requirements. Finally, every fabric undergoes **Final Inspection**, where we ensure quality,
+                    Additional Drying ensures proper moisture balance before final setting.<br><br>
+                    <strong>At the Stenter / Heat Setting (Width & GSM Setting) stage</strong>, we accurately control fabric
+                    width and GSM as per customer specifications. This step reflects our technical capability and commitment
+                    to consistency.<br><br>
+                    <strong>We further enhance fabric performance through Compacting / Pre-Shrinking</strong>, which allows
+                    us to control shrinkage, improve softness, and ensure long-term dimensional stability.<br><br>
+                    <strong>Our Finishing process</strong> adds the final touch by improving fabric hand feel, appearance,
+                    and performance characteristics according to end-use requirements.<br><br>
+                    <strong>Finally, every fabric undergoes Final Inspection</strong>, where we ensure quality,
                     measurements, and overall compliance before approval for packing and delivery.
                 </p>
             </div>
@@ -535,19 +542,19 @@
                         functionality, and exceptional tactile sensation.</p>
                 </div>
             </div>
-        <div class="mt-10 w-full">
-            <div class="text-gray-800 text-justify text-base md:text-lg">
-                Our mission is to make SHENGCHENG TEXTILE your preferred company in all channels by delivering
-                outstanding value, continuous feedback and excellent price by consistently fulfilling all of your
-                requirements. We believe good fabric can make people happy. The look, feel, and even scent of a piece of
-                fabric can instill familiarity, pleasure and comfort. This is why when producing knit fabrics and woven
-                fabrics, we especially focus on their appearance, functionality, and the feel they generate when
-                touched. By using yarns, dyes, and other materials that meet the industry standard, you can see the
-                beautiful color and patterns, and feel the textures brought by different production techniques. Just as
-                people dress in line with their style, we also use fabric to express ourselves. In each meter of our
-                fabric, you will find our dedication. We love fabrics
+            <div class="mt-10 w-full">
+                <div class="text-gray-800 text-justify text-base md:text-lg">
+                    Our mission is to make SHENGCHENG TEXTILE your preferred company in all channels by delivering
+                    outstanding value, continuous feedback and excellent price by consistently fulfilling all of your
+                    requirements. We believe good fabric can make people happy. The look, feel, and even scent of a piece of
+                    fabric can instill familiarity, pleasure and comfort. This is why when producing knit fabrics and woven
+                    fabrics, we especially focus on their appearance, functionality, and the feel they generate when
+                    touched. By using yarns, dyes, and other materials that meet the industry standard, you can see the
+                    beautiful color and patterns, and feel the textures brought by different production techniques. Just as
+                    people dress in line with their style, we also use fabric to express ourselves. In each meter of our
+                    fabric, you will find our dedication. We love fabrics
+                </div>
             </div>
-        </div>
         </div>
         </div>
         </div>
