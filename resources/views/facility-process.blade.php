@@ -80,7 +80,7 @@
         </h2>
 
         <div class="w-full overflow-x-auto pb-4 sm:pb-0">
-            <div class="bg-orange-50 grid grid-cols-7 grid-rows-5 gap-x-7 gap-y-1 mx-auto relative w-max min-w-full">
+            <div class="py-4 bg-orange-50 grid grid-cols-7 grid-rows-5 gap-x-7 gap-y-1 mx-auto relative w-max min-w-full">
                 <!-- Horizontal arrows... -->
                 <div class="absolute left-[12.5%] top-1/2 transform -translate-y-1/2 z-0">
                     <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
@@ -113,7 +113,7 @@
                 </div>
 
                 <!-- Vertical arrows... -->
-                <div class="absolute left-1/2 top-[78%] -translate-x-1/2 z-0">
+                <div class="absolute left-1/2 top-[77%] -translate-x-1/2 z-0">
                     <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor"
                         viewBox="0 0 20 20">
                         <path d="M10 3 L5 12 L15 12 Z" />
@@ -125,13 +125,13 @@
                         <path d="M10 3 L5 12 L15 12 Z" />
                     </svg>
                 </div>
-                <div class="absolute left-1/2 top-[16%] -translate-x-1/2 z-0">
+                <div class="absolute left-1/2 top-[19%] -translate-x-1/2 z-0">
                     <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500 rotate-180" fill="currentColor"
                         viewBox="0 0 20 20">
                         <path d="M10 3 L5 12 L15 12 Z" />
                     </svg>
                 </div>
-                <div class="absolute left-1/2 top-[36%] -translate-x-1/2 z-0">
+                <div class="absolute left-1/2 top-[37.5%] -translate-x-1/2 z-0">
                     <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500 rotate-180" fill="currentColor"
                         viewBox="0 0 20 20">
                         <path d="M10 3 L5 12 L15 12 Z" />
@@ -218,7 +218,7 @@
         </div>
 
         <div class="w-full mt-6 sm:mt-8">
-            <p class="text-justify text-sm sm:text-base md:text-lg text-left">
+            <p class="text-base text-justify sm:text-lg md:text-xl text-left">
                 <strong>Our weaving process begins with Weaving</strong>, where we convert yarn into high-quality woven
                 fabric using controlled production techniques. At this stage, we ensure fabric construction, strength, and
                 consistency according to the intended end use. Our in-house weaving capability allows us to maintain full
@@ -255,33 +255,33 @@
             <!-- Fixed knitting flowchart -->
             <div class="w-full overflow-x-auto pb-4 sm:pb-0">
                 <div
-                    class="bg-orange-50 grid grid-cols-7 grid-rows-5 gap-x-4 md:gap-x-6 gap-y-7 md:gap-y-9 mx-auto relative w-max min-w-full">
+                    class="pt-8 pb-4 bg-orange-50 grid grid-cols-7 grid-rows-4 gap-x-4 md:gap-x-5 gap-y-7 md:gap-y-9 mx-auto relative w-max min-w-full">
                     <!-- Horizontal Sequential Flow Arrows -->
-                    <div class="absolute left-[13%] top-1/2 transform -translate-y-1/2 z-0">
+                    <div class="absolute left-[13%] top-[64%] transform -translate-y-1/2 z-0">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path d="M15 10 L5 5 L5 15 Z" />
                         </svg>
                     </div>
-                    <div class="absolute left-[27%] top-1/2 transform -translate-y-1/2 z-0">
+                    <div class="absolute left-[27%] top-[64%] transform -translate-y-1/2 z-0">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path d="M15 10 L5 5 L5 15 Z" />
                         </svg>
                     </div>
-                    <div class="absolute left-[41.5%] top-1/2 transform -translate-y-1/2 z-0">
+                    <div class="absolute left-[41.5%] top-[64%] transform -translate-y-1/2 z-0">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path d="M15 10 L5 5 L5 15 Z" />
                         </svg>
                     </div>
-                    <div class="absolute left-[57%] top-1/2 transform -translate-y-1/2 z-0">
+                    <div class="absolute left-[57%] top-[64%] transform -translate-y-1/2 z-0">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path d="M15 10 L5 5 L5 15 Z" />
                         </svg>
                     </div>
-                    <div class="absolute left-[70%] top-1/2 transform -translate-y-1/2 z-0">
+                    <div class="absolute left-[70.5%] top-[64%] transform -translate-y-1/2 z-0">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path d="M15 10 L5 5 L5 15 Z" />
@@ -289,19 +289,19 @@
                     </div>
 
                     <!-- Vertical Sequential Flow Arrows -->
-                    <div class="absolute left-1/2 top-[16%] transform -translate-x-1/2 z-0">
+                    <div class="absolute left-1/2 top-[25.5%] transform -translate-x-1/2 z-0">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path d="M10 3 L5 12 L15 12 Z" />
                         </svg>
                     </div>
-                    <div class="absolute left-1/2 top-[38%] transform -translate-x-1/2 z-0">
+                    <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 z-0">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path d="M10 3 L5 12 L15 12 Z" />
                         </svg>
                     </div>
-                    <div class="absolute left-1/2 top-[60%] transform -translate-x-1/2 z-0">
+                    <div class="absolute left-1/2 top-[75%] transform -translate-x-1/2 z-0">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-orange-500" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path d="M10 3 L5 12 L15 12 Z" />
@@ -382,7 +382,7 @@
             </div>
 
             <div class="w-full mt-4 sm:mt-6">
-                <p class="text-justify text-sm sm:text-base md:text-lg text-left">
+                <p class="text-base text-justify sm:text-lg md:text-xl text-left">
                     <strong>Our knitting process begins with Yarn Preparation</strong>, where we carefully select and
                     prepare high-quality yarns to ensure smooth machine performance and consistent fabric quality. By
                     maintaining strict control at this initial stage, we ensure uniform strength, appearance, and
