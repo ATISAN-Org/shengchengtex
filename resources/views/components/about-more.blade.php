@@ -67,20 +67,21 @@
                 <!-- Left to right -->
                 <div class="col-start-1 row-start-3 flex items-center justify-center z-10">
                     <div
-                        class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
+                        class="flex flex-col justify-center items-center bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
                         <span class="font-bold">YARN</span><span class="text-sm font-normal">PREPARATION</span>
                     </div>
                 </div>
                 <div class="col-start-2 row-start-3 flex items-center justify-center z-10">
                     <div
-                        class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
+                        class="flex flex-col justify-center items-center bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
                         <span class="font-bold">WEAVING</span><span class="text-sm font-normal">GREY</span>
                     </div>
                 </div>
                 <div class="col-start-3 row-start-3 flex items-center justify-center z-10">
                     <div
-                        class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
-                        <span class="font-bold">INSPECTION</span><span class="text-sm font-normal">& DYEING</span>
+                        class="flex flex-col justify-center items-center bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
+                        <span class="font-bold">INSPECTION</span><span class="text-sm font-normal">&</span>
+                        <span class="text-sm font-normal">DYEING</span>
                     </div>
                 </div>
                 <!-- Center intersection -->
@@ -91,7 +92,7 @@
                 </div>
                 <div class="col-start-5 row-start-3 flex items-center justify-center z-10">
                     <div
-                        class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
+                        class="flex flex-col justify-center items-center bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg">
                         <span class="font-bold">FINAL</span><span class="text-sm font-normal">INSPECTION</span>
                     </div>
                 </div>
@@ -118,7 +119,8 @@
                 Our weaving process begins with Weaving, where we convert yarn into high-quality woven fabric using
                 controlled production techniques. At this stage, we ensure fabric construction, strength, and consistency
                 according to the intended end use. Our in-house weaving capability allows us to maintain full control over
-                fabric structure and performance. Once weaving is completed, the fabric moves to the Dyeing stage. We carry out dyeing under carefully
+                fabric structure and performance. Once weaving is completed, the fabric moves to the Dyeing stage. We carry
+                out dyeing under carefully
                 monitored conditions to achieve accurate shades, uniform color penetration, and excellent color fastness.
                 Our dyeing process is designed to meet buyer specifications and international quality standards.
                 Depending on product requirements, the dyed fabric then undergoes a series of value-added finishing
@@ -139,7 +141,7 @@
             </p>
         </div>
         <!-- Knitting Process Flowchart -->
-        <div class="w-fullFINISHING my-10">
+        <div class="w-full mb-8">
             <h2 class="text-xl md:text-2xl font-bold text-orange-600 mb-6 uppercase tracking-wide text-left w-full">Process
                 of Knitting</h2>
             <div class="w-full flex flex-col items-center">
@@ -148,49 +150,61 @@
                     <div class="col-start-4 row-start-1 flex items-center justify-center">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
-                            HYDROEXTRACTION /DE-WATRING</div>
+                            <span class="font-bold">HYDROEXTRACTION</span><br><span class="text-sm font-normal">/
+                                DE-WATERING</span>
+                        </div>
                     </div>
                     <div class="col-start-4 row-start-2 flex items-center justify-center">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
-                            STENTER /HEAT SETTING</div>
+                            <span class="font-bold">STENTER</span><br><span class="text-sm font-normal">/ HEAT
+                                SETTING</span>
+                        </div>
                     </div>
                     <!-- Left to right -->
                     <div class="col-start-1 row-start-3 flex items-center justify-center">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
-                            YARNPREPARATION</div>
+                            <span class="font-bold">YARN</span><br><span class="text-sm font-normal">PREPARATION</span>
+                        </div>
                     </div>
                     <div class="col-start-2 row-start-3 flex items-center justify-center">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
-                            KNITTINGGREY</div>
+                            <span class="font-bold">KNITTING</span><br><span class="text-sm font-normal">GREY</span>
+                        </div>
                     </div>
                     <div class="col-start-3 row-start-3 flex items-center justify-center">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
-                            INSPECTION& DYEING</div>
+                            <span class="font-bold">INSPECTION</span><br><span class="text-sm font-normal">& DYEING</span>
+                        </div>
                     </div>
                     <div class="col-start-4 row-start-3 flex items-center justify-center">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
-                            OMPACTING /PRE-SHRINKING</div>
+                            <span class="font-bold">COMPACTING</span><br><span class="text-sm font-normal">/
+                                PRE-SHRINKING</span>
+                        </div>
                     </div>
                     <div class="col-start-5 row-start-3 flex items-center justify-center">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
-                            FINALINSPECTION</div>
+                            <span class="font-bold">FINAL</span><br><span class="text-sm font-normal">INSPECTION</span>
+                        </div>
                     </div>
                     <div class="col-start-6 row-start-3 flex items-center justify-center">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
-                            SHIPMENT</div>
+                            <span class="font-bold">SHIPMENT</span>
+                        </div>
                     </div>
                     <!-- Bottom vertical -->
                     <div class="col-start-4 row-start-4 flex items-center justify-center">
                         <div
                             class="bg-orange-50 border-2 border-orange-200 text-orange-700 font-bold rounded-xl shadow-lg px-6 py-3 text-base md:text-lg text-center">
-                            FINISHING</div>
+                            <span class="font-bold">FINISHING</span>
+                        </div>
                     </div>
                     <!-- Flowchart Arrows: Horizontal (between cards, outside boxes) -->
                     <svg class="absolute left-0 top-[52%] pointer-events-none" width="650" height="0"
@@ -201,10 +215,10 @@
                                 <polygon points="0 0, 10 3.5, 0 7" fill="#ea580c" />
                             </marker>
                         </defs>
-                        <line x1="70" y1="0" x2="135" y2="0" stroke="#ea580c" stroke-width="3"
-                            marker-end="url(#arrowheadk)" />
-                        <line x1="165" y1="0" x2="230" y2="0" stroke="#ea580c" stroke-width="3"
-                            marker-end="url(#arrowheadk)" />
+                        <line x1="70" y1="0" x2="135" y2="0" stroke="#ea580c"
+                            stroke-width="3" marker-end="url(#arrowheadk)" />
+                        <line x1="165" y1="0" x2="230" y2="0" stroke="#ea580c"
+                            stroke-width="3" marker-end="url(#arrowheadk)" />
                         <line x1="260" y1="0" x2="325" y2="0" stroke="#ea580c"
                             stroke-width="3" marker-end="url(#arrowheadk)" />
                         <line x1="355" y1="0" x2="420" y2="0" stroke="#ea580c"
