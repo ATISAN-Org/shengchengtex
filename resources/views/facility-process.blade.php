@@ -51,7 +51,7 @@
                         <button class="w-full h-full focus:outline-none open-media" data-type="image"
                             data-src="{{ $file['url'] }}" aria-label="Open image">
                             <img src="{{ $file['url'] }}" alt="{{ $file['name'] }}"
-                                class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300">
+                                class="w-full h-56 object-cover transform hover:scale-105 transition-transform duration-300">
                         </button>
                         <div class="p-3 text-sm text-gray-700 truncate">{{ $file['name'] }}</div>
                     </div>
@@ -220,7 +220,7 @@
             </div>
 
             <div class="w-full mt-7 sm:mt-12">
-                <p class="text-base text-justify sm:text-lg md:text-xl text-left">
+                <p class="text-base sm:text-lg text-justify text-left">
                     <strong>Our weaving process begins with Weaving</strong>, where we convert yarn into high-quality woven
                     fabric using controlled production techniques. At this stage, we ensure fabric construction, strength,
                     and
@@ -389,7 +389,7 @@
                 </div>
 
                 <div class="w-full mt-7 sm:mt-12">
-                    <p class="text-base text-justify sm:text-lg md:text-xl text-left">
+                    <p class="text-base sm:text-lg text-justify text-left">
                         <strong>Our knitting process begins with Yarn Preparation</strong>, where we carefully select and
                         prepare high-quality yarns to ensure smooth machine performance and consistent fabric quality. By
                         maintaining strict control at this initial stage, we ensure uniform strength, appearance, and
