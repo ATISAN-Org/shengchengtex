@@ -7,12 +7,25 @@
                 About Us
             </h2>
             <p class="text-gray-700 text-justify text-lg leading-relaxed mb-8">
-              Shengcheng Textile Ltd., a subsidiary of Tenhong Group, is a professional manufacturer specializing in polyester-based knitted and woven fabrics. We are located in Shengze Town, Wujiang District, Changzhou City, China.
-With an annual production capacity of approximately 25 million meters of greige fabric, we have been serving the textile industry for over 25 years. Since our establishment, we have been committed to building a reliable and high-quality brand within the global textile market.
-Our products are positioned in the mid to high-end segment, and we continuously develop new fabric varieties that reflect the latest trends in fashion and functionality. Through constant innovation and improvement, we strive to meet the evolving needs of our customers.
-Today, Shengcheng Textile Ltd. operates as a comprehensive textile fabric enterprise, integrating weaving, Knitting , dyeing, finishing, and sales under one complete system. Over the years, we have established a quality control system that exceeds industry standards, along with a reasonable and competitive pricing mechanism.
-We are also pleased to share that Tenhong Group operates a dedicated silk coating factory, enabling us to provide advanced coating, functional finishing, and value-added fabric solutions. This additional capability allows us to offer enhanced performance fabrics with improved durability, functionality, and customization options—further strengthening our ability to serve diverse global market requirements.
-Through professionalism, integrity, and a long-term vision, Shengcheng Textile Ltd. has established strong and mutually beneficial partnerships with customers both domestically and internationally.
+                Shengcheng Textile Ltd., a subsidiary of Tenhong Group, is a professional manufacturer specializing in
+                polyester-based knitted and woven fabrics. We are located in Shengze Town, Wujiang District, Changzhou
+                City, China.
+                With an annual production capacity of approximately 25 million meters of greige fabric, we have been
+                serving the textile industry for over 25 years. Since our establishment, we have been committed to
+                building a reliable and high-quality brand within the global textile market.
+                Our products are positioned in the mid to high-end segment, and we continuously develop new fabric
+                varieties that reflect the latest trends in fashion and functionality. Through constant innovation and
+                improvement, we strive to meet the evolving needs of our customers.
+                Today, Shengcheng Textile Ltd. operates as a comprehensive textile fabric enterprise, integrating
+                weaving, Knitting , dyeing, finishing, and sales under one complete system. Over the years, we have
+                established a quality control system that exceeds industry standards, along with a reasonable and
+                competitive pricing mechanism.
+                We are also pleased to share that Tenhong Group operates a dedicated silk coating factory, enabling us
+                to provide advanced coating, functional finishing, and value-added fabric solutions. This additional
+                capability allows us to offer enhanced performance fabrics with improved durability, functionality, and
+                customization options—further strengthening our ability to serve diverse global market requirements.
+                Through professionalism, integrity, and a long-term vision, Shengcheng Textile Ltd. has established
+                strong and mutually beneficial partnerships with customers both domestically and internationally.
             </p>
 
             <!-- CTA Button -->
