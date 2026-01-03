@@ -18,8 +18,10 @@
             <h3 class="text-2xl font-extrabold mb-4 text-orange-500">Quick Links</h3>
             <ul class="space-y-2">
                 <li><a href="{{ route('landing') }}" class="hover:text-orange-400 transition-colors">Home</a></li>
-                <li><a href="{{ route('products.list') }}" class="hover:text-orange-400 transition-colors">Products</a></li>
-                <li><a href="{{ route('about-more') }}" class="hover:text-orange-400 transition-colors">About Us</a></li>
+                <li><a href="{{ route('products.list') }}" class="hover:text-orange-400 transition-colors">Products</a>
+                </li>
+                <li><a href="{{ route('about-more') }}" class="hover:text-orange-400 transition-colors">About Us</a>
+                </li>
                 <li><a href="{{ route('contact') }}" class="hover:text-orange-400 transition-colors">Contact</a></li>
             </ul>
         </div>
@@ -68,11 +70,16 @@
     </div>
 
     <!-- Decorative Shapes (optional) -->
-    <div class="absolute top-0 left-0 w-32 h-32 bg-orange-600 rounded-full opacity-10 -translate-x-1/2 -translate-y-1/2"></div>
-    <div class="absolute bottom-0 right-0 w-40 h-40 bg-orange-500 rounded-full opacity-10 translate-x-1/2 translate-y-1/2"></div>
+    <div
+        class="absolute top-0 left-0 w-32 h-32 bg-orange-600 rounded-full opacity-10 -translate-x-1/2 -translate-y-1/2">
+    </div>
+    <div
+        class="absolute bottom-0 right-0 w-40 h-40 bg-orange-500 rounded-full opacity-10 translate-x-1/2 translate-y-1/2">
+    </div>
 
     <!-- Bottom Note -->
     <div class="mt-10 text-center text-gray-400 text-sm">
-        &copy; 2025 <a class="font-bold hover:text-orange-400 transition-colors" href="https://atysan.xyz" target="_blank" rel="noopener noreferrer">ATYSAN</a>. All rights reserved.
+        &copy; {{ date('Y') }} <a class="font-bold hover:text-orange-400 transition-colors"
+            href="https://atysan.xyz" target="_blank" rel="noopener noreferrer">ATYSAN</a>. All rights reserved.
     </div>
 </footer>
