@@ -1,12 +1,16 @@
 <section class="flex bg-gray-50 relative pt-9 md:pt-20 pb-8 md:pb-16 lg:pt-32 lg:pb-32">
     <div class="w-11/12 md:w-4/5 mx-auto px-2 md:px-12">
-        <!-- Top section: Image + First part of text -->
+        <!-- Title Section - Always at the top -->
+        <div class="text-center md:text-left mb-8">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-orange-600 tracking-tight">
+                About Us
+            </h2>
+        </div>
+
+        <!-- Content Section: Image + Text -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 mb-6 lg:mb-0">
             <!-- Text Content -->
-            <div class="text-center md:text-left lg:order-1">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-orange-600 tracking-tight">
-                    About Us
-                </h2>
+            <div class="text-center md:text-left">
                 <div class="text-gray-700 text-justify text-base sm:text-lg">
                     <!-- Paragraph 1 - Show on all screens -->
                     <p class="mb-3">
@@ -65,8 +69,8 @@
                 </div>
             </div>
 
-            <!-- Image Side -->
-            <div class="flex justify-center md:justify-end lg:order-2">
+            <!-- Image Side - Aligns with text content, not title -->
+            <div class="flex justify-center md:justify-end">
                 <div class="w-full">
                     <img src="/images/1.png" alt="Textile Factory"
                         class="rounded-xl md:rounded-3xl shadow-2xl w-full" />
@@ -122,7 +126,7 @@
         <div class="hidden 2xl:block mt-2">
             <div class="text-gray-700 text-justify text-lg">
                 <!-- Paragraph 4 - For 2xl screens only -->
-                <p class="mt-2 mb-3">
+                <p class="mb-3">
                     Today, Shengcheng Textile Ltd. operates as a comprehensive textile fabric enterprise,
                     integrating weaving, knitting, dyeing, finishing, and sales under one complete system. Over
                     the years, we have established a quality control system that exceeds industry standards,
