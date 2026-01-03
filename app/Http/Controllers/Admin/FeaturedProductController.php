@@ -11,7 +11,7 @@ class FeaturedProductController extends Controller
 {
     public function index()
     {
-        $products = FeaturedProduct::with('category')->paginate(20);
+        $products = FeaturedProduct::with('category')->get();
         return view('admin.featured_products.index', compact('products'));
     }
 
