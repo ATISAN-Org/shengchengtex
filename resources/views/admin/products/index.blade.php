@@ -8,7 +8,7 @@
         <div class="flex justify-between items-center mb-6">
             <div>
                 <h2 class="text-2xl font-semibold text-gray-800">Products</h2>
-                <p class="text-sm text-gray-500 mt-1">Total: <span class="font-bold">{{ $products->count() }}</span></p>
+                <p class="text-sm text-gray-500">Total: <span class="font-bold">{{ $products->count() }}</span></p>
             </div>
             <a href="{{ route('products.create') }}"
                 class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg shadow transition">
