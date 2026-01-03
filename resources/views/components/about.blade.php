@@ -1,5 +1,5 @@
 <section class="flex items-center bg-gray-50 relative pt-9 md:pt-20 pb-8 md:pb-16 lg:pt-32 lg:pb-32">
-    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-9 items-center px-2 md:px-12">
+    <div class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-2 md:px-12">
 
         <!-- Text Content -->
         <div class="text-center md:text-left">
@@ -8,27 +8,41 @@
             </h2>
             <div class="text-gray-700 text-justify text-base sm:text-lg mb-8">
                 <p class="mb-3">
-                    Shengcheng Textile Ltd., a subsidiary of Tenhong Group, is a professional manufacturer specializing in polyester-based knitted and woven fabrics. We are located in Shengze Town, Wujiang District, Changzhou City, China.
+                    Shengcheng Textile Ltd., a subsidiary of Tenghong Group, is a professional manufacturer specializing
+                    in polyester-based knitted and woven fabrics. We are located in Shengze Town, Wujiang District,
+                    Changzhou City, China.
                 </p>
-                
+
                 <p class="mb-3">
-                    With an annual production capacity of approximately 25 million meters of greige fabric, we have been serving the textile industry for over 25 years. Since our establishment, we have been committed to building a reliable and high-quality brand within the global textile market.
+                    With an annual production capacity of approximately 25 million meters of greige fabric, we have been
+                    serving the textile industry for over 25 years. Since our establishment, we have been committed to
+                    building a reliable and high-quality brand within the global textile market.
                 </p>
-                
+
                 <p class="mb-3">
-                    Our products are positioned in the mid to high-end segment, and we continuously develop new fabric varieties that reflect the latest trends in fashion and functionality. Through constant innovation and improvement, we strive to meet the evolving needs of our customers.
+                    Our products are positioned in the mid to high-end segment, and we continuously develop new fabric
+                    varieties that reflect the latest trends in fashion and functionality. Through constant innovation
+                    and improvement, we strive to meet the evolving needs of our customers.
                 </p>
-                
+
                 <p class="mb-3">
-                    Today, Shengcheng Textile Ltd. operates as a comprehensive textile fabric enterprise, integrating weaving, knitting, dyeing, finishing, and sales under one complete system. Over the years, we have established a quality control system that exceeds industry standards, along with a reasonable and competitive pricing mechanism.
+                    Today, Shengcheng Textile Ltd. operates as a comprehensive textile fabric enterprise, integrating
+                    weaving, knitting, dyeing, finishing, and sales under one complete system. Over the years, we have
+                    established a quality control system that exceeds industry standards, along with a reasonable and
+                    competitive pricing mechanism.
                 </p>
-                
+
                 <p class="mb-3">
-                    We are also pleased to share that Tenhong Group operates a dedicated silk coating factory, enabling us to provide advanced coating, functional finishing, and value-added fabric solutions. This additional capability allows us to offer enhanced performance fabrics with improved durability, functionality, and customization options—further strengthening our ability to serve diverse global market requirements.
+                    We are also pleased to share that Tenhong Group operates a dedicated silk coating factory, enabling
+                    us to provide advanced coating, functional finishing, and value-added fabric solutions. This
+                    additional capability allows us to offer enhanced performance fabrics with improved durability,
+                    functionality, and customization options—further strengthening our ability to serve diverse global
+                    market requirements.
                 </p>
-                
+
                 <p class="mb-0">
-                    Through professionalism, integrity, and a long-term vision, Shengcheng Textile Ltd. has established strong and mutually beneficial partnerships with customers both domestically and internationally.
+                    Through professionalism, integrity, and a long-term vision, Shengcheng Textile Ltd. has established
+                    strong and mutually beneficial partnerships with customers both domestically and internationally.
                 </p>
             </div>
 
@@ -41,7 +55,7 @@
 
         <!-- Image Side - Made Bigger -->
         <div class="flex justify-center md:justify-end">
-            <div class="w-full md:w-[110%] h-[28rem] md:h-[46rem] flex items-center md:ml-4">
+            <div class="w-full flex items-center">
                 <img src="/images/1.png" alt="Textile Factory"
                     class="rounded-xl md:rounded-3xl shadow-2xl w-full h-full object-cover" />
             </div>

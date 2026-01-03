@@ -64,8 +64,7 @@
                         class="absolute -top-2 sm:-top-4 -left-2 sm:-left-4 bg-white rounded-2xl shadow-xl p-2 sm:p-4 border border-orange-100">
                         <div class="flex items-center gap-3">
                             <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
@@ -117,7 +116,7 @@
                 <!-- Left: Mission Image -->
                 <div class="relative">
                     <div class="rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="{{ asset('images/2.png') }}" alt="Our Mission - Quality Fabric Production"
+                        <img src="{{ asset('images/3.png') }}" alt="Our Mission - Quality Fabric Production"
                             class="w-full h-48 sm:h-64 md:h-[500px] object-cover">
                     </div>
                     <!-- Accent Element -->
@@ -218,9 +217,9 @@
     <!-- Quality Commitment Section -->
     <section class="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-orange-50">
         <div class="w-11/12 md:w-4/5 mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-center">
                 <!-- Left: Quality Content -->
-                <div class="space-y-6 md:space-y-8">
+                <div class="space-y-6 md:space-y-6">
                     <div class="space-y-2 md:space-y-4">
                         <div class="flex items-center gap-3">
                             <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
@@ -240,8 +239,8 @@
                     </div>
 
                     <!-- Quality Process -->
-                    <div class="grid grid-cols-2 gap-4 md:gap-6">
-                        <div class="bg-white rounded-2xl p-3 md:p-6 shadow-lg border border-orange-100">
+                    <div class="grid grid-cols-2 gap-4 md:gap-5">
+                        <div class="bg-white rounded-2xl p-3 md:p-4 shadow-lg border border-orange-100">
                             <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
@@ -304,8 +303,8 @@
                 <!-- Right: Quality Image -->
                 <div class="relative">
                     <div class="rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="{{ asset('images/3.png') }}" alt="Quality Control Process"
-                            class="w-full h-48 sm:h-64 md:h-[600px] object-cover">
+                        <img src="{{ asset('images/2.png') }}" alt="Quality Control Process"
+                            class="w-full h-48 sm:h-64 md:h-[490px] object-cover">
                     </div>
                     <!-- Quality Badge -->
                     <div
